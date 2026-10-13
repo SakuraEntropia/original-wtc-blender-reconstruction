@@ -1,0 +1,413 @@
+{
+  "historical_production_ready": false,
+  "github_pushed_files": 0,
+  "technical_check_count": 59,
+  "asset_libraries": 30,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 28,
+      "sha256": "7f598fe7e753b1dc0d39398b99ac099238762115d91e98e4b24f2b34cccf0d73"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 141,
+      "sha256": "1ef0d8ad924b7b142d9eb40466d8d006cc3a66117fc3c80bd56c0e0861d206dc"
+    },
+    {
+      "path": "ASSET_LICENSE.md",
+      "bytes": 602,
+      "sha256": "8a15e0f5ae2ad84880b45025a7e279b65114015357fce1dad560858a9fc95516"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1095,
+      "sha256": "e24f82e46e39320d9c1d66f9eac1add23194976cc41f3319825f936810993a1a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3599,
+      "sha256": "c1180ecad06169d4e2bdccfdc86cafb91ed03bd8f0879b3b0a6bb3b66dde88fd"
+    },
+    {
+      "path": "assets/PLAZA_furniture_and_landscape_interpretation.blend",
+      "bytes": 126042,
+      "sha256": "7fa96d27789f729b44f285185a570f815bb6c5fc384341e0116f741ec4ccd659"
+    },
+    {
+      "path": "assets/PLAZA_globe_and_fountain_SCALE_PROXY.blend",
+      "bytes": 125929,
+      "sha256": "0303d8a470ac1f94296d56295a32e1509ecae92865bc9c3826cba029d52b5098"
+    },
+    {
+      "path": "assets/PLAZA_individual_tile_meshes_STUDY.blend",
+      "bytes": 3031958,
+      "sha256": "220a2eebcb175bcbdde8209fa7d0fc811fb4966bc69312699bc8738c0880cf33"
+    },
+    {
+      "path": "assets/PLAZA_vegetation_TYPE.blend",
+      "bytes": 109719,
+      "sha256": "c4c28bbffd6a17247b80c0fc36d8e1768040184ecd22fde8ca39ae24d3acbf1e"
+    },
+    {
+      "path": "assets/WTC1.blend",
+      "bytes": 4909066,
+      "sha256": "dbec7cd36cc126072c9e42e76d497867acbef44800e7442d52506ceffa4b607a"
+    },
+    {
+      "path": "assets/WTC1_COMPLETION_study.blend",
+      "bytes": 852929,
+      "sha256": "39d44f57ffad6e0dc38f8ee38a39a51b1ee637119aeef6465efb548282f00b15"
+    },
+    {
+      "path": "assets/WTC1_CORE_roof_connections_STUDY.blend",
+      "bytes": 149020,
+      "sha256": "7cb52b50c1f4c47b55870a3be96ba49545fc4e15346759c7ed00fcb7d6ac55f9"
+    },
+    {
+      "path": "assets/WTC1_CORNER_aluminum_photo_interpretation.blend",
+      "bytes": 103482,
+      "sha256": "1c3b0429e7953216c5389fff4a03f427f69ebbe125b6849a001ec63cef81b5e0"
+    },
+    {
+      "path": "assets/WTC1_CROWN_photo_interpretation.blend",
+      "bytes": 621659,
+      "sha256": "68c13e49ba567a71196f36181e0820739a4293c1fb48f493c7d9c3ddf9393254"
+    },
+    {
+      "path": "assets/WTC1_ROOF_detail_components.blend",
+      "bytes": 107427,
+      "sha256": "782a269e5b7babe5424062ac4bb55427b3f03f0ab21082f707d9062fad9a07d4"
+    },
+    {
+      "path": "assets/WTC1_antenna_photo_interpretation_STUDY.blend",
+      "bytes": 138364,
+      "sha256": "d89b42ed7e0215988b5b9486274f966826d7a04f7e2b6d65bc3fedd1c36275f3"
+    },
+    {
+      "path": "assets/WTC2.blend",
+      "bytes": 4881835,
+      "sha256": "5d6db124b6d2e88ea2b1e065cd278f4bf656aa46de4b1ba3aa32c4fb0cce834d"
+    },
+    {
+      "path": "assets/WTC2_COMPLETION_study.blend",
+      "bytes": 862780,
+      "sha256": "dfa677a01fb44b148cf591d6b9eb5d48fb1292579994f3a0a1c1e467ed20cd54"
+    },
+    {
+      "path": "assets/WTC2_CORE_roof_connections_STUDY.blend",
+      "bytes": 147772,
+      "sha256": "71cd9b20cf0cd217fe94ef74b60269baf4dbc52f9a2bf06be064e4767f3ccfde"
+    },
+    {
+      "path": "assets/WTC2_CORNER_aluminum_photo_interpretation.blend",
+      "bytes": 103152,
+      "sha256": "714c419541b2d09772194063665be12b573004ad89517b8a9df65e2cb05af07c"
+    },
+    {
+      "path": "assets/WTC2_CROWN_photo_interpretation.blend",
+      "bytes": 621214,
+      "sha256": "64cff038034e45e8a70aecc67e5e8dd3b941dc7824a6ed689c7234a1088c9890"
+    },
+    {
+      "path": "assets/WTC2_ROOF_detail_components.blend",
+      "bytes": 107449,
+      "sha256": "608ffadb24d9a6ced74acc25239d192efa1bc771e75ebeda5f4f3c77531a6217"
+    },
+    {
+      "path": "assets/WTC3_Marriott_massing_STUDY.blend",
+      "bytes": 504635,
+      "sha256": "ecf55359631284095fff1df3a082516e55b85f00a487fbc5c65a042936542d04"
+    },
+    {
+      "path": "assets/WTC3_Marriott_volume_0_STUDY_ROOF_detail_components.blend",
+      "bytes": 106851,
+      "sha256": "61cd7d09a476acc81fb9d42b20506fb8198e0365a9f11cb8c4f9b9cea6661ef2"
+    },
+    {
+      "path": "assets/WTC3_Marriott_volume_1_STUDY_ROOF_detail_components.blend",
+      "bytes": 99251,
+      "sha256": "048749d7a24e982825b7023029412105305aea16bd55d14bae3f70a7c8d8ad14"
+    },
+    {
+      "path": "assets/WTC4_massing_STUDY.blend",
+      "bytes": 260625,
+      "sha256": "d435ca37430d0fcdce32bacd6dac602dfb40dc0518fd3e1c4659d67186f5cb20"
+    },
+    {
+      "path": "assets/WTC4_volume_0_STUDY_ROOF_detail_components.blend",
+      "bytes": 105641,
+      "sha256": "cfb908ba46ef42f9b064ab34365395ffe26dd880753842a565251b197772508d"
+    },
+    {
+      "path": "assets/WTC5_massing_STUDY.blend",
+      "bytes": 435332,
+      "sha256": "4246fb28f9ea666f5ceadbe9fc78c3a55e1a5f8aec18f07deb5be3ecc924e871"
+    },
+    {
+      "path": "assets/WTC5_volume_0_STUDY_ROOF_detail_components.blend",
+      "bytes": 113094,
+      "sha256": "b4125f46aac7fa1fd7730612bdea88e28b9b491328a7568afa1a0e4adb885075"
+    },
+    {
+      "path": "assets/WTC5_volume_1_STUDY_ROOF_detail_components.blend",
+      "bytes": 102732,
+      "sha256": "1230878cfb94642ece29559c103b8226be1108fa836d160823c79e4301c15dc7"
+    },
+    {
+      "path": "assets/WTC6_massing_STUDY.blend",
+      "bytes": 244254,
+      "sha256": "c1d17d24faeb7dfd1efaf4d2a48b28be900f9202e8b6f2fd4d27c74df2b468ee"
+    },
+    {
+      "path": "assets/WTC6_volume_0_STUDY_ROOF_detail_components.blend",
+      "bytes": 105158,
+      "sha256": "e01e50f30ae89e281f9431eabbdf5ea4949a130c45ca4c42b346a3f1ecf4698c"
+    },
+    {
+      "path": "assets/WTC7_ROOF_detail_components.blend",
+      "bytes": 107991,
+      "sha256": "0046a0e1e6b0a7ad554b343b39dfc8a11f2a19d4484b6121ae90ea4a4ab6c86d"
+    },
+    {
+      "path": "assets/WTC7__NIST_massing_position_schematic.blend",
+      "bytes": 1480989,
+      "sha256": "402299318d4d206d061d5d2774aac48641e2b2a961bdb0babc011929356bcfc7"
+    },
+    {
+      "path": "assets/WTC_TYPICAL_STEEL_PANEL_STUDY.blend",
+      "bytes": 66284,
+      "sha256": "10d81b346fddc9909cd5ce2c1db917197380ea5c7cc5a6ff85cae90fe8b503b9"
+    },
+    {
+      "path": "build.py",
+      "bytes": 5034,
+      "sha256": "d61f129a37781b52b1f519b907ee2e909cfb1e285c88380218281c4a831c61fc"
+    },
+    {
+      "path": "docs/AGENT_PROMPT_ZH.md",
+      "bytes": 2237,
+      "sha256": "8880efff924dc4240d5f791ff75d9a558d0a6ba141a7284b3ea9b1618adc58cb"
+    },
+    {
+      "path": "docs/ASSET_MODULES.md",
+      "bytes": 4084,
+      "sha256": "b952b55a076670ed2991cf7122ae27b534deef8fba68f9694ef62564f290add9"
+    },
+    {
+      "path": "docs/ASSUMPTIONS.md",
+      "bytes": 3245,
+      "sha256": "05e0b21749d5fc369372f681f961931d384dd55dde5d278cd70231b8efd64ca6"
+    },
+    {
+      "path": "docs/COPYRIGHT.md",
+      "bytes": 1429,
+      "sha256": "803ace7c5ec700b63c85e7b4c906ba77d4b0d18687b714d492f9fc05d2ae832c"
+    },
+    {
+      "path": "docs/DELIVERY_STATUS.md",
+      "bytes": 862,
+      "sha256": "4ba6d4540f7dba6d2b931541aebf27690bfb292272a87a57e5baaa3dd4b1e29a"
+    },
+    {
+      "path": "docs/DETAIL_REVISION_PLAN.md",
+      "bytes": 1331,
+      "sha256": "f94d5dd40ca6464fae14f54085fea954f658aeb27a421a38e00eebbbd7b0fd98"
+    },
+    {
+      "path": "docs/PRODUCTION_GATE.md",
+      "bytes": 2146,
+      "sha256": "9a328487205a35b7b62923c193c1a14cfc1fb0939f55aa1e229c0d028890eba2"
+    },
+    {
+      "path": "docs/SOURCES_AND_DIMENSIONS.md",
+      "bytes": 8804,
+      "sha256": "07cf1b712c47ab2535a2d477b8e79ca23f68756a619c21867263daa3f9716227"
+    },
+    {
+      "path": "finalize.py",
+      "bytes": 243,
+      "sha256": "77012dafdc5bdfbc3a26374cc2a36cc3c3ac578f202c6ddfaa756548188dd20b"
+    },
+    {
+      "path": "package.py",
+      "bytes": 1973,
+      "sha256": "e9f3966307100f3e17a07422fb522f61c03b0bd7fc6c5a10baa3d0c58cb4fc29"
+    },
+    {
+      "path": "renders/detail_antenna.png",
+      "bytes": 1536518,
+      "sha256": "859c73f5187c5f9964cb2eb91ff8a328dd7270b976d82063375f11a09f6c34f4"
+    },
+    {
+      "path": "renders/detail_core.png",
+      "bytes": 1806633,
+      "sha256": "9fb5ceb83f7a2838945274814ab9f7f304ae63ed5845eff8b50ddf40701b9fc4"
+    },
+    {
+      "path": "renders/detail_core_top.png",
+      "bytes": 1756690,
+      "sha256": "f08cf61578c6dd88391d33b89f72a1623758b8bc799813a731cc92263aa1e540"
+    },
+    {
+      "path": "renders/detail_crown.png",
+      "bytes": 1741041,
+      "sha256": "d3fee883fce5623b8882380dcd08c595ac54ae26cb6ea2f2d43bb194d050361f"
+    },
+    {
+      "path": "renders/detail_globe.png",
+      "bytes": 1731921,
+      "sha256": "72476bac9933c1213bcabb1799788993f19ac90d9ec54d28d226d29bfc8dbb6d"
+    },
+    {
+      "path": "renders/detail_hat_truss.png",
+      "bytes": 1638641,
+      "sha256": "3f997f5f7e83c6abd6947a999fdea9527228b55f13d2a12880ed2ba1601293bd"
+    },
+    {
+      "path": "renders/detail_lobby.png",
+      "bytes": 1684845,
+      "sha256": "a81bfcb770fc7b06e66ea3eaea008a856a8aad5a4e47c978826bf3174331337e"
+    },
+    {
+      "path": "renders/detail_lowrise.png",
+      "bytes": 1905183,
+      "sha256": "c2c33f39cd115b547672f399ecd0c881279100e8e93f84a17e067f45730c71c3"
+    },
+    {
+      "path": "renders/detail_mep.png",
+      "bytes": 1596441,
+      "sha256": "43acf41a7e5f7cecfe3668d902427e726e7ac92806f91d2b8be60601ada15b92"
+    },
+    {
+      "path": "renders/detail_mep_detail.png",
+      "bytes": 1734333,
+      "sha256": "d3816a71cd6f965605f7ec43e700db8438233cf7bb31eec3f07b2d0acc27ac1c"
+    },
+    {
+      "path": "renders/detail_overview.png",
+      "bytes": 1610017,
+      "sha256": "b6a564bf548281c12caff5da875c5d319053261185a5e51473841815f5f42027"
+    },
+    {
+      "path": "renders/detail_plaza.png",
+      "bytes": 1762178,
+      "sha256": "a0abbcd69ad13331d82e77e6a1828f8bc565afa0c34018e7d7a8023f6fe503cd"
+    },
+    {
+      "path": "renders/detail_roof1.png",
+      "bytes": 1703193,
+      "sha256": "1b7755103b4b20d68b4c94110ae7b42a09f7fedea581c01f8a736732b8f83382"
+    },
+    {
+      "path": "renders/detail_roof2.png",
+      "bytes": 1836897,
+      "sha256": "7488793572c2b91c5fb1a0a2a714d5f7e905a4a3d3f7ca1ee7c560e9f1b2b903"
+    },
+    {
+      "path": "renders/detail_roof_plan.png",
+      "bytes": 1671796,
+      "sha256": "f2a75add4b789e4cbab3a8d583faa9f38203569d38992cdccd0ba32eeced8ac9"
+    },
+    {
+      "path": "renders/detail_section.png",
+      "bytes": 1477969,
+      "sha256": "e4ee84624d457c1987845c7e9e7a550e0c43a74a68670baf7ebb321f5f53e225"
+    },
+    {
+      "path": "renders/detail_site_plan.png",
+      "bytes": 1627599,
+      "sha256": "72d4dbe50a8924efeb44c8d8d82a25f5e339892af3a9b06966857853ddce3992"
+    },
+    {
+      "path": "renders/detail_steel_panels.png",
+      "bytes": 1489216,
+      "sha256": "cc5d4c3b121ed3023b9cad66c5d9dd812657c8577b8919cdaeee572f8f270662"
+    },
+    {
+      "path": "renders/detail_trident.png",
+      "bytes": 1620496,
+      "sha256": "e2c83c0182e26c13476f9736a71bcdec62762d649272b6ce3089106f07267ef0"
+    },
+    {
+      "path": "renders/detail_wtc7.png",
+      "bytes": 1894931,
+      "sha256": "9bb0ddf0de3cfbf95b2cdca0829d3b9e864aed1f4568cc474f3378dda87ae8e9"
+    },
+    {
+      "path": "reports/assets_qa.json",
+      "bytes": 10653,
+      "sha256": "dd6a1125c0cfb388d0de1f45cc2c94febcf30b7763327543cc8631b641f5957f"
+    },
+    {
+      "path": "reports/geometry_manifest.json.gz",
+      "bytes": 3937692,
+      "sha256": "c2ae4a9711f99449851eb958a20346527cc1b34227c87e8004382e0e117d37f5"
+    },
+    {
+      "path": "reports/qa.json",
+      "bytes": 11656,
+      "sha256": "a0eb7f5711c83dbc5a6d6b437cd935f5a86352f1dfe313b39a8473a4369de1e1"
+    },
+    {
+      "path": "review.py",
+      "bytes": 4692,
+      "sha256": "fe0abca2229304ca15ac7e58a6af056e5032ddb78fab7caa524772a3eb028018"
+    },
+    {
+      "path": "revise.py",
+      "bytes": 1896,
+      "sha256": "85105d8e50caad0073d9b4be8a73992f815ebe0a7de001d6ce4a88f91763d84d"
+    },
+    {
+      "path": "src/wtc/__init__.py",
+      "bytes": 73,
+      "sha256": "e7083067e4a25b066a238ffcc27e357282ab6f8d9855d50674ad1dd904384800"
+    },
+    {
+      "path": "src/wtc/completion.py",
+      "bytes": 33513,
+      "sha256": "1e9c0486dd9538b482b9cf6852f3ea33aca91a2ae8b8fc38f8faa73d9ee196b7"
+    },
+    {
+      "path": "src/wtc/context.py",
+      "bytes": 4747,
+      "sha256": "bf222ff66da51298e34003944ba9b0a3daa43700dc197418745b480bd172815c"
+    },
+    {
+      "path": "src/wtc/crown_site_detail.py",
+      "bytes": 36189,
+      "sha256": "f4999cb6477a1d5567c0a478127d77bc0497edb6d8f83e97255f1d021cc34c25"
+    },
+    {
+      "path": "src/wtc/facade_detail.py",
+      "bytes": 12979,
+      "sha256": "18b2dd8f8dde5be9c962b85b7ee7aed37a164c0a83b7902d5895150adfe568fd"
+    },
+    {
+      "path": "src/wtc/lowrise_detail.py",
+      "bytes": 19987,
+      "sha256": "03bcb2bc37f4fab0e465b1686499f6b58465b10124678470b3c3e0f13bcf3122"
+    },
+    {
+      "path": "src/wtc/model.py",
+      "bytes": 14515,
+      "sha256": "4432157fc0963f8cb79fe8698b6aaf21d977f9b4770b5fe9afe3e57bc3bc0d0c"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 10527,
+      "sha256": "50966d34d68ef170fef27e06e24650695e116c5d09c92261abaa1a897e65be87"
+    },
+    {
+      "path": "verify_assets.py",
+      "bytes": 1499,
+      "sha256": "07a93b465c3693b0717dcf7d9a371990f2aeff8bf15c17b9d473f411a8c89780"
+    },
+    {
+      "path": "wtc_detailed_cg.blend",
+      "bytes": 18854594,
+      "sha256": "53a5cca982dd2415ab0c8bcca6c7487c5810419ac1f370f57518114b9836d816"
+    }
+  ]
+}

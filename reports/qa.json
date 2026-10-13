@@ -1,0 +1,516 @@
+{
+  "technical_checks": [
+    {
+      "name": "reopened_saved_file",
+      "passed": true,
+      "evidence": "wtc_detailed_cg.blend"
+    },
+    {
+      "name": "restored_overview_camera",
+      "passed": true,
+      "evidence": "CAM_overview"
+    },
+    {
+      "name": "review_cameras_saved",
+      "passed": true,
+      "evidence": [
+        "CAM_antenna",
+        "CAM_core_cutaway",
+        "CAM_core_roof_connection",
+        "CAM_crown_detail",
+        "CAM_hat_truss",
+        "CAM_industrial_type_components",
+        "CAM_lobby_inside",
+        "CAM_MEP_cutaway",
+        "CAM_overview",
+        "CAM_plaza_furniture",
+        "CAM_plaza_globe",
+        "CAM_roof_plan",
+        "CAM_roof_WTC1",
+        "CAM_roof_WTC2",
+        "CAM_segmented_steel",
+        "CAM_site_plan",
+        "CAM_steel_cover_section",
+        "CAM_trident",
+        "CAM_WTC3_6",
+        "CAM_WTC7"
+      ]
+    },
+    {
+      "name": "WTC1_76_tree_modules",
+      "passed": true,
+      "evidence": 76
+    },
+    {
+      "name": "WTC1_tree_closed_outward_meshes",
+      "passed": true,
+      "evidence": {
+        "closed": true,
+        "positive_volume": true
+      }
+    },
+    {
+      "name": "WTC1_tree_vertical_datums",
+      "passed": true,
+      "evidence": {
+        "plaza_m": 6.7056000000000004,
+        "upper_splice_m": 33.210499999999996
+      }
+    },
+    {
+      "name": "WTC1_face1_59_segmented_axes",
+      "passed": true,
+      "evidence": {
+        "axes": 59,
+        "steel_segments": 2123
+      }
+    },
+    {
+      "name": "WTC1_face1_no_full_height_steel",
+      "passed": true,
+      "evidence": 11.571727752685547
+    },
+    {
+      "name": "WTC1_face2_59_segmented_axes",
+      "passed": true,
+      "evidence": {
+        "axes": 59,
+        "steel_segments": 2123
+      }
+    },
+    {
+      "name": "WTC1_face2_no_full_height_steel",
+      "passed": true,
+      "evidence": 11.571727752685547
+    },
+    {
+      "name": "WTC1_face3_59_segmented_axes",
+      "passed": true,
+      "evidence": {
+        "axes": 59,
+        "steel_segments": 2123
+      }
+    },
+    {
+      "name": "WTC1_face3_no_full_height_steel",
+      "passed": true,
+      "evidence": 11.571727752685547
+    },
+    {
+      "name": "WTC1_face4_59_segmented_axes",
+      "passed": true,
+      "evidence": {
+        "axes": 59,
+        "steel_segments": 2123
+      }
+    },
+    {
+      "name": "WTC1_face4_no_full_height_steel",
+      "passed": true,
+      "evidence": 11.571727752685547
+    },
+    {
+      "name": "WTC1_column_pitch_1_016m",
+      "passed": true,
+      "evidence": 1.0159988302201572
+    },
+    {
+      "name": "WTC1_upper_tube_7x5in",
+      "passed": true,
+      "evidence": [
+        0.1777999997138977,
+        0.12700000405311584,
+        17.0
+      ]
+    },
+    {
+      "name": "WTC1_47_segmented_core_axes",
+      "passed": true,
+      "evidence": {
+        "axes": 47,
+        "segments": 1786
+      }
+    },
+    {
+      "name": "WTC1_110_floor_datums",
+      "passed": true,
+      "evidence": 110
+    },
+    {
+      "name": "WTC1_F3_F6_core_only",
+      "passed": true,
+      "evidence": [
+        [
+          41.757598876953125,
+          26.51759910583496,
+          0.20000000298023224
+        ],
+        [
+          41.757598876953125,
+          26.51759910583496,
+          0.20000000298023224
+        ],
+        [
+          41.757598876953125,
+          26.51759910583496,
+          0.20000000298023224
+        ],
+        [
+          41.757598876953125,
+          26.51759910583496,
+          0.20000000298023224
+        ]
+      ]
+    },
+    {
+      "name": "WTC1_envelope_restored_visible",
+      "passed": true,
+      "evidence": "exterior render state"
+    },
+    {
+      "name": "WTC1_bottom_curtain_wall",
+      "passed": true,
+      "evidence": {
+        "min_m": [
+          -86.56620025634766,
+          23.433799743652344,
+          0.0
+        ],
+        "max_m": [
+          -23.433799743652344,
+          86.56620025634766,
+          33.21049880981445
+        ]
+      }
+    },
+    {
+      "name": "WTC1_crown_curtain_wall_to_opaque_cap",
+      "passed": true,
+      "evidence": {
+        "min_m": [
+          -86.56620025634766,
+          23.433799743652344,
+          399.9664001464844
+        ],
+        "max_m": [
+          -23.433799743652344,
+          86.56620025634766,
+          414.56640625
+        ]
+      }
+    },
+    {
+      "name": "WTC1_all_47_core_axes_reach_roof",
+      "passed": true,
+      "evidence": {
+        "body_endpoint_min_m": 416.9663915634155,
+        "body_endpoint_max_m": 416.9663915634155,
+        "roof_m": 416.9664
+      }
+    },
+    {
+      "name": "WTC1_cap_all_8_edges_independent_panels",
+      "passed": true,
+      "evidence": 248
+    },
+    {
+      "name": "WTC1_pointed_arch_geometry",
+      "passed": true,
+      "evidence": "58 pointed arches / face, two prongs per arch; photo interpretation"
+    },
+    {
+      "name": "WTC1_eight_sided_roof",
+      "passed": true,
+      "evidence": 16
+    },
+    {
+      "name": "WTC2_76_tree_modules",
+      "passed": true,
+      "evidence": 76
+    },
+    {
+      "name": "WTC2_tree_closed_outward_meshes",
+      "passed": true,
+      "evidence": {
+        "closed": true,
+        "positive_volume": true
+      }
+    },
+    {
+      "name": "WTC2_tree_vertical_datums",
+      "passed": true,
+      "evidence": {
+        "plaza_m": 6.7056000000000004,
+        "upper_splice_m": 33.210499999999996
+      }
+    },
+    {
+      "name": "WTC2_face1_59_segmented_axes",
+      "passed": true,
+      "evidence": {
+        "axes": 59,
+        "steel_segments": 2103
+      }
+    },
+    {
+      "name": "WTC2_face1_no_full_height_steel",
+      "passed": true,
+      "evidence": 11.515743255615234
+    },
+    {
+      "name": "WTC2_face2_59_segmented_axes",
+      "passed": true,
+      "evidence": {
+        "axes": 59,
+        "steel_segments": 2103
+      }
+    },
+    {
+      "name": "WTC2_face2_no_full_height_steel",
+      "passed": true,
+      "evidence": 11.515743255615234
+    },
+    {
+      "name": "WTC2_face3_59_segmented_axes",
+      "passed": true,
+      "evidence": {
+        "axes": 59,
+        "steel_segments": 2103
+      }
+    },
+    {
+      "name": "WTC2_face3_no_full_height_steel",
+      "passed": true,
+      "evidence": 11.515743255615234
+    },
+    {
+      "name": "WTC2_face4_59_segmented_axes",
+      "passed": true,
+      "evidence": {
+        "axes": 59,
+        "steel_segments": 2103
+      }
+    },
+    {
+      "name": "WTC2_face4_no_full_height_steel",
+      "passed": true,
+      "evidence": 11.515743255615234
+    },
+    {
+      "name": "WTC2_column_pitch_1_016m",
+      "passed": true,
+      "evidence": 1.0160007661981771
+    },
+    {
+      "name": "WTC2_upper_tube_7x5in",
+      "passed": true,
+      "evidence": [
+        0.1777999997138977,
+        0.12700000405311584,
+        17.0
+      ]
+    },
+    {
+      "name": "WTC2_47_segmented_core_axes",
+      "passed": true,
+      "evidence": {
+        "axes": 47,
+        "segments": 1786
+      }
+    },
+    {
+      "name": "WTC2_110_floor_datums",
+      "passed": true,
+      "evidence": 110
+    },
+    {
+      "name": "WTC2_F3_F6_core_only",
+      "passed": true,
+      "evidence": [
+        [
+          26.51759910583496,
+          41.757598876953125,
+          0.20000000298023224
+        ],
+        [
+          26.51759910583496,
+          41.757598876953125,
+          0.20000000298023224
+        ],
+        [
+          26.51759910583496,
+          41.757598876953125,
+          0.20000000298023224
+        ],
+        [
+          26.51759910583496,
+          41.757598876953125,
+          0.20000000298023224
+        ]
+      ]
+    },
+    {
+      "name": "WTC2_envelope_restored_visible",
+      "passed": true,
+      "evidence": "exterior render state"
+    },
+    {
+      "name": "WTC2_bottom_curtain_wall",
+      "passed": true,
+      "evidence": {
+        "min_m": [
+          23.433799743652344,
+          -86.56620025634766,
+          0.0
+        ],
+        "max_m": [
+          86.56620025634766,
+          -23.433799743652344,
+          33.21049880981445
+        ]
+      }
+    },
+    {
+      "name": "WTC2_crown_curtain_wall_to_opaque_cap",
+      "passed": true,
+      "evidence": {
+        "min_m": [
+          23.433799743652344,
+          -86.56620025634766,
+          398.1376037597656
+        ],
+        "max_m": [
+          86.56620025634766,
+          -23.433799743652344,
+          412.73760986328125
+        ]
+      }
+    },
+    {
+      "name": "WTC2_all_47_core_axes_reach_roof",
+      "passed": true,
+      "evidence": {
+        "body_endpoint_min_m": 415.1375913619995,
+        "body_endpoint_max_m": 415.1375913619995,
+        "roof_m": 415.1376
+      }
+    },
+    {
+      "name": "WTC2_cap_all_8_edges_independent_panels",
+      "passed": true,
+      "evidence": 248
+    },
+    {
+      "name": "WTC2_pointed_arch_geometry",
+      "passed": true,
+      "evidence": "58 pointed arches / face, two prongs per arch; photo interpretation"
+    },
+    {
+      "name": "WTC2_eight_sided_roof",
+      "passed": true,
+      "evidence": 16
+    },
+    {
+      "name": "each_plaza_tile_unique_mesh",
+      "passed": true,
+      "evidence": 8630
+    },
+    {
+      "name": "plaza_tile_z_datum",
+      "passed": true,
+      "evidence": 6.7056000000000004
+    },
+    {
+      "name": "orange_antenna_proxy_removed",
+      "passed": true,
+      "evidence": "one mast assembly remains"
+    },
+    {
+      "name": "generic_globe_present",
+      "passed": true,
+      "evidence": "generic sculpture scale proxy; faithful artwork reproduction excluded"
+    },
+    {
+      "name": "finite_geometry_and_transforms",
+      "passed": true,
+      "evidence": 117610
+    },
+    {
+      "name": "materials_on_all_scene_meshes",
+      "passed": true,
+      "evidence": 117610
+    },
+    {
+      "name": "no_external_texture_dependencies",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "name": "20_render_files",
+      "passed": true,
+      "evidence": [
+        "overview",
+        "site_plan",
+        "trident",
+        "lobby",
+        "globe",
+        "roof1",
+        "roof2",
+        "antenna",
+        "mep",
+        "hat_truss",
+        "core",
+        "steel_panels",
+        "section",
+        "wtc7",
+        "lowrise",
+        "roof_plan",
+        "crown",
+        "core_top",
+        "plaza",
+        "mep_detail"
+      ]
+    },
+    {
+      "name": "shadow_pool_expanded",
+      "passed": true,
+      "evidence": "2048"
+    },
+    {
+      "name": "new_detail_parts_closed_outward",
+      "passed": true,
+      "evidence": {
+        "unique_meshes": 4644,
+        "failed": []
+      }
+    }
+  ],
+  "technical_pass": true,
+  "historical_production_ready": false,
+  "historical_blockers": [
+    "corner tree/return plates not transcribed",
+    "full floor elevations and core shafts unverified",
+    "lobby/sky lobby/public-floor layouts and finishes schematic",
+    "MER equipment reference transferred from 75/76 to top without as-built plan",
+    "rooftop and antenna component dimensions/layout estimated",
+    "WTC3-7/site footprints and georeference incomplete",
+    "Koenig sculpture is only a generic scale proxy",
+    "basement/PATH/retail and full MEP distribution absent"
+  ],
+  "statistics": {
+    "objects": 117640,
+    "scene_mesh_objects": 117610,
+    "unique_scene_meshes": 17204,
+    "plaza_tile_meshes": 8630,
+    "materials": 67,
+    "mesh_faces": 194494,
+    "instanced_base_mesh_faces": 2835414,
+    "faces_in_used_mesh_datablocks": 194494
+  },
+  "blender_version": "5.2.0 Alpha",
+  "publication": {
+    "pushed": false,
+    "reason": "GitHub credentials restored; first verified public push pending"
+  },
+  "technical_check_count": 59
+}
