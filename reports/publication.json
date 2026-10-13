@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/SakuraEntropia/original-wtc-blender-reconstruction",
+  "public": true,
+  "payload_commit": "ab2408a745f8a9fc90a791118dd832454017a677",
+  "verified_file_count": 82,
+  "verified_utc": "2026-10-13T15:15:16.218136+00:00",
+  "all_payload_git_blob_hashes_match": true,
+  "main_blend_git_blob_sha": "09ad2dc58dec5ccbbfeb8771def6dc7ed78fa251",
+  "asset_libraries": 30,
+  "rendered_views": 20,
+  "source_photos_or_scans_in_repository": false,
+  "historical_production_ready": false
+}

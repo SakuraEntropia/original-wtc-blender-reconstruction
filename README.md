@@ -13,7 +13,7 @@
 
 实测 Blender 5.2.0 Alpha。尚未验证稳定版兼容性。材质均程序生成，无外部图像、工业模型或贴图依赖。脚本先渲染，恢复可见状态后保存总场景，再输出独立资产。`reports/qa.json` 是保存文件重开验收，`reports/geometry_manifest.json.gz` 逐对象记录尺寸、材质、来源标签和未量化的不确定度。
 
-资料：[来源尺寸表](docs/SOURCES_AND_DIMENSIONS.md)；[假设](docs/ASSUMPTIONS.md)；[主提示词](docs/AGENT_PROMPT_ZH.md)；[版权](docs/COPYRIGHT.md)。代码 MIT；原创几何/材质/渲染的贡献部分 CC BY 4.0，见许可文件。GitHub 凭证已恢复；已验收成果准备发布到 public 仓库。实际远端核验见 docs/DELIVERY_STATUS.md。
+资料：[来源尺寸表](docs/SOURCES_AND_DIMENSIONS.md)；[假设](docs/ASSUMPTIONS.md)；[主提示词](docs/AGENT_PROMPT_ZH.md)；[版权](docs/COPYRIGHT.md)。代码 MIT；原创几何/材质/渲染的贡献部分 CC BY 4.0，见许可文件。GitHub public 已推送：[仓库](https://github.com/SakuraEntropia/original-wtc-blender-reconstruction)。已逐件核对远端与本地Git blob哈希；主.blend、30个资产库、20图、脚本、尺寸引用与许可记录均已公开。参考图纸与照片未上传。详见 reports/publication.json。
 
 本轮新增 `facade_detail.py` 和 `lowrise_detail.py`。钢箱段、端板/拼接件、凹槽铝罩与玻璃分开；屋面/女儿墙为8段含45°角切。WTC7用NIST不同朝向窗列、独立石板/挂盒；WTC5使用FEMA的330×420ft L形包络。新视角：`detail_steel_panels.png`、`detail_section.png`、`detail_wtc7.png`、`detail_lowrise.png`、`detail_roof_plan.png`。
 

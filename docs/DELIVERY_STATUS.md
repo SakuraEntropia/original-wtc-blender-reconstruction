@@ -6,4 +6,4 @@
 
 历史生产门槛仍未完全满足：角部节点、真实各层标高/变截面、全域机电/内装/竖井、场地测绘和地下系统仍缺。雕塑为原创通用代理。完整UV/LOD/稳定版DCC管线未验。
 
-GitHub 凭证已恢复；当前待首次推送。仓库与远端核验结果将在完成后登记。
+GitHub public 已推送：https://github.com/SakuraEntropia/original-wtc-blender-reconstruction。已核验内容提交 `ab2408a745f8a9fc90a791118dd832454017a677` 的82个文件与本地Git blob逐件一致，包括主.blend、30个资产库、20张渲染图、脚本、引用和许可。后续发布状态提交只更新元数据。参考照片、图纸、历史备份未上传。

@@ -1,6 +1,6 @@
 {
   "historical_production_ready": false,
-  "github_pushed_files": 0,
+  "github_pushed_files": 82,
   "technical_check_count": 59,
   "asset_libraries": 30,
   "files": [
@@ -26,8 +26,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3599,
-      "sha256": "c1180ecad06169d4e2bdccfdc86cafb91ed03bd8f0879b3b0a6bb3b66dde88fd"
+      "bytes": 3789,
+      "sha256": "8af25f1f07c5186f2937a9d352c5dee3081d2b3c7f142040380e4b558423fc88"
     },
     {
       "path": "assets/PLAZA_furniture_and_landscape_interpretation.blend",
@@ -206,8 +206,8 @@
     },
     {
       "path": "docs/DELIVERY_STATUS.md",
-      "bytes": 862,
-      "sha256": "4ba6d4540f7dba6d2b931541aebf27690bfb292272a87a57e5baaa3dd4b1e29a"
+      "bytes": 1143,
+      "sha256": "89437e240eb020849b1401762c062a1ee0ef9176974d1ce9f582f63156d8e4e0"
     },
     {
       "path": "docs/DETAIL_REVISION_PLAN.md",
@@ -216,8 +216,8 @@
     },
     {
       "path": "docs/PRODUCTION_GATE.md",
-      "bytes": 2146,
-      "sha256": "9a328487205a35b7b62923c193c1a14cfc1fb0939f55aa1e229c0d028890eba2"
+      "bytes": 2257,
+      "sha256": "54584ee3a3f158e0d488ac5d889291e1cba39acbd8a58d317aeb247674339349"
     },
     {
       "path": "docs/SOURCES_AND_DIMENSIONS.md",
@@ -345,9 +345,14 @@
       "sha256": "c2ae4a9711f99449851eb958a20346527cc1b34227c87e8004382e0e117d37f5"
     },
     {
+      "path": "reports/publication.json",
+      "bytes": 512,
+      "sha256": "491015142b3a7923846b8fdeeed73c2867ce6aec2d7b2b44e7482c69cc3d4fb8"
+    },
+    {
       "path": "reports/qa.json",
-      "bytes": 11656,
-      "sha256": "a0eb7f5711c83dbc5a6d6b437cd935f5a86352f1dfe313b39a8473a4369de1e1"
+      "bytes": 11771,
+      "sha256": "3fd0208cba638f9dba88e0c3c4a161c44ac272c6de189f949d88f931848257b0"
     },
     {
       "path": "review.py",

@@ -509,8 +509,10 @@
   },
   "blender_version": "5.2.0 Alpha",
   "publication": {
-    "pushed": false,
-    "reason": "GitHub credentials restored; first verified public push pending"
+    "pushed": true,
+    "repository": "https://github.com/SakuraEntropia/original-wtc-blender-reconstruction",
+    "verified_payload_commit": "ab2408a745f8a9fc90a791118dd832454017a677",
+    "verified_file_count": 82
   },
   "technical_check_count": 59
 }
