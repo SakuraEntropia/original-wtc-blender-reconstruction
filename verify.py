@@ -18,7 +18,7 @@ def bounds(ob):
 
 check('reopened_saved_file',Path(bpy.data.filepath).name=='wtc_detailed_cg.blend',Path(bpy.data.filepath).name)
 check('restored_overview_camera',bpy.context.scene.camera.name=='CAM_overview',bpy.context.scene.camera.name)
-check('review_cameras_saved',len([o for o in bpy.data.objects if o.name.startswith('CAM_')])==26,
+check('review_cameras_saved',len([o for o in bpy.data.objects if o.name.startswith('CAM_')])==29,
       [o.name for o in bpy.data.objects if o.name.startswith('CAM_')])
 for name in ('WTC1','WTC2'):
     trees=[o for o in bpy.data.objects if re.fullmatch(name+r'_tree_s\d_\d+',o.name)]
@@ -53,17 +53,21 @@ for name in ('WTC1','WTC2'):
     check(name+'_revised_facade_visible',revised_facade and not revised_facade.hide_render,'NIST-sized replacement curtain wall visible')
     bottom=bounds(bpy.data.objects[name+'_concourse_to_tree_glass_STUDY'])
     check(name+'_bottom_curtain_wall',abs(bottom['min_m'][2])<1e-5 and abs(bottom['max_m'][2]-TREE_TOP)<1e-4,bottom)
-    top=bounds(bpy.data.objects[name+'_crown_glazing_to_cap_STUDY'])
     roof=1368*FT if name=='WTC1' else 1362*FT
-    check(name+'_crown_curtain_wall_to_opaque_cap',abs(top['max_m'][2]-(roof-2.4))<1e-4 and abs(top['min_m'][2]-(roof-17))<1e-4,top)
+    top_glass=[o for o in bpy.data.collections[name+'_crown_curved_cladding'].objects if o.get('module')=='crown_107_glazing']
+    glass_height=(11+7/12)*FT-2*.0254
+    check(name+'_active_crown107_glazing_below_open_MER',len(top_glass)==4 and all(
+        not o.hide_render and abs(bounds(o)['max_m'][2]-bounds(o)['min_m'][2]-glass_height)<1e-4
+        for o in top_glass),{'parts':len(top_glass),'clear_glass_height_m':glass_height})
     end_heights=[]
     for axis in range(47):
         parts=[o for o in core if o.get('axis_index')==axis]
         last=max(parts,key=lambda o:o.location.z)
         end_heights.append(last.location.z+max(v.co.z for v in list(last.data.vertices)[:16]))
     check(name+'_all_47_core_axes_reach_roof',all(abs(z-roof)<.001 for z in end_heights),{'body_endpoint_min_m':min(end_heights),'body_endpoint_max_m':max(end_heights),'roof_m':roof})
-    panels=[o for o in bpy.data.objects if o.name.startswith(name+'_crown_cap_edge') and o.get('module')=='sloping_cap_panel']
-    check(name+'_cap_all_8_edges_independent_panels',{o.get('edge') for o in panels}==set(range(8)),len(panels))
+    panels=list(bpy.data.collections[name+'_CROWN_CAP_mitered_panels'].objects)
+    planes=[o for o in panels if o.get('module') in ('original_roof_field_panel','original_corner_roof_triangle')]
+    check(name+'_cap_all_8_edges_independent_panels',{o.get('edge') for o in planes}==set(range(8)),len(planes))
     revised=[o for o in bpy.data.objects if o.name.startswith(name) and o.get('module')=='crown_curved_transition']
     check(name+'_curved_crown_geometry',len(revised)==464,{'parts':len(revised),'source':'NIST1-5Av1 Fig4-8;29 two-bay units per face;4 ribbons/unit'})
     cap=bpy.data.objects[name+'_roof_datum']
@@ -100,6 +104,8 @@ import sys
 sys.path.insert(0,str(ROOT))
 from verify_revision import inspect
 inspect(check)
+from verify_original_junction import inspect as original_junction_inspect
+original_junction_inspect(check)
 
 parents={}
 for col in bpy.data.collections:
@@ -132,7 +138,9 @@ with (ROOT/'reports'/'geometry_manifest.json').open('rb') as src,gzip.open(ROOT/
     shutil.copyfileobj(src,dst)
 report={'technical_checks':checks,'technical_check_count':len(checks),'technical_pass':all(c['passed'] for c in checks),
         'historical_production_ready':False,
-        'historical_blockers':['corner tree/return plates not transcribed','full floor elevations and core shafts unverified',
+        'historical_blockers':['corner-tree and structural fabrication schedules unverified; AB321/323 exterior junction partly transcribed',
+          'roof apex/run, finished110 absolute mapping and public observation deck dimensions inferred',
+          'full floor elevations and core shafts unverified',
           'lobby/sky lobby/public-floor layouts and finishes schematic','MER equipment reference transferred from 75/76 to top without as-built plan',
           'rooftop and antenna component dimensions/layout estimated','WTC3-7/site footprints and georeference incomplete',
           'Koenig sculpture is only a generic scale proxy','basement/PATH/retail and full MEP distribution absent'],

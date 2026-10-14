@@ -1,6 +1,8 @@
 # 原纽约 WTC｜模块化 CG 研究模型
 
-主文件 `wtc_detailed_cg.blend`；独立资产库 `assets/`；26个检查镜头与渲染 `renders/detail_*.png`。双塔、分段钢柱、核心、大厅、机电类型、帽桁架、天线、WTC3–7、广场分别组织。每块铺砖独立对象/mesh；重复窗框、吊顶、构件复用网格。
+主文件 `wtc_detailed_cg.blend`；独立资产库 `assets/`；29个检查镜头与渲染 `renders/detail_*.png`。双塔、分段钢柱、核心、大厅、机电类型、帽桁架、天线、WTC3–7、广场分别组织。每块铺砖独立对象/mesh；重复窗框、吊顶、构件复用网格。
+
+追加原建筑A·AB·321/323节点修订：5in×7in分件突出框、不等宽且内退的三分角板、下缘截角/上端收尖的角屋面、共享顶点的斜接及独立翻边。旧通用U框与同宽八角帽檐撤换。新近景：`crown_miter`、`edge_profile`、`edge_top`；源图/推断区分见[执行记录](docs/ORIGINAL_JUNCTION_IMPLEMENTATION.md)。
 
 2026-10-14修正：按NIST1-5Av1增加玻璃退距/凸框、每层三分角板、两跨曲线开合塔冠、44/78层特殊窗带及机械层凸翅；大厅增加模块凹槽顶棚、灯具、核心外饰与门框；WTC7按NIST1-9屋顶平面增加两机房、两屏墙、五个冷却出口及北侧竖百叶；方砖沿喷泉/花盆裁切，接入放射铺装。
 
@@ -23,4 +25,4 @@ python3 package.py
 
 [GitHub public仓库](https://github.com/SakuraEntropia/original-wtc-blender-reconstruction)；实际已推送版本、文件数量和Git blob核验见`reports/publication.json`。本地最新改动是否已发布以该报告为准。
 
-最终重开：89项技术检查通过；40个资产库、26个镜头；132,643个mesh对象、8,670块独立铺砖、82种材质。连续两次迁移对象/mesh/集合/材质数量一致。技术验收不等于完整历史生产精度。
+最终重开及技术检查结果以`reports/qa.json`为准；资产链接及重复迁移分别见`assets_qa.json`、`repeat_qa.json`。技术验收不等于完整历史生产精度。

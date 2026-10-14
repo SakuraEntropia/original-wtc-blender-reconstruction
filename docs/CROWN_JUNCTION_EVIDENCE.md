@@ -1,5 +1,7 @@
 # 塔冠转角与帽檐补正
 
+**已被原图节点修订取代。下文仅保留旧批次记录；当前尺寸及几何见[原图执行记录](ORIGINAL_JUNCTION_IMPLEMENTATION.md)。160mm/65mm框、1.8m内退、同宽八边形帽檐已撤换。**
+
 2026-10-14追加。沿用[NIST1-5Av1 Fig4-8](https://nvlpubs.nist.gov/nistpubs/Legacy/NCSTAR/ncstar1-5av1.pdf)与[Rose/Fausty1981屋顶原照](https://www.brianrose.com/blog/2015/10/new-yorkthe-walk/)的形态依据。
 
 旧帽檐外轮廓未采用立面罩面外移后的倒角修正，内缘又低于当前CG屋面膜层。现外、内、收口全部采用同一207ft2in结构参考及208ft10in外皮的平行偏移八边形；四角在平面保持45°。斜面板法向6mm厚度、内缘水平包边、外缘下滴口独立分件，转角按一致顶点斜接。表面仍有独立板缝。内缘至屋面+0.60m及1.8m收进量为CG估计，不是女儿墙施工图尺寸。

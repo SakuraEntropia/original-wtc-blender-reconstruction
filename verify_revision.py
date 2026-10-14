@@ -16,7 +16,7 @@ def inspect(check):
         facade_objects=list(facade.all_objects) if facade else []
         frames=[o for o in facade_objects if o.get('module')=='raised_window_frame']
         check(tower+'_raised_window_frames_sourced',len(frames)>=376 and all(abs(o.get('frame_width_m',.0254)-.0254)<1e-6 for o in frames),len(frames))
-        corner=[o for o in facade_objects if o.get('module')=='corner_three_panel']
+        corner=[o for o in facade_objects if o.get('module')=='original_corner_panel']
         groups={}
         for o in corner:groups.setdefault((o.get('edge'),o.get('story_index')),set()).add(o.get('panel_index'))
         check(tower+'_corner_three_panels_per_story',bool(groups) and all(v=={1,2,3} for v in groups.values()),len(groups))

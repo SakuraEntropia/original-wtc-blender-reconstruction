@@ -19,6 +19,9 @@
         "CAM_core_cutaway",
         "CAM_core_roof_connection",
         "CAM_crown_detail",
+        "CAM_crown_miter",
+        "CAM_edge_profile",
+        "CAM_edge_top",
         "CAM_facade_corner",
         "CAM_hat_truss",
         "CAM_industrial_type_components",
@@ -190,19 +193,11 @@
       }
     },
     {
-      "name": "WTC1_crown_curtain_wall_to_opaque_cap",
+      "name": "WTC1_active_crown107_glazing_below_open_MER",
       "passed": true,
       "evidence": {
-        "min_m": [
-          -31.566200256347656,
-          -31.566200256347656,
-          399.9664001464844
-        ],
-        "max_m": [
-          31.566200256347656,
-          31.566200256347656,
-          414.56640625
-        ]
+        "parts": 4,
+        "clear_glass_height_m": 3.4798
       }
     },
     {
@@ -217,7 +212,7 @@
     {
       "name": "WTC1_cap_all_8_edges_independent_panels",
       "passed": true,
-      "evidence": 244
+      "evidence": 252
     },
     {
       "name": "WTC1_curved_crown_geometry",
@@ -380,19 +375,11 @@
       }
     },
     {
-      "name": "WTC2_crown_curtain_wall_to_opaque_cap",
+      "name": "WTC2_active_crown107_glazing_below_open_MER",
       "passed": true,
       "evidence": {
-        "min_m": [
-          -31.566200256347656,
-          -31.566200256347656,
-          398.1376037597656
-        ],
-        "max_m": [
-          31.566200256347656,
-          31.566200256347656,
-          412.73760986328125
-        ]
+        "parts": 4,
+        "clear_glass_height_m": 3.4798
       }
     },
     {
@@ -407,7 +394,7 @@
     {
       "name": "WTC2_cap_all_8_edges_independent_panels",
       "passed": true,
-      "evidence": 244
+      "evidence": 252
     },
     {
       "name": "WTC2_curved_crown_geometry",
@@ -445,12 +432,12 @@
     {
       "name": "finite_geometry_and_transforms",
       "passed": true,
-      "evidence": 132643
+      "evidence": 143428
     },
     {
       "name": "materials_on_all_scene_meshes",
       "passed": true,
-      "evidence": 132643
+      "evidence": 143428
     },
     {
       "name": "no_external_texture_dependencies",
@@ -492,7 +479,7 @@
       "name": "new_detail_parts_closed_outward",
       "passed": true,
       "evidence": {
-        "unique_meshes": 4974,
+        "unique_meshes": 9138,
         "failed": []
       }
     },
@@ -504,17 +491,17 @@
     {
       "name": "WTC1_cap_independent_support",
       "passed": true,
-      "evidence": 544
+      "evidence": 504
     },
     {
       "name": "WTC1_glass_corner_transition_frames",
       "passed": true,
-      "evidence": 936
+      "evidence": 5616
     },
     {
       "name": "WTC1_mitered_coping8_edges",
       "passed": true,
-      "evidence": 260
+      "evidence": 1000
     },
     {
       "name": "WTC1_raised_window_frames_sourced",
@@ -524,7 +511,7 @@
     {
       "name": "WTC1_corner_three_panels_per_story",
       "passed": true,
-      "evidence": 436
+      "evidence": 440
     },
     {
       "name": "WTC1_sky_lobby44_78_eight_panels",
@@ -559,17 +546,17 @@
     {
       "name": "WTC2_cap_independent_support",
       "passed": true,
-      "evidence": 544
+      "evidence": 504
     },
     {
       "name": "WTC2_glass_corner_transition_frames",
       "passed": true,
-      "evidence": 936
+      "evidence": 5616
     },
     {
       "name": "WTC2_mitered_coping8_edges",
       "passed": true,
-      "evidence": 260
+      "evidence": 1000
     },
     {
       "name": "WTC2_raised_window_frames_sourced",
@@ -579,7 +566,7 @@
     {
       "name": "WTC2_corner_three_panels_per_story",
       "passed": true,
-      "evidence": 436
+      "evidence": 440
     },
     {
       "name": "WTC2_sky_lobby44_78_eight_panels",
@@ -660,13 +647,656 @@
       "name": "cut_pavers_clear_fountain",
       "passed": true,
       "evidence": []
+    },
+    {
+      "name": "WTC1_original_junction_collections_visible",
+      "passed": true,
+      "evidence": [
+        "WTC1_FACADE_corner_transition_frames",
+        "WTC1_corner_three_panels",
+        "WTC1_CROWN_CAP_mitered_panels"
+      ]
+    },
+    {
+      "name": "WTC1_original_junction_actual_visible_finite_meshes",
+      "passed": true,
+      "evidence": {
+        "meshes": 6260,
+        "bad": []
+      }
+    },
+    {
+      "name": "WTC1_original_frame_pairs_and_tracks",
+      "passed": true,
+      "evidence": {
+        "groups": 936,
+        "bad_groups": [],
+        "face_axis_coverage": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            58
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            58
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            58
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            58
+          ]
+        ]
+      }
+    },
+    {
+      "name": "WTC1_original_frame_dimension_tags",
+      "passed": true,
+      "evidence": {
+        "width_m": 0.127,
+        "projection_m": 0.1778
+      }
+    },
+    {
+      "name": "WTC1_original_frame_actual_width_projection_and_axis",
+      "passed": true,
+      "evidence": [
+        {
+          "face": 1,
+          "axis": 0,
+          "piece": 0,
+          "width_m": 0.1269989013671875,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": 3.112792967385758e-06,
+          "bounds": {
+            "min_m": [
+              -84.52749633789062,
+              22.9945011138916,
+              6.70959997177124
+            ],
+            "max_m": [
+              -84.40049743652344,
+              23.173799514770508,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        },
+        {
+          "face": 1,
+          "axis": 58,
+          "piece": 0,
+          "width_m": 0.1270008087158203,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": -2.5177001816700795e-07,
+          "bounds": {
+            "min_m": [
+              -25.59950065612793,
+              22.9945011138916,
+              6.70959997177124
+            ],
+            "max_m": [
+              -25.47249984741211,
+              23.173799514770508,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        },
+        {
+          "face": 2,
+          "axis": 0,
+          "piece": 0,
+          "width_m": 0.1270008087158203,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": 2.5177001816700795e-07,
+          "bounds": {
+            "min_m": [
+              -23.173799514770508,
+              25.47249984741211,
+              6.70959997177124
+            ],
+            "max_m": [
+              -22.9945011138916,
+              25.59950065612793,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        },
+        {
+          "face": 2,
+          "axis": 58,
+          "piece": 0,
+          "width_m": 0.1269989013671875,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": -3.112792967385758e-06,
+          "bounds": {
+            "min_m": [
+              -23.173799514770508,
+              84.40049743652344,
+              6.70959997177124
+            ],
+            "max_m": [
+              -22.9945011138916,
+              84.52749633789062,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        },
+        {
+          "face": 3,
+          "axis": 0,
+          "piece": 0,
+          "width_m": 0.1270008087158203,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": 2.517700217197216e-07,
+          "bounds": {
+            "min_m": [
+              -25.59950065612793,
+              86.82620239257812,
+              6.70959997177124
+            ],
+            "max_m": [
+              -25.47249984741211,
+              87.00550079345703,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        },
+        {
+          "face": 3,
+          "axis": 58,
+          "piece": 0,
+          "width_m": 0.1269989013671875,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": -3.1127929531749032e-06,
+          "bounds": {
+            "min_m": [
+              -84.52749633789062,
+              86.82620239257812,
+              6.70959997177124
+            ],
+            "max_m": [
+              -84.40049743652344,
+              87.00550079345703,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        },
+        {
+          "face": 4,
+          "axis": 0,
+          "piece": 0,
+          "width_m": 0.1269989013671875,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": 3.1127929815966127e-06,
+          "bounds": {
+            "min_m": [
+              -87.00550079345703,
+              84.40049743652344,
+              6.70959997177124
+            ],
+            "max_m": [
+              -86.82620239257812,
+              84.52749633789062,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        },
+        {
+          "face": 4,
+          "axis": 58,
+          "piece": 0,
+          "width_m": 0.1270008087158203,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": -2.517700110615806e-07,
+          "bounds": {
+            "min_m": [
+              -87.00550079345703,
+              25.47249984741211,
+              6.70959997177124
+            ],
+            "max_m": [
+              -86.82620239257812,
+              25.59950065612793,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        }
+      ]
+    },
+    {
+      "name": "WTC1_original_corner_panels_actual_unequal_widths",
+      "passed": true,
+      "evidence": {
+        "nominal_m": [
+          0.587375,
+          1.016,
+          0.587375
+        ],
+        "joint_m": 0.006,
+        "bad": []
+      }
+    },
+    {
+      "name": "WTC1_original_corner_three_panels_and_seams",
+      "passed": true,
+      "evidence": {
+        "story_groups": 440,
+        "bad_groups": []
+      }
+    },
+    {
+      "name": "WTC1_original_roof_triangles_mesh_matches_source_anchors",
+      "passed": true,
+      "evidence": {
+        "triangles": 12,
+        "bad": []
+      }
+    },
+    {
+      "name": "WTC1_original_roof_6ft_parapet_9ft_rise_estimated_mapping",
+      "passed": true,
+      "evidence": {
+        "parapet_rise_m": 1.8288000000000002,
+        "roof_rise_m": 2.7432000000000003,
+        "bad": []
+      }
+    },
+    {
+      "name": "WTC1_original_roof_corner_three_shared_apex_triangles",
+      "passed": true,
+      "evidence": {
+        "corner_edges": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "bad_edges": []
+      }
+    },
+    {
+      "name": "WTC1_original_roof_two_actual_raked_seams_per_corner",
+      "passed": true,
+      "evidence": {
+        "joints_per_edge": {
+          "1": 2,
+          "3": 2,
+          "5": 2,
+          "7": 2
+        },
+        "bad": []
+      }
+    },
+    {
+      "name": "WTC1_raked_seam_has_two_actual_folded_planes",
+      "passed": true,
+      "evidence": {
+        "joints": 8,
+        "failed": []
+      }
+    },
+    {
+      "name": "WTC1_original_roof_field_panels_actual_datum_span",
+      "passed": true,
+      "evidence": {
+        "panels": 240,
+        "bad": []
+      }
+    },
+    {
+      "name": "WTC2_original_junction_collections_visible",
+      "passed": true,
+      "evidence": [
+        "WTC2_FACADE_corner_transition_frames",
+        "WTC2_corner_three_panels",
+        "WTC2_CROWN_CAP_mitered_panels"
+      ]
+    },
+    {
+      "name": "WTC2_original_junction_actual_visible_finite_meshes",
+      "passed": true,
+      "evidence": {
+        "meshes": 6260,
+        "bad": []
+      }
+    },
+    {
+      "name": "WTC2_original_frame_pairs_and_tracks",
+      "passed": true,
+      "evidence": {
+        "groups": 936,
+        "bad_groups": [],
+        "face_axis_coverage": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            58
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            58
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            58
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            58
+          ]
+        ]
+      }
+    },
+    {
+      "name": "WTC2_original_frame_dimension_tags",
+      "passed": true,
+      "evidence": {
+        "width_m": 0.127,
+        "projection_m": 0.1778
+      }
+    },
+    {
+      "name": "WTC2_original_frame_actual_width_projection_and_axis",
+      "passed": true,
+      "evidence": [
+        {
+          "face": 1,
+          "axis": 0,
+          "piece": 0,
+          "width_m": 0.1270008087158203,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": 2.5177001816700795e-07,
+          "bounds": {
+            "min_m": [
+              25.47249984741211,
+              -87.00550079345703,
+              6.70959997177124
+            ],
+            "max_m": [
+              25.59950065612793,
+              -86.82620239257812,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        },
+        {
+          "face": 1,
+          "axis": 58,
+          "piece": 0,
+          "width_m": 0.1269989013671875,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": -3.112792967385758e-06,
+          "bounds": {
+            "min_m": [
+              84.40049743652344,
+              -87.00550079345703,
+              6.70959997177124
+            ],
+            "max_m": [
+              84.52749633789062,
+              -86.82620239257812,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        },
+        {
+          "face": 2,
+          "axis": 0,
+          "piece": 0,
+          "width_m": 0.1269989013671875,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": 3.112792967385758e-06,
+          "bounds": {
+            "min_m": [
+              86.82620239257812,
+              -84.52749633789062,
+              6.70959997177124
+            ],
+            "max_m": [
+              87.00550079345703,
+              -84.40049743652344,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        },
+        {
+          "face": 2,
+          "axis": 58,
+          "piece": 0,
+          "width_m": 0.1270008087158203,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": -2.5177001461429427e-07,
+          "bounds": {
+            "min_m": [
+              86.82620239257812,
+              -25.59950065612793,
+              6.70959997177124
+            ],
+            "max_m": [
+              87.00550079345703,
+              -25.47249984741211,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        },
+        {
+          "face": 3,
+          "axis": 0,
+          "piece": 0,
+          "width_m": 0.1269989013671875,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": 3.112792967385758e-06,
+          "bounds": {
+            "min_m": [
+              84.40049743652344,
+              -23.173799514770508,
+              6.70959997177124
+            ],
+            "max_m": [
+              84.52749633789062,
+              -22.9945011138916,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        },
+        {
+          "face": 3,
+          "axis": 58,
+          "piece": 0,
+          "width_m": 0.1270008087158203,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": -2.5177001461429427e-07,
+          "bounds": {
+            "min_m": [
+              25.47249984741211,
+              -23.173799514770508,
+              6.70959997177124
+            ],
+            "max_m": [
+              25.59950065612793,
+              -22.9945011138916,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        },
+        {
+          "face": 4,
+          "axis": 0,
+          "piece": 0,
+          "width_m": 0.1270008087158203,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": 2.517700217197216e-07,
+          "bounds": {
+            "min_m": [
+              22.9945011138916,
+              -25.59950065612793,
+              6.70959997177124
+            ],
+            "max_m": [
+              23.173799514770508,
+              -25.47249984741211,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        },
+        {
+          "face": 4,
+          "axis": 58,
+          "piece": 0,
+          "width_m": 0.1269989013671875,
+          "depth_m": 0.17929840087890625,
+          "axis_error_m": -3.112792967385758e-06,
+          "bounds": {
+            "min_m": [
+              22.9945011138916,
+              -84.52749633789062,
+              6.70959997177124
+            ],
+            "max_m": [
+              23.173799514770508,
+              -84.40049743652344,
+              10.359199523925781
+            ]
+          },
+          "passed": true
+        }
+      ]
+    },
+    {
+      "name": "WTC2_original_corner_panels_actual_unequal_widths",
+      "passed": true,
+      "evidence": {
+        "nominal_m": [
+          0.587375,
+          1.016,
+          0.587375
+        ],
+        "joint_m": 0.006,
+        "bad": []
+      }
+    },
+    {
+      "name": "WTC2_original_corner_three_panels_and_seams",
+      "passed": true,
+      "evidence": {
+        "story_groups": 440,
+        "bad_groups": []
+      }
+    },
+    {
+      "name": "WTC2_original_roof_triangles_mesh_matches_source_anchors",
+      "passed": true,
+      "evidence": {
+        "triangles": 12,
+        "bad": []
+      }
+    },
+    {
+      "name": "WTC2_original_roof_6ft_parapet_9ft_rise_estimated_mapping",
+      "passed": true,
+      "evidence": {
+        "parapet_rise_m": 1.8288000000000002,
+        "roof_rise_m": 2.7432000000000003,
+        "bad": []
+      }
+    },
+    {
+      "name": "WTC2_original_roof_corner_three_shared_apex_triangles",
+      "passed": true,
+      "evidence": {
+        "corner_edges": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "bad_edges": []
+      }
+    },
+    {
+      "name": "WTC2_original_roof_two_actual_raked_seams_per_corner",
+      "passed": true,
+      "evidence": {
+        "joints_per_edge": {
+          "1": 2,
+          "3": 2,
+          "5": 2,
+          "7": 2
+        },
+        "bad": []
+      }
+    },
+    {
+      "name": "WTC2_raked_seam_has_two_actual_folded_planes",
+      "passed": true,
+      "evidence": {
+        "joints": 8,
+        "failed": []
+      }
+    },
+    {
+      "name": "WTC2_original_roof_field_panels_actual_datum_span",
+      "passed": true,
+      "evidence": {
+        "panels": 240,
+        "bad": []
+      }
     }
   ],
-  "technical_check_count": 89,
+  "technical_check_count": 115,
   "technical_pass": true,
   "historical_production_ready": false,
   "historical_blockers": [
-    "corner tree/return plates not transcribed",
+    "corner-tree and structural fabrication schedules unverified; AB321/323 exterior junction partly transcribed",
+    "roof apex/run, finished110 absolute mapping and public observation deck dimensions inferred",
     "full floor elevations and core shafts unverified",
     "lobby/sky lobby/public-floor layouts and finishes schematic",
     "MER equipment reference transferred from 75/76 to top without as-built plan",
@@ -676,14 +1306,14 @@
     "basement/PATH/retail and full MEP distribution absent"
   ],
   "statistics": {
-    "objects": 132687,
-    "scene_mesh_objects": 132643,
-    "unique_scene_meshes": 17574,
+    "objects": 143475,
+    "scene_mesh_objects": 143428,
+    "unique_scene_meshes": 21739,
     "plaza_tile_meshes": 8670,
-    "materials": 82,
-    "mesh_faces": 232860,
-    "instanced_base_mesh_faces": 6631566,
-    "faces_in_used_mesh_datablocks": 232860
+    "materials": 86,
+    "mesh_faces": 256712,
+    "instanced_base_mesh_faces": 6690028,
+    "faces_in_used_mesh_datablocks": 256712
   },
   "blender_version": "5.2.0 Alpha",
   "publication": {

@@ -4,10 +4,11 @@ from .lobby_revision import apply as lobby
 from .facade_revision import apply as facade
 from .wtc7_roof_revision import apply as roof7
 from .crown_edge_revision import apply as crown_junction
+from .original_junction_revision import apply as original_junction
 
 
 def apply():
-    for name,fn in (('paving',paving),('lobby',lobby),('facade',facade),('wtc7_roof',roof7),('crown_junction',crown_junction)):
+    for name,fn in (('paving',paving),('lobby',lobby),('facade',facade),('wtc7_roof',roof7),('crown_junction',crown_junction),('original_junction',original_junction)):
         print('REVISION_START '+name,flush=True)
         fn()
         print('REVISION_DONE '+name,flush=True)

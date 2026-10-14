@@ -4,6 +4,8 @@
 
 架构：四个独立、幂等的 Blender Python 修正模块，分别管理立面、大堂、WTC7屋顶、铺装。`build.py` 与 `revise.py` 调用同一入口。资料尺寸与照片推定尺寸分别标注；照片不进入公开仓库。
 
+追加原图节点模块`original_junction_revision.py`及独立实际几何验收`verify_original_junction.py`，纠正斜接、双折边和不等分角板。原通用U框和同宽八角帽檐撤换；见`ORIGINAL_JUNCTION_IMPLEMENTATION.md`。
+
 - [x] `facade_revision.py`：查普通幕墙边框、转角三分板、塔冠曲线收合、换乘层结构；只替换对应构件，保留独立钢柱。
 - [x] `lobby_revision.py`：核大堂照片，增加模块顶棚、灯具、核心外饰；查询Sphere资产及再分发许可。
 - [x] `wtc7_roof_revision.py`：按NIST两机房、五冷却塔组织屋顶模块，记录未注尺寸。

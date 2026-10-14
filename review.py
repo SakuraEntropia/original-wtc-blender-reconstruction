@@ -10,7 +10,8 @@ VIEWS={'overview':'CAM_overview','site_plan':'CAM_site_plan','trident':'CAM_trid
  'crown':'CAM_crown_detail','core_top':'CAM_core_roof_connection','plaza':'CAM_plaza_furniture',
  'mep_detail':'CAM_industrial_type_components','facade_corner':'CAM_facade_corner',
  'sky_lobby':'CAM_sky_lobby_band','wtc7_roof':'CAM_WTC7_roof',
- 'lobby_ceiling':'CAM_lobby_ceiling','paving_seam':'CAM_paving_seam','cap_structure':'CAM_cap_structure'}
+ 'lobby_ceiling':'CAM_lobby_ceiling','paving_seam':'CAM_paving_seam','cap_structure':'CAM_cap_structure',
+ 'crown_miter':'CAM_crown_miter','edge_profile':'CAM_edge_profile','edge_top':'CAM_edge_top'}
 
 def camera(name,loc,target,scale):
     ob=bpy.data.objects.get(name)
@@ -35,6 +36,16 @@ def create_detail_cameras():
     ob=camera('CAM_lobby_ceiling',(78,-81,12),(70,-73,21),36)
     ob.data.type='PERSP';ob.data.lens=22
     camera('CAM_cap_structure',(113,-124,438),(83,-83,414),27)
+    camera('CAM_crown_miter',(99,-108,425),(85.3,-85.3,413.5),9)
+    camera('CAM_edge_profile',(88,-101,105),(84.7,-86.5,103.8),2.8)
+    camera('CAM_edge_top',(92,-103,417),(84.9,-86.3,412.2),4.8)
+    # Orthographic millimetre sheets lose depth precision with a10km range.
+    # Crown A/B rendering established this cause; preserve actual dimensions.
+    for name in ('CAM_crown_miter','CAM_edge_profile','CAM_edge_top','CAM_cap_structure'):
+        bpy.data.objects[name].data.clip_start=.1
+        bpy.data.objects[name].data.clip_end=100
+    bpy.data.objects['CAM_crown_detail'].data.clip_start=.1
+    bpy.data.objects['CAM_crown_detail'].data.clip_end=220
 
 def child(root,prefix):return next((c for c in root.children if c.name.startswith(prefix)),None)
 
