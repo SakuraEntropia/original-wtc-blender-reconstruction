@@ -1,5 +1,7 @@
 # 当前交付
 
+最新：顶部旧玻璃视口/渲染清理，背墙止于屋面下；中形饰面改为上下连通的扁平网格。127项技术检查、40库、30图；见FLAT_CROWN_CORRECTION.md。下文为旧批次记录。
+
 本轮内容提交`8da63aa923039f634dfdf44135fd941eec154f34`已推送；逐件核验124个远端Git blob全部匹配。`.blend`、40库、29图、代码及原图引用均已包含。
 
 最新追加：原AB321/323斜接/边框修订。5×7in分件突出框、内退不等分角板、角部屋面收尖及双折边斜接、fascia/翻边/支承独立件已经实际保存和渲染。新增`crown_miter`、`edge_profile`、`edge_top`近景；115项技术检查、40库、29图。具体依据及推断见`ORIGINAL_JUNCTION_IMPLEMENTATION.md`。下文是上一批次记录，发布哈希以`reports/publication.json`为准。

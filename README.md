@@ -1,6 +1,8 @@
 # 原纽约 WTC｜模块化 CG 研究模型
 
-主文件 `wtc_detailed_cg.blend`；独立资产库 `assets/`；29个检查镜头与渲染 `renders/detail_*.png`。双塔、分段钢柱、核心、大厅、机电类型、帽桁架、天线、WTC3–7、广场分别组织。每块铺砖独立对象/mesh；重复窗框、吊顶、构件复用网格。
+主文件 `wtc_detailed_cg.blend`；独立资产库 `assets/`；30个检查镜头与渲染 `renders/detail_*.png`。双塔、分段钢柱、核心、大厅、机电类型、帽桁架、天线、WTC3–7、广场分别组织。每块铺砖独立对象/mesh；重复窗框、吊顶、构件复用网格。
+
+最新修正：旧顶部玻璃在视口/渲染均隐藏，机电背墙截止屋面下；中形饰面每两跨合成一个闭合连通扁平网格，上下共面接合。厚度25mm为CG参数，取消圆滑法线。新增`crown_unit`近景及实际三角形碰撞/连通性验收，见[修正记录](docs/FLAT_CROWN_CORRECTION.md)。
 
 追加原建筑A·AB·321/323节点修订：5in×7in分件突出框、不等宽且内退的三分角板、下缘截角/上端收尖的角屋面、共享顶点的斜接及独立翻边。旧通用U框与同宽八角帽檐撤换。新近景：`crown_miter`、`edge_profile`、`edge_top`；源图/推断区分见[执行记录](docs/ORIGINAL_JUNCTION_IMPLEMENTATION.md)。
 

@@ -20,7 +20,7 @@ for mesh in bpy.data.meshes:
     bm.free()
 render_reviews()
 scene=bpy.context.scene
-scene['quality_status']='AB321/323 corrected crown junction / dimensioned split projection / unequal inset corner panels; absolute datums and roof apex inferred; historical gates remain open'
+scene['quality_status']='Flat connected two-bay crown / superseded viewport glass suppressed / service backing below roof; source dimensions retained; historical gates remain open'
 for c in bpy.data.collections:
     if any(s in c.name for s in ('_CROWN_photo','_CORNER_aluminum','_ROOF_detail','_CORE_roof_connections','PLAZA_furniture')):
         c.asset_mark();c.asset_data.description=c.get('confidence','CG study; inspect source tags')

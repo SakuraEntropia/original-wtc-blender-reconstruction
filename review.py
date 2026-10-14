@@ -11,7 +11,8 @@ VIEWS={'overview':'CAM_overview','site_plan':'CAM_site_plan','trident':'CAM_trid
  'mep_detail':'CAM_industrial_type_components','facade_corner':'CAM_facade_corner',
  'sky_lobby':'CAM_sky_lobby_band','wtc7_roof':'CAM_WTC7_roof',
  'lobby_ceiling':'CAM_lobby_ceiling','paving_seam':'CAM_paving_seam','cap_structure':'CAM_cap_structure',
- 'crown_miter':'CAM_crown_miter','edge_profile':'CAM_edge_profile','edge_top':'CAM_edge_top'}
+ 'crown_miter':'CAM_crown_miter','edge_profile':'CAM_edge_profile','edge_top':'CAM_edge_top',
+ 'crown_unit':'CAM_crown_unit_flat'}
 
 def camera(name,loc,target,scale):
     ob=bpy.data.objects.get(name)
@@ -39,9 +40,10 @@ def create_detail_cameras():
     camera('CAM_crown_miter',(99,-108,425),(85.3,-85.3,413.5),9)
     camera('CAM_edge_profile',(88,-101,105),(84.7,-86.5,103.8),2.8)
     camera('CAM_edge_top',(92,-103,417),(84.9,-86.3,412.2),4.8)
+    camera('CAM_crown_unit_flat',(60,-109,410),(55,-86.8262,407.83),10.2)
     # Orthographic millimetre sheets lose depth precision with a10km range.
     # Crown A/B rendering established this cause; preserve actual dimensions.
-    for name in ('CAM_crown_miter','CAM_edge_profile','CAM_edge_top','CAM_cap_structure'):
+    for name in ('CAM_crown_miter','CAM_edge_profile','CAM_edge_top','CAM_cap_structure','CAM_crown_unit_flat'):
         bpy.data.objects[name].data.clip_start=.1
         bpy.data.objects[name].data.clip_end=100
     bpy.data.objects['CAM_crown_detail'].data.clip_start=.1

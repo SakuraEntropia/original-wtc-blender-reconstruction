@@ -18,7 +18,7 @@ def bounds(ob):
 
 check('reopened_saved_file',Path(bpy.data.filepath).name=='wtc_detailed_cg.blend',Path(bpy.data.filepath).name)
 check('restored_overview_camera',bpy.context.scene.camera.name=='CAM_overview',bpy.context.scene.camera.name)
-check('review_cameras_saved',len([o for o in bpy.data.objects if o.name.startswith('CAM_')])==29,
+check('review_cameras_saved',len([o for o in bpy.data.objects if o.name.startswith('CAM_')])==30,
       [o.name for o in bpy.data.objects if o.name.startswith('CAM_')])
 for name in ('WTC1','WTC2'):
     trees=[o for o in bpy.data.objects if re.fullmatch(name+r'_tree_s\d_\d+',o.name)]
@@ -68,8 +68,9 @@ for name in ('WTC1','WTC2'):
     panels=list(bpy.data.collections[name+'_CROWN_CAP_mitered_panels'].objects)
     planes=[o for o in panels if o.get('module') in ('original_roof_field_panel','original_corner_roof_triangle')]
     check(name+'_cap_all_8_edges_independent_panels',{o.get('edge') for o in planes}==set(range(8)),len(planes))
-    revised=[o for o in bpy.data.objects if o.name.startswith(name) and o.get('module')=='crown_curved_transition']
-    check(name+'_curved_crown_geometry',len(revised)==464,{'parts':len(revised),'source':'NIST1-5Av1 Fig4-8;29 two-bay units per face;4 ribbons/unit'})
+    revised=[o for o in bpy.data.collections[name+'_crown_curved_cladding'].objects if o.get('module')=='crown_flat_joined_unit']
+    check(name+'_curved_crown_geometry',len(revised)==116 and sum(o.get('branch_count',0) for o in revised)==464,
+          {'joined_two_bay_units':len(revised),'branches':sum(o.get('branch_count',0) for o in revised),'source':'NIST1-5Av1 Fig4-8'})
     cap=bpy.data.objects[name+'_roof_datum']
     check(name+'_eight_sided_roof',len(cap.data.vertices)==16,len(cap.data.vertices))
 
@@ -106,6 +107,8 @@ from verify_revision import inspect
 inspect(check)
 from verify_original_junction import inspect as original_junction_inspect
 original_junction_inspect(check)
+from verify_flat_crown import inspect as flat_crown_inspect
+flat_crown_inspect(check)
 
 parents={}
 for col in bpy.data.collections:

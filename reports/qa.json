@@ -20,6 +20,7 @@
         "CAM_core_roof_connection",
         "CAM_crown_detail",
         "CAM_crown_miter",
+        "CAM_crown_unit_flat",
         "CAM_edge_profile",
         "CAM_edge_top",
         "CAM_facade_corner",
@@ -218,8 +219,9 @@
       "name": "WTC1_curved_crown_geometry",
       "passed": true,
       "evidence": {
-        "parts": 464,
-        "source": "NIST1-5Av1 Fig4-8;29 two-bay units per face;4 ribbons/unit"
+        "joined_two_bay_units": 116,
+        "branches": 464,
+        "source": "NIST1-5Av1 Fig4-8"
       }
     },
     {
@@ -400,8 +402,9 @@
       "name": "WTC2_curved_crown_geometry",
       "passed": true,
       "evidence": {
-        "parts": 464,
-        "source": "NIST1-5Av1 Fig4-8;29 two-bay units per face;4 ribbons/unit"
+        "joined_two_bay_units": 116,
+        "branches": 464,
+        "source": "NIST1-5Av1 Fig4-8"
       }
     },
     {
@@ -432,12 +435,12 @@
     {
       "name": "finite_geometry_and_transforms",
       "passed": true,
-      "evidence": 143428
+      "evidence": 142276
     },
     {
       "name": "materials_on_all_scene_meshes",
       "passed": true,
-      "evidence": 143428
+      "evidence": 142276
     },
     {
       "name": "no_external_texture_dependencies",
@@ -479,14 +482,14 @@
       "name": "new_detail_parts_closed_outward",
       "passed": true,
       "evidence": {
-        "unique_meshes": 9138,
+        "unique_meshes": 9136,
         "failed": []
       }
     },
     {
       "name": "WTC1_crown_curves_strengthened",
       "passed": true,
-      "evidence": 464
+      "evidence": 116
     },
     {
       "name": "WTC1_cap_independent_support",
@@ -541,7 +544,7 @@
     {
       "name": "WTC2_crown_curves_strengthened",
       "passed": true,
-      "evidence": 464
+      "evidence": 116
     },
     {
       "name": "WTC2_cap_independent_support",
@@ -1289,9 +1292,103 @@
         "panels": 240,
         "bad": []
       }
+    },
+    {
+      "name": "WTC1_crown_arms_and_stems_one_connected_solid",
+      "passed": true,
+      "evidence": {
+        "units": 116,
+        "bad_meshes": []
+      }
+    },
+    {
+      "name": "WTC1_crown_flat25mm_unsmoothed_section",
+      "passed": true,
+      "evidence": {
+        "flat_normals": true,
+        "depth_m": 0.025
+      }
+    },
+    {
+      "name": "WTC1_joined_finish_reaches_lower_and_upper_seats",
+      "passed": true,
+      "evidence": {
+        "lower_z": 405.656,
+        "upper_z": 413.6644
+      }
+    },
+    {
+      "name": "WTC1_superseded_top_glass_hidden_in_viewport_and_render",
+      "passed": true,
+      "evidence": [
+        "WTC1_top_lower_glass_STUDY",
+        "WTC1_top_upper_glass_STUDY",
+        "WTC1_crown_glazing_to_cap_STUDY"
+      ]
+    },
+    {
+      "name": "WTC1_service_backing_stops_below_maintenance_roof",
+      "passed": true,
+      "evidence": {
+        "clearance_m": 0.00799560546875
+      }
+    },
+    {
+      "name": "WTC1_active_top_glass_clear_of_cladding_triangles",
+      "passed": true,
+      "evidence": {
+        "intersecting_triangle_pairs": 0
+      }
+    },
+    {
+      "name": "WTC2_crown_arms_and_stems_one_connected_solid",
+      "passed": true,
+      "evidence": {
+        "units": 116,
+        "bad_meshes": []
+      }
+    },
+    {
+      "name": "WTC2_crown_flat25mm_unsmoothed_section",
+      "passed": true,
+      "evidence": {
+        "flat_normals": true,
+        "depth_m": 0.025
+      }
+    },
+    {
+      "name": "WTC2_joined_finish_reaches_lower_and_upper_seats",
+      "passed": true,
+      "evidence": {
+        "lower_z": 403.8272,
+        "upper_z": 411.8356
+      }
+    },
+    {
+      "name": "WTC2_superseded_top_glass_hidden_in_viewport_and_render",
+      "passed": true,
+      "evidence": [
+        "WTC2_top_lower_glass_STUDY",
+        "WTC2_top_upper_glass_STUDY",
+        "WTC2_crown_glazing_to_cap_STUDY"
+      ]
+    },
+    {
+      "name": "WTC2_service_backing_stops_below_maintenance_roof",
+      "passed": true,
+      "evidence": {
+        "clearance_m": 0.00799560546875
+      }
+    },
+    {
+      "name": "WTC2_active_top_glass_clear_of_cladding_triangles",
+      "passed": true,
+      "evidence": {
+        "intersecting_triangle_pairs": 0
+      }
     }
   ],
-  "technical_check_count": 115,
+  "technical_check_count": 127,
   "technical_pass": true,
   "historical_production_ready": false,
   "historical_blockers": [
@@ -1306,14 +1403,14 @@
     "basement/PATH/retail and full MEP distribution absent"
   ],
   "statistics": {
-    "objects": 143475,
-    "scene_mesh_objects": 143428,
-    "unique_scene_meshes": 21739,
+    "objects": 142324,
+    "scene_mesh_objects": 142276,
+    "unique_scene_meshes": 21737,
     "plaza_tile_meshes": 8670,
     "materials": 86,
-    "mesh_faces": 256712,
-    "instanced_base_mesh_faces": 6690028,
-    "faces_in_used_mesh_datablocks": 256712
+    "mesh_faces": 257086,
+    "instanced_base_mesh_faces": 6771740,
+    "faces_in_used_mesh_datablocks": 257086
   },
   "blender_version": "5.2.0 Alpha",
   "publication": {

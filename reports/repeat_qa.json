@@ -1,20 +1,20 @@
 {
   "passed": true,
   "before": {
-    "objects": 143475,
-    "meshes": 21739,
+    "objects": 142324,
+    "meshes": 21737,
     "collections": 158,
     "materials": 86
   },
   "once": {
-    "objects": 143475,
-    "meshes": 21739,
+    "objects": 142324,
+    "meshes": 21737,
     "collections": 158,
     "materials": 86
   },
   "twice": {
-    "objects": 143475,
-    "meshes": 21739,
+    "objects": 142324,
+    "meshes": 21737,
     "collections": 158,
     "materials": 86
   }
