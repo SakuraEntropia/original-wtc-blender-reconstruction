@@ -1,24 +1,26 @@
-# 原纽约 WTC｜细节 CG 工程
+# 原纽约 WTC｜模块化 CG 研究模型
 
-当前主文件 `wtc_detailed_cg.blend`；独立 Blender 资产在 `assets/`。双塔、树柱/大厅/核心、机电类型模块、帽桁架、WTC3–7、铺砖与球体代理分别组织。`REVIEW_CAMERAS` 保存全部 20 个检查镜头。铺砖数量见 reports/qa.json，每块是独立对象和独立 mesh；重复外柱与楼板复用网格。
+主文件 `wtc_detailed_cg.blend`；独立资产库 `assets/`；26个检查镜头与渲染 `renders/detail_*.png`。双塔、分段钢柱、核心、大厅、机电类型、帽桁架、天线、WTC3–7、广场分别组织。每块铺砖独立对象/mesh；重复窗框、吊顶、构件复用网格。
 
-本轮修正：统一 Concourse/Plaza 标高；依据 NIST 图3-6 的 9′4″、11′4″和6′标注重做连续三叉；矩形管与宽翼缘顶部构件分开；3–6层外侧留空；大厅基座避免切入；顶部机电百叶退后4ft；机电加入风机叶轮、护栅、风管、圆管与法兰；帽桁架按核心框架与外围伸臂独立建；观景栏改为杆件；天线改为完整四边格构；去除橙色高度代理。
+2026-10-14修正：按NIST1-5Av1增加玻璃退距/凸框、每层三分角板、两跨曲线开合塔冠、44/78层特殊窗带及机械层凸翅；大厅增加模块凹槽顶棚、灯具、核心外饰与门框；WTC7按NIST1-9屋顶平面增加两机房、两屏墙、五个冷却出口及北侧竖百叶；方砖沿喷泉/花盆裁切，接入放射铺装。
 
-**当前为细节研究模型，尚未达到完整历史复原的 production-ready 标准。** 角部树板、真实核心/井道布局、逐层标高、室内布局、设备型号与布置、完整街区/地下商业/PATH均未完成原图级核定。球体为原创通用尺度代理，未复制 Koenig 原作。详见 [生产门槛与缺口](docs/PRODUCTION_GATE.md)。
+**当前未达到完整历史复原的production-ready标准。** 来源明确的尺寸保持原值；照片拟合的曲率、板厚、设备型号、机房高度、绝对楼层标高和布局仍标估算。曲线塔冠是铝饰面，不能当作承重钢施工图。地下商业/PATH、全域机电、真实逐层室内及完整UV/LOD/稳定版导出管线仍未完成。见[生产门槛](docs/PRODUCTION_GATE.md)与[七项记录](docs/SEVEN_ITEM_REVISION_PLAN.md)。
 
 ```sh
 /Applications/Blender.app/Contents/MacOS/Blender -b --factory-startup -t 4 -P build.py
+/Applications/Blender.app/Contents/MacOS/Blender -b wtc_detailed_cg.blend -t 4 -P revise.py -- --views=crown,lobby,wtc7_roof,paving_seam
 /Applications/Blender.app/Contents/MacOS/Blender -b wtc_detailed_cg.blend -t 4 -P verify.py
+/Applications/Blender.app/Contents/MacOS/Blender -b wtc_detailed_cg.blend -t 4 -P verify_repeat.py
+/Applications/Blender.app/Contents/MacOS/Blender -b --factory-startup -t 4 -P verify_assets.py
+python3 package.py
 ```
 
-实测 Blender 5.2.0 Alpha。尚未验证稳定版兼容性。材质均程序生成，无外部图像、工业模型或贴图依赖。脚本先渲染，恢复可见状态后保存总场景，再输出独立资产。`reports/qa.json` 是保存文件重开验收，`reports/geometry_manifest.json.gz` 逐对象记录尺寸、材质、来源标签和未量化的不确定度。
+实测Blender5.2.0 Alpha；验证结果与实际数量见`reports/qa.json`、`assets_qa.json`、`repeat_qa.json`。`geometry_manifest.json.gz`逐件记录实际边界、材质、来源与不确定度；未知测量公差不编数值。链接资产库已测试；大量对象本地Append较慢，建议集合实例。`review.py -- --views=...`单独重渲染，`--views=none`可仅保存更新。
 
-资料：[来源尺寸表](docs/SOURCES_AND_DIMENSIONS.md)；[假设](docs/ASSUMPTIONS.md)；[主提示词](docs/AGENT_PROMPT_ZH.md)；[版权](docs/COPYRIGHT.md)。代码 MIT；原创几何/材质/渲染的贡献部分 CC BY 4.0，见许可文件。GitHub public 已推送：[仓库](https://github.com/SakuraEntropia/original-wtc-blender-reconstruction)。已逐件核对远端与本地Git blob哈希；主.blend、30个资产库、20图、脚本、尺寸引用与许可记录均已公开。参考图纸与照片未上传。详见 reports/publication.json。
+全部网格/程序材质由代码生成，无外部贴图或第三方工业资产依赖。Sphere仍是通用尺度代理；找到的TurboSquid与Warehouse候选没有取得开放网格再分发授权，见[授权核查](docs/LOBBY_SPHERE_EVIDENCE.md)。图纸、照片只引用，不打包。
 
-本轮新增 `facade_detail.py` 和 `lowrise_detail.py`。钢箱段、端板/拼接件、凹槽铝罩与玻璃分开；屋面/女儿墙为8段含45°角切。WTC7用NIST不同朝向窗列、独立石板/挂盒；WTC5使用FEMA的330×420ft L形包络。新视角：`detail_steel_panels.png`、`detail_section.png`、`detail_wtc7.png`、`detail_lowrise.png`、`detail_roof_plan.png`。
+资料：[主提示词](docs/AGENT_PROMPT_ZH.md)、[尺寸表](docs/SOURCES_AND_DIMENSIONS.md)、[立面证据](docs/FACADE_REVISION_EVIDENCE.md)、[大厅](docs/LOBBY_SPHERE_EVIDENCE.md)、[WTC7屋顶](docs/WTC7_ROOF_EVIDENCE.md)、[铺装](docs/PAVING_REVISION_EVIDENCE.md)、[版权](docs/COPYRIGHT.md)。代码MIT；自有几何/材质/渲染贡献CC BY4.0，许可不延伸至第三方原作。
 
-2026-10-13再修：新增 `crown_site_detail.py`，按历史照片重建尖拱/菱形塔冠、8边内收斜帽檐、窗擦双轨及转盘小车；天线换白色分段主筒与外附部件；核心增加屋面连接与分段井壁；广场补放射砖、环座、花池、灯杆；主楼与裙楼屋顶加入独立检修/管线/桥架部件。所有无原注尺寸仍标估算。`detail_crown.png`、`detail_core_top.png`、`detail_plaza.png`、`detail_mep_detail.png`为新增检查视角。
+[GitHub public仓库](https://github.com/SakuraEntropia/original-wtc-blender-reconstruction)；实际已推送版本、文件数量和Git blob核验见`reports/publication.json`。本地最新改动是否已发布以该报告为准。
 
-已有保存场景可用 `Blender -b wtc_detailed_cg.blend -P revise.py` 增量更新；`review.py -- --views=crown,core_top`单独复测镜头，节约重建成本。完整重建仍用build.py。
-
-最终保存文件重开：59项技术检查通过；20个1280×1280检查图；30个独立资产库只读加载通过。当前117,610个mesh对象、8,630块独立铺砖、67种程序材质。大量独立钢段和铺砖使对象数高；推荐按集合关闭未使用模块。尺寸清单压缩存储，解压后为JSON；含每件实际边界和未量化的不确定度。
+最终重开：89项技术检查通过；40个资产库、26个镜头；132,643个mesh对象、8,670块独立铺砖、82种材质。连续两次迁移对象/mesh/集合/材质数量一致。技术验收不等于完整历史生产精度。

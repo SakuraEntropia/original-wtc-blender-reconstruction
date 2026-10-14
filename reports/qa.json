@@ -15,14 +15,18 @@
       "passed": true,
       "evidence": [
         "CAM_antenna",
+        "CAM_cap_structure",
         "CAM_core_cutaway",
         "CAM_core_roof_connection",
         "CAM_crown_detail",
+        "CAM_facade_corner",
         "CAM_hat_truss",
         "CAM_industrial_type_components",
+        "CAM_lobby_ceiling",
         "CAM_lobby_inside",
         "CAM_MEP_cutaway",
         "CAM_overview",
+        "CAM_paving_seam",
         "CAM_plaza_furniture",
         "CAM_plaza_globe",
         "CAM_roof_plan",
@@ -30,10 +34,12 @@
         "CAM_roof_WTC2",
         "CAM_segmented_steel",
         "CAM_site_plan",
+        "CAM_sky_lobby_band",
         "CAM_steel_cover_section",
         "CAM_trident",
         "CAM_WTC3_6",
-        "CAM_WTC7"
+        "CAM_WTC7",
+        "CAM_WTC7_roof"
       ]
     },
     {
@@ -163,9 +169,9 @@
       ]
     },
     {
-      "name": "WTC1_envelope_restored_visible",
+      "name": "WTC1_revised_facade_visible",
       "passed": true,
-      "evidence": "exterior render state"
+      "evidence": "NIST-sized replacement curtain wall visible"
     },
     {
       "name": "WTC1_bottom_curtain_wall",
@@ -188,13 +194,13 @@
       "passed": true,
       "evidence": {
         "min_m": [
-          -86.56620025634766,
-          23.433799743652344,
+          -31.566200256347656,
+          -31.566200256347656,
           399.9664001464844
         ],
         "max_m": [
-          -23.433799743652344,
-          86.56620025634766,
+          31.566200256347656,
+          31.566200256347656,
           414.56640625
         ]
       }
@@ -211,12 +217,15 @@
     {
       "name": "WTC1_cap_all_8_edges_independent_panels",
       "passed": true,
-      "evidence": 248
+      "evidence": 244
     },
     {
-      "name": "WTC1_pointed_arch_geometry",
+      "name": "WTC1_curved_crown_geometry",
       "passed": true,
-      "evidence": "58 pointed arches / face, two prongs per arch; photo interpretation"
+      "evidence": {
+        "parts": 464,
+        "source": "NIST1-5Av1 Fig4-8;29 two-bay units per face;4 ribbons/unit"
+      }
     },
     {
       "name": "WTC1_eight_sided_roof",
@@ -350,9 +359,9 @@
       ]
     },
     {
-      "name": "WTC2_envelope_restored_visible",
+      "name": "WTC2_revised_facade_visible",
       "passed": true,
-      "evidence": "exterior render state"
+      "evidence": "NIST-sized replacement curtain wall visible"
     },
     {
       "name": "WTC2_bottom_curtain_wall",
@@ -375,13 +384,13 @@
       "passed": true,
       "evidence": {
         "min_m": [
-          23.433799743652344,
-          -86.56620025634766,
+          -31.566200256347656,
+          -31.566200256347656,
           398.1376037597656
         ],
         "max_m": [
-          86.56620025634766,
-          -23.433799743652344,
+          31.566200256347656,
+          31.566200256347656,
           412.73760986328125
         ]
       }
@@ -398,12 +407,15 @@
     {
       "name": "WTC2_cap_all_8_edges_independent_panels",
       "passed": true,
-      "evidence": 248
+      "evidence": 244
     },
     {
-      "name": "WTC2_pointed_arch_geometry",
+      "name": "WTC2_curved_crown_geometry",
       "passed": true,
-      "evidence": "58 pointed arches / face, two prongs per arch; photo interpretation"
+      "evidence": {
+        "parts": 464,
+        "source": "NIST1-5Av1 Fig4-8;29 two-bay units per face;4 ribbons/unit"
+      }
     },
     {
       "name": "WTC2_eight_sided_roof",
@@ -413,7 +425,7 @@
     {
       "name": "each_plaza_tile_unique_mesh",
       "passed": true,
-      "evidence": 8630
+      "evidence": 8670
     },
     {
       "name": "plaza_tile_z_datum",
@@ -433,12 +445,12 @@
     {
       "name": "finite_geometry_and_transforms",
       "passed": true,
-      "evidence": 117610
+      "evidence": 132643
     },
     {
       "name": "materials_on_all_scene_meshes",
       "passed": true,
-      "evidence": 117610
+      "evidence": 132643
     },
     {
       "name": "no_external_texture_dependencies",
@@ -480,11 +492,177 @@
       "name": "new_detail_parts_closed_outward",
       "passed": true,
       "evidence": {
-        "unique_meshes": 4644,
+        "unique_meshes": 4974,
         "failed": []
       }
+    },
+    {
+      "name": "WTC1_crown_curves_strengthened",
+      "passed": true,
+      "evidence": 464
+    },
+    {
+      "name": "WTC1_cap_independent_support",
+      "passed": true,
+      "evidence": 544
+    },
+    {
+      "name": "WTC1_glass_corner_transition_frames",
+      "passed": true,
+      "evidence": 936
+    },
+    {
+      "name": "WTC1_mitered_coping8_edges",
+      "passed": true,
+      "evidence": 260
+    },
+    {
+      "name": "WTC1_raised_window_frames_sourced",
+      "passed": true,
+      "evidence": 380
+    },
+    {
+      "name": "WTC1_corner_three_panels_per_story",
+      "passed": true,
+      "evidence": 436
+    },
+    {
+      "name": "WTC1_sky_lobby44_78_eight_panels",
+      "passed": true,
+      "evidence": 8
+    },
+    {
+      "name": "WTC1_MER_fins_7inch_projection",
+      "passed": true,
+      "evidence": 8
+    },
+    {
+      "name": "WTC1_modular_lobby_ceiling",
+      "passed": true,
+      "evidence": 1671
+    },
+    {
+      "name": "WTC1_lobby_core_finish",
+      "passed": true,
+      "evidence": 46
+    },
+    {
+      "name": "WTC1_lobby_operative_lights",
+      "passed": true,
+      "evidence": 4
+    },
+    {
+      "name": "WTC2_crown_curves_strengthened",
+      "passed": true,
+      "evidence": 464
+    },
+    {
+      "name": "WTC2_cap_independent_support",
+      "passed": true,
+      "evidence": 544
+    },
+    {
+      "name": "WTC2_glass_corner_transition_frames",
+      "passed": true,
+      "evidence": 936
+    },
+    {
+      "name": "WTC2_mitered_coping8_edges",
+      "passed": true,
+      "evidence": 260
+    },
+    {
+      "name": "WTC2_raised_window_frames_sourced",
+      "passed": true,
+      "evidence": 380
+    },
+    {
+      "name": "WTC2_corner_three_panels_per_story",
+      "passed": true,
+      "evidence": 436
+    },
+    {
+      "name": "WTC2_sky_lobby44_78_eight_panels",
+      "passed": true,
+      "evidence": 8
+    },
+    {
+      "name": "WTC2_MER_fins_7inch_projection",
+      "passed": true,
+      "evidence": 8
+    },
+    {
+      "name": "WTC2_modular_lobby_ceiling",
+      "passed": true,
+      "evidence": 1671
+    },
+    {
+      "name": "WTC2_lobby_core_finish",
+      "passed": true,
+      "evidence": 46
+    },
+    {
+      "name": "WTC2_lobby_operative_lights",
+      "passed": true,
+      "evidence": 4
+    },
+    {
+      "name": "WTC7_two_penthouses",
+      "passed": true,
+      "evidence": [
+        "WTC7_west_penthouse_enclosure_PLAN_STUDY",
+        "WTC7_east_penthouse_enclosure_PLAN_STUDY"
+      ]
+    },
+    {
+      "name": "WTC7_five_north_cooling_outlets",
+      "passed": true,
+      "evidence": [
+        "WTC7_north_cooling_tower1_fan_shroud_STUDY",
+        "WTC7_north_cooling_tower2_fan_shroud_STUDY",
+        "WTC7_north_cooling_tower3_fan_shroud_STUDY",
+        "WTC7_north_cooling_tower4_fan_shroud_STUDY",
+        "WTC7_north_cooling_tower5_fan_shroud_STUDY"
+      ]
+    },
+    {
+      "name": "WTC7_open_equipment_court",
+      "passed": true,
+      "evidence": [
+        "WTC7_yard_screenwall_0.375_PLAN_STUDY",
+        "WTC7_yard_screenwall_0.62_PLAN_STUDY"
+      ]
+    },
+    {
+      "name": "WTC7_vertical_intake_louvers",
+      "passed": true,
+      "evidence": 140
+    },
+    {
+      "name": "WTC7_old_generic_plant_suppressed",
+      "passed": true,
+      "evidence": "WTC7_ROOF_detail_components"
+    },
+    {
+      "name": "conforming_paver_boundary_closed",
+      "passed": true,
+      "evidence": {
+        "tiles": 140,
+        "bad": []
+      }
+    },
+    {
+      "name": "paving_revision_saved",
+      "passed": true,
+      "evidence": "2026-10-14-conforming-pavers-v1"
+    },
+    {
+      "name": "cut_pavers_clear_fountain",
+      "passed": true,
+      "evidence": []
     }
   ],
+  "technical_check_count": 89,
   "technical_pass": true,
   "historical_production_ready": false,
   "historical_blockers": [
@@ -498,21 +676,18 @@
     "basement/PATH/retail and full MEP distribution absent"
   ],
   "statistics": {
-    "objects": 117640,
-    "scene_mesh_objects": 117610,
-    "unique_scene_meshes": 17204,
-    "plaza_tile_meshes": 8630,
-    "materials": 67,
-    "mesh_faces": 194494,
-    "instanced_base_mesh_faces": 2835414,
-    "faces_in_used_mesh_datablocks": 194494
+    "objects": 132687,
+    "scene_mesh_objects": 132643,
+    "unique_scene_meshes": 17574,
+    "plaza_tile_meshes": 8670,
+    "materials": 82,
+    "mesh_faces": 232860,
+    "instanced_base_mesh_faces": 6631566,
+    "faces_in_used_mesh_datablocks": 232860
   },
   "blender_version": "5.2.0 Alpha",
   "publication": {
-    "pushed": true,
-    "repository": "https://github.com/SakuraEntropia/original-wtc-blender-reconstruction",
-    "verified_payload_commit": "ab2408a745f8a9fc90a791118dd832454017a677",
-    "verified_file_count": 82
-  },
-  "technical_check_count": 59
+    "performed_by_this_verification": false,
+    "status_document": "docs/DELIVERY_STATUS.md / reports/publication.json"
+  }
 }

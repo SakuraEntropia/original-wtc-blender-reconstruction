@@ -18,7 +18,7 @@ def bounds(ob):
 
 check('reopened_saved_file',Path(bpy.data.filepath).name=='wtc_detailed_cg.blend',Path(bpy.data.filepath).name)
 check('restored_overview_camera',bpy.context.scene.camera.name=='CAM_overview',bpy.context.scene.camera.name)
-check('review_cameras_saved',len([o for o in bpy.data.objects if o.name.startswith('CAM_')])==20,
+check('review_cameras_saved',len([o for o in bpy.data.objects if o.name.startswith('CAM_')])==26,
       [o.name for o in bpy.data.objects if o.name.startswith('CAM_')])
 for name in ('WTC1','WTC2'):
     trees=[o for o in bpy.data.objects if re.fullmatch(name+r'_tree_s\d_\d+',o.name)]
@@ -49,7 +49,8 @@ for name in ('WTC1','WTC2'):
     check(name+'_110_floor_datums',len(slabs)==110,len(slabs))
     actual=[list(bpy.data.objects[name+f'_F{i:03d}_SLAB_STUDY'].dimensions) for i in (3,4,5,6)]
     check(name+'_F3_F6_core_only',all(max(d[:2])<43 for d in actual),actual)
-    check(name+'_envelope_restored_visible',not bpy.data.objects[name+'_envelope_208ft10in'].hide_render,'exterior render state')
+    revised_facade=bpy.data.collections.get(name+'_FACADE_REVISION')
+    check(name+'_revised_facade_visible',revised_facade and not revised_facade.hide_render,'NIST-sized replacement curtain wall visible')
     bottom=bounds(bpy.data.objects[name+'_concourse_to_tree_glass_STUDY'])
     check(name+'_bottom_curtain_wall',abs(bottom['min_m'][2])<1e-5 and abs(bottom['max_m'][2]-TREE_TOP)<1e-4,bottom)
     top=bounds(bpy.data.objects[name+'_crown_glazing_to_cap_STUDY'])
@@ -63,7 +64,8 @@ for name in ('WTC1','WTC2'):
     check(name+'_all_47_core_axes_reach_roof',all(abs(z-roof)<.001 for z in end_heights),{'body_endpoint_min_m':min(end_heights),'body_endpoint_max_m':max(end_heights),'roof_m':roof})
     panels=[o for o in bpy.data.objects if o.name.startswith(name+'_crown_cap_edge') and o.get('module')=='sloping_cap_panel']
     check(name+'_cap_all_8_edges_independent_panels',{o.get('edge') for o in panels}==set(range(8)),len(panels))
-    check(name+'_pointed_arch_geometry',sum(o.name.startswith(name+'_crown_S') and '_arch' in o.name for o in bpy.data.objects)==464,'58 pointed arches / face, two prongs per arch; photo interpretation')
+    revised=[o for o in bpy.data.objects if o.name.startswith(name) and o.get('module')=='crown_curved_transition']
+    check(name+'_curved_crown_geometry',len(revised)==464,{'parts':len(revised),'source':'NIST1-5Av1 Fig4-8;29 two-bay units per face;4 ribbons/unit'})
     cap=bpy.data.objects[name+'_roof_datum']
     check(name+'_eight_sided_roof',len(cap.data.vertices)==16,len(cap.data.vertices))
 
@@ -87,13 +89,17 @@ check('no_external_texture_dependencies',not external,external)
 render_names=('overview','site_plan','trident','lobby','globe','roof1','roof2','antenna','mep','hat_truss','core','steel_panels','section','wtc7','lowrise','roof_plan','crown','core_top','plaza','mep_detail')
 check('20_render_files',all((ROOT/'renders'/('detail_'+s+'.png')).is_file() and (ROOT/'renders'/('detail_'+s+'.png')).stat().st_size>10000 for s in render_names),list(render_names))
 check('shadow_pool_expanded',bpy.context.scene.eevee.shadow_pool_size=='2048',bpy.context.scene.eevee.shadow_pool_size)
-newparts=[o for o in meshes if any(t in c.name for c in ownership[o.name] for t in ('_CROWN_photo','_CORNER_aluminum','_ROOF_detail','_CORE_roof_connections','PLAZA_furniture','PLAZA_vegetation'))]
+newparts=[o for o in meshes if any(t in c.name for c in ownership[o.name] for t in ('_CROWN_photo','_CORNER_aluminum','_ROOF_detail','_CORE_roof_connections','PLAZA_furniture','PLAZA_vegetation','_window_frames','_corner_three_panels','_crown_curved_cladding','_sky_lobby_facade','_story_column_covers','_recessed_window_rows','_spandrel_covers','_mechanical_facade','_LOBBY_','WTC7_ROOF_NIST','_CROWN_CAP','_FACADE_corner_transition'))]
 newmeshes={o.data for o in newparts};bad=[]
 for m in newmeshes:
     bm=bmesh.new();bm.from_mesh(m)
     if not all(e.is_manifold for e in bm.edges) or bm.calc_volume(signed=True)<=0:bad.append(m.name)
     bm.free()
 check('new_detail_parts_closed_outward',not bad,{'unique_meshes':len(newmeshes),'failed':bad})
+import sys
+sys.path.insert(0,str(ROOT))
+from verify_revision import inspect
+inspect(check)
 
 parents={}
 for col in bpy.data.collections:

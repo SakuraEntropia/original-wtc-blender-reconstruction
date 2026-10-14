@@ -11,6 +11,9 @@ files.update(ROOT/n for n in ('README.md','LICENSE','ASSET_LICENSE.md','.gitigno
 for pattern in ('src/**/*.py','docs/*.md','assets/*.blend','renders/detail_*.png'):
     files.update(ROOT.glob(pattern))
 files.update(ROOT/'reports'/n for n in ('qa.json','assets_qa.json','geometry_manifest.json.gz'))
+repeat=json.loads((ROOT/'reports/repeat_qa.json').read_text())
+if not repeat['passed']:raise RuntimeError('Delivery requires idempotent migration check')
+files.add(ROOT/'reports/repeat_qa.json')
 pub=json.loads((ROOT/'reports/publication.json').read_text()) if (ROOT/'reports/publication.json').exists() else {}
 if pub:files.add(ROOT/'reports/publication.json')
 manifest={'historical_production_ready':False,'github_pushed_files':pub.get('verified_file_count',0),

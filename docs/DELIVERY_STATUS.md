@@ -1,9 +1,9 @@
-# 细化交付
+# 当前交付
 
-最新批次：尖拱/倒Y与下部菱形塔冠、内收斜帽檐及板缝；白色分段天线与连接/发送部件；窗擦轨/转盘/小车、屋顶管线/桥架/检修口；核心到屋面及节点剖视；广场独立砖/放射砖、环座、花池与灯杆。WTC3–7屋顶补独立组件。20个检查镜头。
+2026-10-14批次：突出窗框/玻璃退距；三分角板；两跨曲线开合塔冠；空中大厅及机械窗带；模块顶棚/灯具/核心外饰；WTC7两机房/两屏墙/五冷却出口；广场140块边界裁砖。追加帽檐45°斜接、端板/螺栓/I形支架、加宽曲线及交界框，cap_structure可剖看。新镜头facade_corner、sky_lobby、wtc7_roof、lobby_ceiling、paving_seam。
 
-最终实际对象数、铺砖数与保存文件验收见reports/qa.json；独立资产加载见assets_qa.json；逐件尺寸与来源见geometry_manifest.json.gz。照片解释不等于原图尺寸。
+保存场景、26张渲染、独立资产库、逐件来源尺寸、重开/重入检查随项目交付。最终实际数量和结果以reports/qa.json、assets_qa.json、repeat_qa.json为准。
 
-历史生产门槛仍未完全满足：角部节点、真实各层标高/变截面、全域机电/内装/竖井、场地测绘和地下系统仍缺。雕塑为原创通用代理。完整UV/LOD/稳定版DCC管线未验。
+未完成：全域机电施工布置、地下/PATH、逐层平面/真实核心井道、换乘层承重钢专图、角部树柱专图、稳定版/LOD/UV交付管线。Sphere只保留通用代理；候选资产没有获得开放再分发授权。模型仍不能宣称完整历史复原production-ready。
 
-GitHub public 已推送：https://github.com/SakuraEntropia/original-wtc-blender-reconstruction。已核验内容提交 `ab2408a745f8a9fc90a791118dd832454017a677` 的82个文件与本地Git blob逐件一致，包括主.blend、30个资产库、20张渲染图、脚本、引用和许可。后续发布状态提交只更新元数据。参考照片、图纸、历史备份未上传。
+现有GitHub public仓库：https://github.com/SakuraEntropia/original-wtc-blender-reconstruction。实际推送commit、文件数及远端Git blob核验见reports/publication.json；参考照片、图纸、受限第三方网格均未上传。

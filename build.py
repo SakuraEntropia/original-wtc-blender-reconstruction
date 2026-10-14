@@ -8,6 +8,7 @@ from wtc.completion import PLAZA_Z
 from wtc.facade_detail import upgrade_facades,steel_mesh,cover_mesh,material,object_mesh,typical_panel_sample
 from wtc.lowrise_detail import enrich_context
 from wtc.crown_site_detail import enhance
+from wtc.latest_revision import apply as latest_revision
 import bpy
 import bmesh
 from mathutils import Vector
@@ -16,6 +17,7 @@ build()
 upgrade_facades()
 enrich_context()
 enhance()
+latest_revision()
 panel_sample=typical_panel_sample()
 section=bpy.data.collections.new('SECTION_REVIEW_steel_and_aluminum')
 bpy.context.scene.collection.children.link(section)
@@ -91,7 +93,6 @@ for col in bpy.data.collections:
 scene.render.filepath='//renders/preview.png'
 bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'wtc_detailed_cg.blend'),compress=True)
 (ROOT/'assets').mkdir(exist_ok=True)
-for col in bpy.data.collections:
-    if col.asset_data:
-        safe=''.join(c if c.isalnum() or c in '_-' else '_' for c in col.name)
-        bpy.data.libraries.write(str(ROOT/'assets'/(safe+'.blend')),{col},fake_user=True,compress=True)
+from asset_export import export_assets
+export_assets()
+bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'wtc_detailed_cg.blend'),compress=True)

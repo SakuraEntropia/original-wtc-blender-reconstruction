@@ -2,13 +2,15 @@
 
 | 内容 | 来源/权利范围 | 包内处理 |
 |---|---|---|
-| Python代码 | 项目原创贡献，MIT | included；LICENSE |
-| 原创网格、程序材质、11张渲染 | 本项目自建贡献，CC BY4.0 | included；ASSET_LICENSE.md；不延伸到第三方原作 |
-| 工业模型/纹理 | 未找到许可明确的适配资产 | 未使用；不宣称导入工业资产 |
-| NIST报告内的港务局原图 | 原图注明经港务局许可转载 | 引用URL、图号及事实尺寸；扫描页不随包发布 |
-| LOC/9-11 Memorial照片 | 各项版权状态不同 | 仅链接；没有嵌入或打包照片 |
-| Koenig Sphere | 原作复制权未确认 | 原作精确网格未建；仅原创通用球体尺度代理 |
+| Python代码 | 项目原创贡献，MIT | LICENSE |
+| 自建网格、程序材质、渲染 | 可许可的项目贡献，CC BY4.0 | ASSET_LICENSE.md，不延伸到第三方原作 |
+| 第三方工业模型/纹理 | 无已取得并兼容公开网格交付的适配资产 | 未使用 |
+| NIST报告/港务局图纸/报告内第三方照片 | 原图注明许可转载；照片权利各异 | 仅URL、图号、事实尺寸，不打包扫描 |
+| LOC、9/11 Memorial、Brian Rose/Fausty、JWSmythe、Tai Ping/Edward Fields档案图像 | 各项权利不同；用于观察建筑形态/内饰 | 仅链接，不复制照片纹理或扫描 |
+| Koenig The Sphere | 原作精确复制授权未取得；候选网格再分发未获核准 | 仅自建通用尺度代理，不能算雕塑复原 |
 
-程序生成不代表取得所有第三方原作的权利。CC BY4.0只覆盖本项目可许可的原创贡献，参考图纸、照片、雕塑原作及商标均不在许可范围内。参考 [CC BY4.0条款](https://creativecommons.org/licenses/by/4.0/)。GitHub尚未发布。
+程序生成不自动取得第三方原作权利。CC BY4.0仅覆盖项目可许可贡献，图纸、照片、雕塑原作与商标不在该许可范围。许可：[CC BY4.0](https://creativecommons.org/licenses/by/4.0/)。
 
-本轮研究照片：Brian Rose/Edward Fausty 1981原照有版权，仅本地临时研究，不打包；JWSmythe 2001-09-06照片在Commons注明CC BY3.0，仅研究链接、不打包；LOC2021636621用于观察铺装与家具，不打包照片，也不复制其中雕塑。新塔冠、天线及家具几何均由本项目Python生成；未使用工业资产下载。雕塑仍明确为通用尺度代理。
+Sphere候选与官方条款的本轮实际核查见[授权记录](LOBBY_SPHERE_EVIDENCE.md)：TurboSquid2224261限定Editorial且受再分发条款限制；Warehouse记录未核清来源与原作权利链。均未购买、下载、导入或发布。
+
+公开仓库只含代码、自建资产、渲染和引用/许可文档；真实发布状态见reports/publication.json。参考资料缓存存于项目外临时目录，不进入Git或交付ZIP。

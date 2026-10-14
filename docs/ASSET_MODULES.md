@@ -1,36 +1,46 @@
 # 独立资产清单
 
-在空白场景逐库只读链接，校验几何/材质依赖；共30库通过。Asset Browser可实例化集合。Append会保留设计世界坐标；大量独立对象本地化较慢，建议链接/集合实例。验证模式与SHA256见reports/assets_qa.json。
+当前40库在空白场景逐库只读链接，通过实际几何/材质/无外部图像依赖检查。已退役的直线塔冠、单块角板与通用WTC7屋顶资产不再单独交付；主文件中保留隐藏历史研究对象。大量对象Append较慢，优先链接或集合实例。
 
 | 文件 | mesh对象 | 字节 | SHA256 |
 |---|---:|---:|---|
-| PLAZA_furniture_and_landscape_interpretation.blend | 280 | 126042 | 7fa96d27789f729b44f285185a570f815bb6c5fc384341e0116f741ec4ccd659 |
-| PLAZA_globe_and_fountain_SCALE_PROXY.blend | 104 | 125929 | 0303d8a470ac1f94296d56295a32e1509ecae92865bc9c3826cba029d52b5098 |
-| PLAZA_individual_tile_meshes_STUDY.blend | 8631 | 3031958 | 220a2eebcb175bcbdde8209fa7d0fc811fb4966bc69312699bc8738c0880cf33 |
-| PLAZA_vegetation_TYPE.blend | 77 | 109719 | c4c28bbffd6a17247b80c0fc36d8e1768040184ecd22fde8ca39ae24d3acbf1e |
-| WTC1.blend | 27419 | 4909066 | dbec7cd36cc126072c9e42e76d497867acbef44800e7442d52506ceffa4b607a |
-| WTC1_COMPLETION_study.blend | 4661 | 852929 | 39d44f57ffad6e0dc38f8ee38a39a51b1ee637119aeef6465efb548282f00b15 |
-| WTC1_CORE_roof_connections_STUDY.blend | 364 | 149020 | 7cb52b50c1f4c47b55870a3be96ba49545fc4e15346759c7ed00fcb7d6ac55f9 |
-| WTC1_CORNER_aluminum_photo_interpretation.blend | 420 | 103482 | 1c3b0429e7953216c5389fff4a03f427f69ebbe125b6849a001ec63cef81b5e0 |
-| WTC1_CROWN_photo_interpretation.blend | 1917 | 621659 | 68c13e49ba567a71196f36181e0820739a4293c1fb48f493c7d9c3ddf9393254 |
-| WTC1_ROOF_detail_components.blend | 427 | 107427 | 782a269e5b7babe5424062ac4bb55427b3f03f0ab21082f707d9062fad9a07d4 |
-| WTC1_antenna_photo_interpretation_STUDY.blend | 380 | 138364 | d89b42ed7e0215988b5b9486274f966826d7a04f7e2b6d65bc3fedd1c36275f3 |
-| WTC2.blend | 27255 | 4881835 | 5d6db124b6d2e88ea2b1e065cd278f4bf656aa46de4b1ba3aa32c4fb0cce834d |
-| WTC2_COMPLETION_study.blend | 4698 | 862780 | dfa677a01fb44b148cf591d6b9eb5d48fb1292579994f3a0a1c1e467ed20cd54 |
-| WTC2_CORE_roof_connections_STUDY.blend | 361 | 147772 | 71cd9b20cf0cd217fe94ef74b60269baf4dbc52f9a2bf06be064e4767f3ccfde |
-| WTC2_CORNER_aluminum_photo_interpretation.blend | 416 | 103152 | 714c419541b2d09772194063665be12b573004ad89517b8a9df65e2cb05af07c |
-| WTC2_CROWN_photo_interpretation.blend | 1917 | 621214 | 64cff038034e45e8a70aecc67e5e8dd3b941dc7824a6ed689c7234a1088c9890 |
-| WTC2_ROOF_detail_components.blend | 427 | 107449 | 608ffadb24d9a6ced74acc25239d192efa1bc771e75ebeda5f4f3c77531a6217 |
-| WTC3_Marriott_massing_STUDY.blend | 7280 | 504635 | ecf55359631284095fff1df3a082516e55b85f00a487fbc5c65a042936542d04 |
-| WTC3_Marriott_volume_0_STUDY_ROOF_detail_components.blend | 444 | 106851 | 61cd7d09a476acc81fb9d42b20506fb8198e0365a9f11cb8c4f9b9cea6661ef2 |
-| WTC3_Marriott_volume_1_STUDY_ROOF_detail_components.blend | 294 | 99251 | 048749d7a24e982825b7023029412105305aea16bd55d14bae3f70a7c8d8ad14 |
-| WTC4_massing_STUDY.blend | 3066 | 260625 | d435ca37430d0fcdce32bacd6dac602dfb40dc0518fd3e1c4659d67186f5cb20 |
-| WTC4_volume_0_STUDY_ROOF_detail_components.blend | 414 | 105641 | cfb908ba46ef42f9b064ab34365395ffe26dd880753842a565251b197772508d |
-| WTC5_massing_STUDY.blend | 5925 | 435332 | 4246fb28f9ea666f5ceadbe9fc78c3a55e1a5f8aec18f07deb5be3ecc924e871 |
-| WTC5_volume_0_STUDY_ROOF_detail_components.blend | 570 | 113094 | b4125f46aac7fa1fd7730612bdea88e28b9b491328a7568afa1a0e4adb885075 |
-| WTC5_volume_1_STUDY_ROOF_detail_components.blend | 360 | 102732 | 1230878cfb94642ece29559c103b8226be1108fa836d160823c79e4301c15dc7 |
-| WTC6_massing_STUDY.blend | 2778 | 244254 | c1d17d24faeb7dfd1efaf4d2a48b28be900f9202e8b6f2fd4d27c74df2b468ee |
-| WTC6_volume_0_STUDY_ROOF_detail_components.blend | 414 | 105158 | e01e50f30ae89e281f9431eabbdf5ea4949a130c45ca4c42b346a3f1ecf4698c |
-| WTC7_ROOF_detail_components.blend | 468 | 107991 | 0046a0e1e6b0a7ad554b343b39dfc8a11f2a19d4484b6121ae90ea4a4ab6c86d |
-| WTC7__NIST_massing_position_schematic.blend | 25047 | 1480989 | 402299318d4d206d061d5d2774aac48641e2b2a961bdb0babc011929356bcfc7 |
-| WTC_TYPICAL_STEEL_PANEL_STUDY.blend | 6 | 66284 | 10d81b346fddc9909cd5ce2c1db917197380ea5c7cc5a6ff85cae90fe8b503b9 |
+| PLAZA_furniture_and_landscape_interpretation.blend | 280 | 125944 | 56e2780e6bcb008786df61f7de8cc9c435cefc1bcf84c732fa661807ac62ec70 |
+| PLAZA_globe_and_fountain_SCALE_PROXY.blend | 104 | 130248 | b447a9326327f4e49eb2b7a59e34f22c966ced667a742ef8f811fdbbf4f43df2 |
+| PLAZA_individual_tile_meshes_STUDY.blend | 8671 | 3197537 | 6f29d1c822de11e71ebbb1e1f79f95631b64061aa412a948c318d23cda7e744f |
+| PLAZA_vegetation_TYPE.blend | 77 | 109700 | ffa614f10d0fac76354935ccdafc30d246166ec16abd8febbe2b97ef00d4440f |
+| WTC1.blend | 32935 | 6280562 | cf3c44b069be51f3027a01e56d519cd748188fca8c8ca2032e2bc829d81576c8 |
+| WTC1_COMPLETION_study.blend | 6328 | 1010144 | fddf60ebc6990cd6aad96d8cff9c12060bd8e516b2aa2c6cb6c21468c67ce95c |
+| WTC1_CORE_roof_connections_STUDY.blend | 364 | 148945 | efc33bfc96cbf0b47240b1c104fd3b820b5daf4f688e0b1523e622d68677dd9c |
+| WTC1_CROWN_CAP_mitered_panels.blend | 260 | 171446 | f95a9ae9fd24fade881797d690d14f478a57e5019bedb9514f98debf4e338808 |
+| WTC1_CROWN_CAP_steel_support_TYPE.blend | 544 | 177380 | 34afcf4762654af628fa70c008a9e6e8a302688833edcf0ed5f24d0beb61adae |
+| WTC1_FACADE_REVISION.blend | 4976 | 1201069 | e817195fddb886fc439a6ad3072847a26778cf08a68be4ac9558c6f6f01deb47 |
+| WTC1_FACADE_corner_transition_frames.blend | 936 | 193784 | 840b54f916c369271da9f38e81ffc52c994ade2f2b558253cd1b420a46d4d0b5 |
+| WTC1_LOBBY_photo_interpretation_STUDY.blend | 1667 | 215108 | 58131f65d57eff13106228f75f2a11ab6429c4d96650a2fce4934ac7d2a29f69 |
+| WTC1_ROOF_detail_components.blend | 427 | 107393 | 0de396ffb19c4860794dab952e1a1c5007a6d91dcfdaf65940b8f7b4cc3329b0 |
+| WTC1_antenna_photo_interpretation_STUDY.blend | 380 | 138398 | 9ae3cb0ffcd5dcf83e0c9619a30258552e7ed1890dc2f4e7a20892289cc99fea |
+| WTC1_corner_three_panels.blend | 1308 | 308148 | 50827fcc0f53ac6004b84dba095425e0548bcc94974d25ac670124258f6bbdc5 |
+| WTC1_crown_curved_cladding.blend | 1184 | 348125 | c84a17aecca61d9863f2d190ba08646c5d41e10cd35e418f4ffed858b9c79339 |
+| WTC2.blend | 32771 | 6178339 | 0fb1137fc60526f5a634dea858e4e378daa33deec960ea3e66036a061a2eaf56 |
+| WTC2_COMPLETION_study.blend | 6365 | 1020208 | ce09b34aa398b832356b37c06607df54a2f5bcc412cc47a7106a0d5808c58a06 |
+| WTC2_CORE_roof_connections_STUDY.blend | 361 | 147818 | c579f2f8a23f0b71cc7c71e073ce64093ba24fdd868b5b93557609038d713a56 |
+| WTC2_CROWN_CAP_mitered_panels.blend | 260 | 171135 | 763a84ed118ba3857390423752c102b1ad38a2b00757f805fb8b79aad49d0851 |
+| WTC2_CROWN_CAP_steel_support_TYPE.blend | 544 | 177472 | be1cc9d5a87e7ef8fe771023ba2f3c700017f74dd54e8316ce89cffaf026cf44 |
+| WTC2_FACADE_REVISION.blend | 4976 | 1200307 | 041bda63c25ea2ae3b11db2f086f30b5f923d87d7dce4c9a746e1363518ddc52 |
+| WTC2_FACADE_corner_transition_frames.blend | 936 | 193667 | be01b9264a9164c906e10023903a1cce534540c8657e43918c19b9089cc2ca16 |
+| WTC2_LOBBY_photo_interpretation_STUDY.blend | 1667 | 214756 | 289ffec56610e043cf8e392777af2474e86a73639fcd9e3d86ff91e7d61932cc |
+| WTC2_ROOF_detail_components.blend | 427 | 107427 | 6e869a8ea833732500f0d0f2d202d896ad1ee493a2451c0d857872af40fefcd6 |
+| WTC2_corner_three_panels.blend | 1308 | 307435 | f86d33db717958e4ab1874eea293a8ecc7240b0263eee9aa65b1017421743dcd |
+| WTC2_crown_curved_cladding.blend | 1184 | 347503 | f2950fd94e7f1ce1f81a6a960185e3535a60083d2990b9c66d35225f697c15fe |
+| WTC3_Marriott_massing_STUDY.blend | 7280 | 504461 | 09c7df9f980b8ba2b754e392bb47d1d8c57d0786212580a5fa2c6d8fca2fcbab |
+| WTC3_Marriott_volume_0_STUDY_ROOF_detail_components.blend | 444 | 106844 | b67eaeebd8d145dfb621dda226b79e9faadda26fd10ba8e9350f9686fd0137db |
+| WTC3_Marriott_volume_1_STUDY_ROOF_detail_components.blend | 294 | 99218 | ebe4a0a88c430b59c83a57e6a07e3b293117fe5f1dc6e3c2b0d9792a95c4e8cb |
+| WTC4_massing_STUDY.blend | 3066 | 260726 | 7949d50b0f5588386fd0f5d43938c44bafbf01188dd1ab95e293bf230334be69 |
+| WTC4_volume_0_STUDY_ROOF_detail_components.blend | 414 | 105699 | 262b04b51fb5b477ca585e4c75b6c3d15aea6118e0bffdf45df055f02e4e8e6e |
+| WTC5_massing_STUDY.blend | 5925 | 435098 | 143486fb4a67c2180a425706f185641fdc74eb3b8072c87d18002801cb2a11da |
+| WTC5_volume_0_STUDY_ROOF_detail_components.blend | 570 | 113057 | 53f8f70b8e32d78de3071dd6091abdf9923b924eaeb0cb4f06aaf07dd33bd4ad |
+| WTC5_volume_1_STUDY_ROOF_detail_components.blend | 360 | 102740 | 6dd6f4bdd4048bc3d6a10ccffdff6ef0299e7fce4f99fd92ebceafe4df322ad5 |
+| WTC6_massing_STUDY.blend | 2778 | 244403 | 6ac20b5b4e978140574a59d884719037d63bada2b8b84fe6ddf09dbac4368a34 |
+| WTC6_volume_0_STUDY_ROOF_detail_components.blend | 414 | 105166 | 74a54e8a182c33fce5724c4efcd7c360ec37747d37f93dbdcaa9e16bff67b228 |
+| WTC7_ROOF_NIST_plan_interpretation.blend | 627 | 164678 | d19e3231c01846f97ea9f34ec1c2c6ad8b821a61660e2635c400fe271e9977ba |
+| WTC7__NIST_massing_position_schematic.blend | 25674 | 1588784 | a44e659faa8339d1f4fb7c69ef871ca363a9a60fad03ee968f45a79568b3642f |
+| WTC_TYPICAL_STEEL_PANEL_STUDY.blend | 6 | 66286 | 39d78925e7de36d6f425592a82eaddd1ce4c90389d5eb1f02490b8464e6f1289 |
