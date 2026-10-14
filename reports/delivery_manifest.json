@@ -1,6 +1,6 @@
 {
   "historical_production_ready": false,
-  "github_pushed_files": 82,
+  "github_pushed_files": 116,
   "technical_check_count": 89,
   "asset_libraries": 40,
   "files": [
@@ -266,8 +266,8 @@
     },
     {
       "path": "docs/DELIVERY_STATUS.md",
-      "bytes": 1167,
-      "sha256": "4c0e3158863086c64c99aafb9e5a2214a9d575f20fe2f9fc6ca66870bfd9ece8"
+      "bytes": 1323,
+      "sha256": "ff948f6c8a3e6ad85822430bbe85d9f5973fa30a0f54a907f49f96ae7d2c34fe"
     },
     {
       "path": "docs/DETAIL_REVISION_PLAN.md",
@@ -297,7 +297,7 @@
     {
       "path": "docs/SEVEN_ITEM_REVISION_PLAN.md",
       "bytes": 1414,
-      "sha256": "0d83d72b31e64a77623d4c245965b8ee32cafdbd888df363b7ab4f6abf75cd15"
+      "sha256": "e8b77a4dca60171ffec210267bea6d6ce3902f9ea62f6ad39352ee9839330656"
     },
     {
       "path": "docs/SOURCES_AND_DIMENSIONS.md",
@@ -461,8 +461,8 @@
     },
     {
       "path": "reports/publication.json",
-      "bytes": 512,
-      "sha256": "491015142b3a7923846b8fdeeed73c2867ce6aec2d7b2b44e7482c69cc3d4fb8"
+      "bytes": 855,
+      "sha256": "34266805f83fdc3f4efb9af2a2da8726add9f901f7c8b458328afa5e42c7889e"
     },
     {
       "path": "reports/qa.json",

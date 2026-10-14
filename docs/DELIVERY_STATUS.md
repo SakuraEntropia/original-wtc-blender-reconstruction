@@ -7,3 +7,5 @@
 未完成：全域机电施工布置、地下/PATH、逐层平面/真实核心井道、换乘层承重钢专图、角部树柱专图、稳定版/LOD/UV交付管线。Sphere只保留通用代理；候选资产没有获得开放再分发授权。模型仍不能宣称完整历史复原production-ready。
 
 现有GitHub public仓库：https://github.com/SakuraEntropia/original-wtc-blender-reconstruction。实际推送commit、文件数及远端Git blob核验见reports/publication.json；参考照片、图纸、受限第三方网格均未上传。
+
+本轮内容提交`646cd64cde3c3b55abf0a7e46e69e7a2f1a53b66`已推送并核对116个Git blob。40资产库、26图、主.blend及代码/证据均包含。

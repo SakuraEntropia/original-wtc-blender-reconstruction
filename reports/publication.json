@@ -1,13 +1,18 @@
 {
   "repository": "https://github.com/SakuraEntropia/original-wtc-blender-reconstruction",
   "public": true,
-  "payload_commit": "ab2408a745f8a9fc90a791118dd832454017a677",
-  "verified_file_count": 82,
-  "verified_utc": "2026-10-13T15:15:16.218136+00:00",
+  "payload_commit": "646cd64cde3c3b55abf0a7e46e69e7a2f1a53b66",
+  "payload_tree": "9ce2a3cbd62234fd096d93bf69a09d8754cb7781",
+  "api_reference_sha": "646cd64cde3c3b55abf0a7e46e69e7a2f1a53b66",
+  "verified_file_count": 116,
+  "verified_utc": "2026-10-14T11:50:20.212061+00:00",
   "all_payload_git_blob_hashes_match": true,
-  "main_blend_git_blob_sha": "09ad2dc58dec5ccbbfeb8771def6dc7ed78fa251",
-  "asset_libraries": 30,
-  "rendered_views": 20,
+  "main_blend_git_blob_sha": "d81298eea5fb53b4231c9474fc56d88a58dd058b",
+  "asset_libraries": 40,
+  "rendered_views": 26,
+  "technical_checks": 89,
   "source_photos_or_scans_in_repository": false,
-  "historical_production_ready": false
+  "third_party_mesh_assets_used": false,
+  "historical_production_ready": false,
+  "scope_note": "Payload commit verified before publication/ZIP metadata refresh. Later status-only commit does not alter model/assets/renders."
 }

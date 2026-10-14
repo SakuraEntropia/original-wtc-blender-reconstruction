@@ -9,6 +9,6 @@
 - [x] `wtc7_roof_revision.py`：按NIST两机房、五冷却塔组织屋顶模块，记录未注尺寸。
 - [x] `paving_revision.py` / `planar.py`：方砖沿喷泉与24个圆花盆轮廓裁切，统一铺装标高，保留每砖独立mesh。纯几何面积守恒与网格闭合验收。
 - [x] 集成：近景镜头覆盖七项；实际运行Blender、检查渲染、重开文件检查几何和资产依赖。
-- [ ] 更新交付清单、生产缺口、版权记录；压缩包重打包并推送现有public仓库。
+- [x] 更新交付清单、生产缺口、版权记录；压缩包重打包并推送现有public仓库。
 
 验收命令：Blender后台打开`wtc_detailed_cg.blend`执行`revise.py`；再打开执行`verify.py`；空场景执行`verify_assets.py`；最后Python运行`package.py`。技术通过不代表未取得原图的细节达到历史测绘精度。
