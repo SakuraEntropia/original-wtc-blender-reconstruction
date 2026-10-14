@@ -1,5 +1,7 @@
 # 当前交付
 
+本轮内容提交`8da63aa923039f634dfdf44135fd941eec154f34`已推送；逐件核验124个远端Git blob全部匹配。`.blend`、40库、29图、代码及原图引用均已包含。
+
 最新追加：原AB321/323斜接/边框修订。5×7in分件突出框、内退不等分角板、角部屋面收尖及双折边斜接、fascia/翻边/支承独立件已经实际保存和渲染。新增`crown_miter`、`edge_profile`、`edge_top`近景；115项技术检查、40库、29图。具体依据及推断见`ORIGINAL_JUNCTION_IMPLEMENTATION.md`。下文是上一批次记录，发布哈希以`reports/publication.json`为准。
 
 2026-10-14批次：突出窗框/玻璃退距；三分角板；两跨曲线开合塔冠；空中大厅及机械窗带；模块顶棚/灯具/核心外饰；WTC7两机房/两屏墙/五冷却出口；广场140块边界裁砖。追加帽檐45°斜接、端板/螺栓/I形支架、加宽曲线及交界框，cap_structure可剖看。新镜头facade_corner、sky_lobby、wtc7_roof、lobby_ceiling、paving_seam。

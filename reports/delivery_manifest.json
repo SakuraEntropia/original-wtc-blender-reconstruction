@@ -1,6 +1,6 @@
 {
   "historical_production_ready": false,
-  "github_pushed_files": 116,
+  "github_pushed_files": 124,
   "technical_check_count": 115,
   "asset_libraries": 40,
   "files": [
@@ -271,8 +271,8 @@
     },
     {
       "path": "docs/DELIVERY_STATUS.md",
-      "bytes": 1759,
-      "sha256": "6bbc184970fd4d6c7f6ef50de007b271999e6775d9509a72e66efdf4b5c0a5cc"
+      "bytes": 1943,
+      "sha256": "4e40c4f81f887638209b54752377ff26828e043f7b44a991975536c6fa6ea3f6"
     },
     {
       "path": "docs/DETAIL_REVISION_PLAN.md",
@@ -491,8 +491,8 @@
     },
     {
       "path": "reports/publication.json",
-      "bytes": 855,
-      "sha256": "34266805f83fdc3f4efb9af2a2da8726add9f901f7c8b458328afa5e42c7889e"
+      "bytes": 866,
+      "sha256": "b00d7244f6cce297f0951a9fa7754ed839dcbc34f8f16a6bec27e5d423f0b08e"
     },
     {
       "path": "reports/qa.json",

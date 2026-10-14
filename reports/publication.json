@@ -1,18 +1,18 @@
 {
   "repository": "https://github.com/SakuraEntropia/original-wtc-blender-reconstruction",
   "public": true,
-  "payload_commit": "646cd64cde3c3b55abf0a7e46e69e7a2f1a53b66",
-  "payload_tree": "9ce2a3cbd62234fd096d93bf69a09d8754cb7781",
-  "api_reference_sha": "646cd64cde3c3b55abf0a7e46e69e7a2f1a53b66",
-  "verified_file_count": 116,
-  "verified_utc": "2026-10-14T11:50:20.212061+00:00",
+  "payload_commit": "8da63aa923039f634dfdf44135fd941eec154f34",
+  "payload_tree": "04982d7e006e8fddd147c50deb577f332c37f1d9",
+  "api_reference_sha": "8da63aa923039f634dfdf44135fd941eec154f34",
+  "verified_file_count": 124,
+  "verified_utc": "2026-10-14T12:55:42.836489+00:00",
   "all_payload_git_blob_hashes_match": true,
-  "main_blend_git_blob_sha": "d81298eea5fb53b4231c9474fc56d88a58dd058b",
+  "main_blend_git_blob_sha": "fcc147c60350c131958e1279a90dad152da23b43",
   "asset_libraries": 40,
-  "rendered_views": 26,
-  "technical_checks": 89,
+  "rendered_views": 29,
+  "technical_checks": 115,
   "source_photos_or_scans_in_repository": false,
   "third_party_mesh_assets_used": false,
   "historical_production_ready": false,
-  "scope_note": "Payload commit verified before publication/ZIP metadata refresh. Later status-only commit does not alter model/assets/renders."
+  "scope_note": "AB321/323 model payload verified before publication/ZIP metadata refresh; following status commit does not change model/assets/renders."
 }
