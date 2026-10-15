@@ -139,7 +139,7 @@ def _spandrel_row_mesh(height, mat, width=OPENING):
     return _mesh(key, v, f, mat)
 
 
-def _story_schedule(roof):
+def _story_schedule(roof, include_port_authority=True):
     """Exact ordinary/sky pitch, estimated mechanical pitch closes the envelope.
 
     TREE_TOP is the existing splice datum, not a newly verified floor elevation.
@@ -148,12 +148,13 @@ def _story_schedule(roof):
     dimension is scaled.
     """
     top = roof-CROWN_DEPTH
-    mer = (top-TREE_TOP-92*12*FT-2*14*FT)/4
+    extra={43:2*FT,67:4*FT} if include_port_authority and abs(roof-1368*FT)<.001 else {}
+    mer = (top-TREE_TOP-92*12*FT-2*14*FT-sum(extra.values()))/4
     z, rows = TREE_TOP, []
     for level in range(9, 107):
         mechanical = level in (41, 42, 75, 76)
-        pitch = mer if mechanical else (14 if level in (44, 78) else 12)*FT
-        opening = (8+5/12)*FT if level in (44, 78) else (7+5/12)*FT
+        pitch = mer if mechanical else (14 if level in (44, 78) else 12)*FT+extra.get(level,0)
+        opening = ((8+5/12)*FT if level in (44, 78) else (7+5/12)*FT)+extra.get(level,0)
         rows.append(dict(level=level, z=z, pitch=pitch,
                          opening=opening, mechanical=mechanical))
         z += pitch
@@ -162,6 +163,8 @@ def _story_schedule(roof):
 
 
 def _regular_facade(name, xy, roof, root, metal, glass):
+    root['port_authority_heights_applied']=True
+    root['special_height_source']='User43=14ft/67=16ft; archival drawing note confirms two differing floors; enlarged window inferred, absolute datums estimated'
     parent = bpy.data.collections[name]
     frame_root = next(c for c in parent.children if c.name.startswith('02_perimeter'))
     for c in frame_root.children:

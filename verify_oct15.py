@@ -37,14 +37,14 @@ def inspect(check):
     check('south_roof_access_masts_dishes_and_deck_supports',all(any(s in o.name for o in col.objects) for s in
           ('north_access_door','south_access_door','west_comm_dish','east_comm_dish','north_comm_dish','walk_support','maintenance_security_fence','pad_safety_net')),len(col.objects))
     cameras=[o for o in bpy.data.objects if o.type=='CAMERA']
-    check('all_review_cameras_perspective',len(cameras)==34 and all(o.data.type=='PERSP' for o in cameras),len(cameras))
+    check('all_review_cameras_perspective',len(cameras)==42 and all(o.data.type=='PERSP' for o in cameras),len(cameras))
     check('saved_cycles_gpu_configuration',scene.render.engine=='CYCLES' and scene.cycles.device=='GPU',scene.get('render_configuration',''))
     path=Path(__file__).parent/'reports/render_runtime.json'
     runtime=json.loads(path.read_text()) if path.exists() else {'views':{}}
     views=runtime['views'];valid=[k for k,v in views.items() if v.get('revision')==scene.get('south_roof_revision') and
         v.get('base_frame_revision')==scene.get('base_frame_revision') and v.get('lobby_revision')==scene.get('source_lobby_plan_revision') and v.get('crown_revision')==scene.get('flat_connected_crown_revision') and v.get('engine')=='CYCLES' and v.get('cycles_device')=='GPU' and v.get('compute_device_type')=='METAL' and
         v.get('enabled_devices') and v.get('camera_type')=='PERSP' and v.get('seconds',0)>0]
-    check('all_34_views_actually_rendered_cycles_metal_gpu',len(valid)==34,{'rendered_views':len(valid),'devices':scene.get('render_device_names',[])[:]})
+    check('all_42_review_views_have_actual_cycles_metal_gpu_renders',len(valid)==42,{'rendered_views':len(valid),'devices':scene.get('render_device_names',[])[:],'note':'Per-view revisions distinguish incremental updates from prior images.'})
     evidence=runtime.get('execution_evidence',{})
     lines=evidence.get('cycles_debug_path_tracing_device_lines',[])
     check('cycles_debug_confirms_actual_metal_path_tracing',evidence.get('gpu_path_records')==34 and bool(lines) and all('(Metal)' in line for line in lines),evidence)

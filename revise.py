@@ -21,7 +21,7 @@ for mesh in bpy.data.meshes:
 scene=bpy.context.scene
 bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'wtc_detailed_cg.blend'),compress=True)
 render_reviews()
-scene['quality_status']='Oct15: exterior viewport restored, source-traced curved mezzanine and revolving entrances, three positive trident crests / nested frames / paired-curve waisted first-floor lintels, AB302 full-height thin flat crown, photo-fitted South roof; Perspective Cycles Metal GPU; historical gates remain open'
+scene['quality_status']='Oct16: WTC7 core/public-lobby study, source-labelled1977 Windows, split elevator mechanisms, jointed lobby finishes and composite-floor connection panel; North43/67 height differential allocated once; Perspective Cycles Metal GPU; historical production gates remain open'
 for c in bpy.data.collections:
     if any(s in c.name for s in ('_CROWN_photo','_CORNER_aluminum','_ROOF_detail','_CORE_roof_connections','PLAZA_furniture')):
         c.asset_mark();c.asset_data.description=c.get('confidence','CG study; inspect source tags')

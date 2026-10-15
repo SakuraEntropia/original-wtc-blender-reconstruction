@@ -1,21 +1,21 @@
 {
   "passed": true,
   "before": {
-    "objects": 150774,
-    "meshes": 22700,
-    "collections": 165,
-    "materials": 98
+    "objects": 160297,
+    "meshes": 24832,
+    "collections": 173,
+    "materials": 125
   },
   "once": {
-    "objects": 150774,
-    "meshes": 22700,
-    "collections": 165,
-    "materials": 98
+    "objects": 160297,
+    "meshes": 24832,
+    "collections": 173,
+    "materials": 125
   },
   "twice": {
-    "objects": 150774,
-    "meshes": 22700,
-    "collections": 165,
-    "materials": 98
+    "objects": 160297,
+    "meshes": 24832,
+    "collections": 173,
+    "materials": 125
   }
 }

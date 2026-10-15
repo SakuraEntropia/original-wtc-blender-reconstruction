@@ -18,7 +18,7 @@ def bounds(ob):
 
 check('reopened_saved_file',Path(bpy.data.filepath).name=='wtc_detailed_cg.blend',Path(bpy.data.filepath).name)
 check('restored_overview_camera',bpy.context.scene.camera.name=='CAM_overview',bpy.context.scene.camera.name)
-check('review_cameras_saved',len([o for o in bpy.data.objects if o.name.startswith('CAM_')])==34,
+check('review_cameras_saved',len([o for o in bpy.data.objects if o.name.startswith('CAM_')])==42,
       [o.name for o in bpy.data.objects if o.name.startswith('CAM_')])
 for name in ('WTC1','WTC2'):
     trees=[o for o in bpy.data.objects if re.fullmatch(name+r'_tree_s\d_\d+',o.name)]
@@ -114,6 +114,8 @@ from verify_oct15 import inspect as oct15_inspect
 oct15_inspect(check)
 from wtc.interior_visibility_revision import inspect as interior_visibility_inspect
 interior_visibility_inspect(check)
+from verify_interior_details import inspect as interior_details_inspect
+interior_details_inspect(check)
 
 parents={}
 for col in bpy.data.collections:

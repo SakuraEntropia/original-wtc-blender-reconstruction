@@ -18,6 +18,8 @@
         "CAM_base_nested_frame",
         "CAM_base_track_ridge",
         "CAM_cap_structure",
+        "CAM_composite_end",
+        "CAM_composite_floor",
         "CAM_core_cutaway",
         "CAM_core_roof_connection",
         "CAM_crown_detail",
@@ -25,13 +27,16 @@
         "CAM_crown_unit_flat",
         "CAM_edge_profile",
         "CAM_edge_top",
+        "CAM_elevator_cab",
         "CAM_facade_corner",
         "CAM_hat_truss",
         "CAM_industrial_type_components",
         "CAM_lobby_ceiling",
         "CAM_lobby_inside",
         "CAM_lobby_mezzanine_plan",
+        "CAM_lobby_stone",
         "CAM_MEP_cutaway",
+        "CAM_north67",
         "CAM_overview",
         "CAM_paving_seam",
         "CAM_plaza_furniture",
@@ -45,8 +50,11 @@
         "CAM_sky_lobby_band",
         "CAM_steel_cover_section",
         "CAM_trident",
+        "CAM_windows1977",
         "CAM_WTC3_6",
         "CAM_WTC7",
+        "CAM_WTC7_inside",
+        "CAM_WTC7_inside_core",
         "CAM_WTC7_roof"
       ]
     },
@@ -439,12 +447,12 @@
     {
       "name": "finite_geometry_and_transforms",
       "passed": true,
-      "evidence": 150721
+      "evidence": 160188
     },
     {
       "name": "materials_on_all_scene_meshes",
       "passed": true,
-      "evidence": 150721
+      "evidence": 160188
     },
     {
       "name": "no_external_texture_dependencies",
@@ -486,7 +494,7 @@
       "name": "new_detail_parts_closed_outward",
       "passed": true,
       "evidence": {
-        "unique_meshes": 9398,
+        "unique_meshes": 11314,
         "failed": []
       }
     },
@@ -533,7 +541,7 @@
     {
       "name": "WTC1_modular_lobby_ceiling",
       "passed": true,
-      "evidence": 3069
+      "evidence": 3297
     },
     {
       "name": "WTC1_lobby_core_finish",
@@ -543,7 +551,7 @@
     {
       "name": "WTC1_lobby_operative_lights",
       "passed": true,
-      "evidence": 4
+      "evidence": 16
     },
     {
       "name": "WTC2_crown_curves_thin_flat",
@@ -588,7 +596,7 @@
     {
       "name": "WTC2_modular_lobby_ceiling",
       "passed": true,
-      "evidence": 3069
+      "evidence": 3297
     },
     {
       "name": "WTC2_lobby_core_finish",
@@ -598,7 +606,7 @@
     {
       "name": "WTC2_lobby_operative_lights",
       "passed": true,
-      "evidence": 4
+      "evidence": 16
     },
     {
       "name": "WTC7_two_penthouses",
@@ -1494,7 +1502,7 @@
     {
       "name": "all_review_cameras_perspective",
       "passed": true,
-      "evidence": 34
+      "evidence": 42
     },
     {
       "name": "saved_cycles_gpu_configuration",
@@ -1502,13 +1510,14 @@
       "evidence": "Cycles / GPU / Metal only / 32 adaptive samples / denoised"
     },
     {
-      "name": "all_34_views_actually_rendered_cycles_metal_gpu",
+      "name": "all_42_review_views_have_actual_cycles_metal_gpu_renders",
       "passed": true,
       "evidence": {
-        "rendered_views": 34,
+        "rendered_views": 42,
         "devices": [
           "Apple M5 (GPU - 10 cores)"
-        ]
+        ],
+        "note": "Per-view revisions distinguish incremental updates from prior images."
       }
     },
     {
@@ -1778,9 +1787,227 @@
         "segments": 1786,
         "roof_and_shaft_parts": 361
       }
+    },
+    {
+      "name": "North43_14ft_North67_16ft_South_both12ft",
+      "passed": true,
+      "evidence": {
+        "N43": 4.267200000000001,
+        "N67": 4.8768,
+        "S43": 3.6576000000000004,
+        "S67": 3.6576000000000004
+      }
+    },
+    {
+      "name": "six_foot_difference_allocated_once",
+      "passed": true,
+      "evidence": {
+        "F44_difference_m": 0.6096000000000004,
+        "F68_difference_m": 1.828800000000001
+      }
+    },
+    {
+      "name": "WTC1_slabs_follow_revised_facade_datums",
+      "passed": true,
+      "evidence": 98
+    },
+    {
+      "name": "WTC1_end_seat_slots_are_geometry",
+      "passed": true,
+      "evidence": {
+        "seats": 12,
+        "slot_open": true,
+        "solid_web": true
+      }
+    },
+    {
+      "name": "WTC1_six_physical_connection_hosts",
+      "passed": true,
+      "evidence": 1149
+    },
+    {
+      "name": "WTC1_profiled_deck_bridging_rods_and_concrete",
+      "passed": true,
+      "evidence": 1149
+    },
+    {
+      "name": "WTC1_lower_corner_terminal_projections_present",
+      "passed": true,
+      "evidence": 32
+    },
+    {
+      "name": "WTC1_carpets_jointed_stone_and_actual_lights",
+      "passed": true,
+      "evidence": 228
+    },
+    {
+      "name": "WTC1_lift_portal_backing_opened",
+      "passed": true,
+      "evidence": "Replaced closed backing with three separate wall parts"
+    },
+    {
+      "name": "WTC1_editable_lift_doors_guides_weight_ropes_operator",
+      "passed": true,
+      "evidence": 79
+    },
+    {
+      "name": "WTC2_slabs_follow_revised_facade_datums",
+      "passed": true,
+      "evidence": 98
+    },
+    {
+      "name": "WTC2_end_seat_slots_are_geometry",
+      "passed": true,
+      "evidence": {
+        "seats": 12,
+        "slot_open": true,
+        "solid_web": true
+      }
+    },
+    {
+      "name": "WTC2_six_physical_connection_hosts",
+      "passed": true,
+      "evidence": 1149
+    },
+    {
+      "name": "WTC2_profiled_deck_bridging_rods_and_concrete",
+      "passed": true,
+      "evidence": 1149
+    },
+    {
+      "name": "WTC2_lower_corner_terminal_projections_present",
+      "passed": true,
+      "evidence": 32
+    },
+    {
+      "name": "WTC2_carpets_jointed_stone_and_actual_lights",
+      "passed": true,
+      "evidence": 228
+    },
+    {
+      "name": "WTC2_lift_portal_backing_opened",
+      "passed": true,
+      "evidence": "Replaced closed backing with three separate wall parts"
+    },
+    {
+      "name": "WTC2_editable_lift_doors_guides_weight_ropes_operator",
+      "passed": true,
+      "evidence": 79
+    },
+    {
+      "name": "WTC7_31_elevators_per_NIST_primary_source",
+      "passed": true,
+      "evidence": 31
+    },
+    {
+      "name": "WTC7_lobbies_stairs_escalators_and_floor4_atrium",
+      "passed": true,
+      "evidence": 4714
+    },
+    {
+      "name": "Windows_original_period_and_functional_components",
+      "passed": true,
+      "evidence": {
+        "period": "1976/1977",
+        "parts": 1825
+      }
+    },
+    {
+      "name": "new_interior_and_floor_parts_closed_positive",
+      "passed": true,
+      "evidence": {
+        "modules": 8,
+        "failed": []
+      }
+    },
+    {
+      "name": "latest14_views_rendered_for_current_detail_revisions",
+      "passed": true,
+      "evidence": [
+        "wtc7_interior",
+        "wtc7_core",
+        "floor_structure",
+        "floor_end",
+        "elevator",
+        "restaurant",
+        "stone",
+        "north_heights",
+        "overview",
+        "lobby",
+        "lobby_ceiling",
+        "balcony",
+        "revolving",
+        "base_frame"
+      ]
+    },
+    {
+      "name": "current_interior_batch_actual_Metal_path_tracing",
+      "passed": true,
+      "evidence": {
+        "completed_views": [
+          "balcony",
+          "base_frame",
+          "elevator",
+          "floor_end",
+          "floor_structure",
+          "lobby",
+          "lobby_ceiling",
+          "north_heights",
+          "overview",
+          "restaurant",
+          "revolving",
+          "stone",
+          "wtc7_core",
+          "wtc7_interior"
+        ],
+        "unique_completed_view_count": 14,
+        "gpu_path_records": 18,
+        "cycles_debug_path_tracing_device_lines": [
+          "Path tracing on: Apple M5 (GPU - 10 cores) (Metal) (display) [METAL_Apple M5 (GPU - 10 cores)]"
+        ],
+        "source_logs": [
+          {
+            "sha256": "25525683fd20d447c3b065ae8a7e488d8ada9f6898766b1ae61eefeb64a77061",
+            "completed_views": [
+              "floor_end",
+              "floor_structure",
+              "stone",
+              "elevator",
+              "restaurant",
+              "wtc7_interior",
+              "wtc7_core"
+            ],
+            "gpu_path_records": 7
+          },
+          {
+            "sha256": "9474459ee46297648eb726134223db944394fa43728b84a2bea0f5ca2249bb65",
+            "completed_views": [
+              "floor_end",
+              "wtc7_interior",
+              "wtc7_core",
+              "north_heights",
+              "lobby",
+              "lobby_ceiling",
+              "balcony",
+              "revolving",
+              "base_frame",
+              "overview"
+            ],
+            "gpu_path_records": 10
+          },
+          {
+            "sha256": "0c45f88ed8b7d8da6e0dd582b75dbcfb0e6b9914eaf304751dd97209acd42087",
+            "completed_views": [
+              "floor_end"
+            ],
+            "gpu_path_records": 1
+          }
+        ],
+        "scope": "Oct16 final geometry and WTC7 lamp registration;14 unique views,18 renders including revised floor-end camera and WTC7 cutaways. Remaining28 views retain individually recorded previous revisions. Per-view timestamp identifies the final image."
+      }
     }
   ],
-  "technical_check_count": 168,
+  "technical_check_count": 192,
   "technical_pass": true,
   "historical_production_ready": false,
   "historical_blockers": [
@@ -1795,14 +2022,14 @@
     "basement/PATH/retail and full MEP distribution absent"
   ],
   "statistics": {
-    "objects": 150774,
-    "scene_mesh_objects": 150721,
-    "unique_scene_meshes": 22700,
+    "objects": 160297,
+    "scene_mesh_objects": 160188,
+    "unique_scene_meshes": 24832,
     "plaza_tile_meshes": 8670,
-    "materials": 98,
-    "mesh_faces": 410832,
-    "instanced_base_mesh_faces": 6991376,
-    "faces_in_used_mesh_datablocks": 410832
+    "materials": 125,
+    "mesh_faces": 464454,
+    "instanced_base_mesh_faces": 7154726,
+    "faces_in_used_mesh_datablocks": 464454
   },
   "blender_version": "5.2.0 Alpha",
   "publication": {

@@ -12,6 +12,10 @@ from .south_roof_revision import apply as south_roof
 from .lobby_plan_revision import apply as lobby_plan
 from .base_frame_revision import apply as base_frame
 from .interior_visibility_revision import apply as interior_visibility
+from .floor_schedule_revision import apply as floor_schedule
+from .public_interiors_revision import apply as public_interiors
+from .wtc7_interior_revision import apply as wtc7_interior
+from .floor_structure_revision import apply as floor_structure
 
 
 def apply():
@@ -31,3 +35,7 @@ def apply():
 
     base_frame()
     interior_visibility()
+    floor_schedule()
+    public_interiors()
+    wtc7_interior()
+    floor_structure()
