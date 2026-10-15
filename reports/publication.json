@@ -1,21 +1,27 @@
 {
   "repository": "https://github.com/SakuraEntropia/original-wtc-blender-reconstruction",
   "public": true,
-  "payload_commit": "a9a3a3c93fde9f9e268f94448bbb0cfe65ad5786",
-  "payload_tree": "dabeb77cdb3fd434b16424a4022f4d8b8aeba0c4",
-  "api_reference_sha": "a9a3a3c93fde9f9e268f94448bbb0cfe65ad5786",
-  "verified_file_count": 147,
-  "verified_utc": "2026-10-15T03:30:48.307647+00:00",
+  "payload_commit": "71a8265e86b955484dcd5bf1efd7ee62ec9a55cd",
+  "payload_tree": "a7cca806435d0261592ee69f098870f5c9148534",
+  "api_reference_sha": "71a8265e86b955484dcd5bf1efd7ee62ec9a55cd",
+  "verified_file_count": 148,
+  "verified_utc": "2026-10-15T03:49:47.506019+00:00",
   "all_payload_git_blob_hashes_match": true,
-  "main_blend_git_blob_sha": "0d79548200de8a854d29b44dc7f2e62a98967062",
+  "main_blend_git_blob_sha": "8e932e6c0f861f033a7e34bd7952cb8dcaf8025a",
   "asset_libraries": 45,
   "rendered_views": 34,
-  "technical_checks": 164,
+  "technical_checks": 168,
   "gpu_path_tracing_devices": [
     "Path tracing on: Apple M5 (GPU - 10 cores) (Metal) (display) [METAL_Apple M5 (GPU - 10 cores)]"
   ],
   "source_photos_or_scans_in_repository": false,
   "third_party_mesh_assets_used": false,
   "historical_production_ready": false,
-  "scope_note": "Model/scripts/assets/renders and QA verified at payload commit. Following metadata commit updates publication and ZIP manifest without changing those payload files."
+  "scope_note": "Model/scripts/assets/renders and QA verified at payload commit. Following metadata commit updates publication and ZIP manifest without changing those payload files.",
+  "latest_visibility_revision": "2026-10-15-restore-floor-core-v1",
+  "latest_visibility_rendered_views": [
+    "core",
+    "overview"
+  ],
+  "render_state_note": "Overview/core re-rendered after restoring floor/core visibility; remaining images retain preceding34-view batch. Per-view state recorded in render_runtime.json."
 }
