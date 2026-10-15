@@ -1,18 +1,21 @@
 {
   "repository": "https://github.com/SakuraEntropia/original-wtc-blender-reconstruction",
   "public": true,
-  "payload_commit": "8da63aa923039f634dfdf44135fd941eec154f34",
-  "payload_tree": "04982d7e006e8fddd147c50deb577f332c37f1d9",
-  "api_reference_sha": "8da63aa923039f634dfdf44135fd941eec154f34",
-  "verified_file_count": 124,
-  "verified_utc": "2026-10-14T12:55:42.836489+00:00",
+  "payload_commit": "a9a3a3c93fde9f9e268f94448bbb0cfe65ad5786",
+  "payload_tree": "dabeb77cdb3fd434b16424a4022f4d8b8aeba0c4",
+  "api_reference_sha": "a9a3a3c93fde9f9e268f94448bbb0cfe65ad5786",
+  "verified_file_count": 147,
+  "verified_utc": "2026-10-15T03:30:48.307647+00:00",
   "all_payload_git_blob_hashes_match": true,
-  "main_blend_git_blob_sha": "fcc147c60350c131958e1279a90dad152da23b43",
-  "asset_libraries": 40,
-  "rendered_views": 29,
-  "technical_checks": 115,
+  "main_blend_git_blob_sha": "0d79548200de8a854d29b44dc7f2e62a98967062",
+  "asset_libraries": 45,
+  "rendered_views": 34,
+  "technical_checks": 164,
+  "gpu_path_tracing_devices": [
+    "Path tracing on: Apple M5 (GPU - 10 cores) (Metal) (display) [METAL_Apple M5 (GPU - 10 cores)]"
+  ],
   "source_photos_or_scans_in_repository": false,
   "third_party_mesh_assets_used": false,
   "historical_production_ready": false,
-  "scope_note": "AB321/323 model payload verified before publication/ZIP metadata refresh; following status commit does not change model/assets/renders."
+  "scope_note": "Model/scripts/assets/renders and QA verified at payload commit. Following metadata commit updates publication and ZIP manifest without changing those payload files."
 }
