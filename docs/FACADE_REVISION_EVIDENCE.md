@@ -37,3 +37,5 @@
 对象 `module`：`raised_window_frame`、`aluminum_cover`、`corner_three_panel`、`sky_lobby_window`、`sky_lobby_spandrel`、`mechanical_cover_fins`、`crown_curved_transition`、`crown_alternating_cover`。曲线对象 `structural=False`；每个角分段 `panels_per_story=3`；新框记录 `projection_m`、`frame_width_m`、`glass_recess_m`。
 
 建议重开文件检查：旧菱形／直尖拱不可见；新曲线每两跨开合；窗框位于玻璃外侧；各层角板三分；78层窗高及上窗间板分别比普通层增加1ft。代码静态检查由本模块作者执行；Blender渲染与重开验收由集成流程执行。
+
+2026-10-15最终更正：17m塔冠总范围已由AB302印刷相对层高链替换，现107底窗间板→屋面板顶20.1676m，中字整框11.176m。见OCT15_FINAL_SOURCE_CORRECTIONS.md；本页旧17m与旧曲线板厚只是前版记录。

@@ -5,7 +5,12 @@ from .facade_revision import apply as facade
 from .wtc7_roof_revision import apply as roof7
 from .crown_edge_revision import apply as crown_junction
 from .original_junction_revision import apply as original_junction
+from .crown_height_revision import apply as full_crown_height
 from .crown_flat_revision import apply as flat_crown
+from .oct15_revision import apply as oct15
+from .south_roof_revision import apply as south_roof
+from .lobby_plan_revision import apply as lobby_plan
+from .base_frame_revision import apply as base_frame
 
 
 def apply():
@@ -13,6 +18,14 @@ def apply():
         print('REVISION_START '+name,flush=True)
         fn()
         print('REVISION_DONE '+name,flush=True)
+    full_crown_height()
     print('REVISION_START flat_crown',flush=True)
     flat_crown()
     print('REVISION_DONE flat_crown',flush=True)
+
+    oct15()
+    south_roof()
+
+    lobby_plan()
+
+    base_frame()

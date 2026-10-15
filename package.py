@@ -14,6 +14,7 @@ files.update(ROOT/'reports'/n for n in ('qa.json','assets_qa.json','geometry_man
 repeat=json.loads((ROOT/'reports/repeat_qa.json').read_text())
 if not repeat['passed']:raise RuntimeError('Delivery requires idempotent migration check')
 files.add(ROOT/'reports/repeat_qa.json')
+files.add(ROOT/'reports/render_runtime.json')
 pub=json.loads((ROOT/'reports/publication.json').read_text()) if (ROOT/'reports/publication.json').exists() else {}
 if pub:files.add(ROOT/'reports/publication.json')
 manifest={'historical_production_ready':False,'github_pushed_files':pub.get('verified_file_count',0),

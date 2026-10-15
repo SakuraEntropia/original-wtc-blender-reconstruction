@@ -11,7 +11,7 @@
       "mesh_objects": 280,
       "external_images": [],
       "bytes": 125949,
-      "sha256": "67c86d7524c8312fa36f15a1282ddbb7ce61ef86d876270deb07d71ca88fa73a"
+      "sha256": "45c8c248017e2091649d8602a652a02271b308bf011312656aa9fbb24cdd5877"
     },
     {
       "file": "PLAZA_globe_and_fountain_SCALE_PROXY.blend",
@@ -21,8 +21,8 @@
       ],
       "mesh_objects": 104,
       "external_images": [],
-      "bytes": 130240,
-      "sha256": "fbed8903d9288d5fce32180abd7f7edc979140da5187d62e595f66635cbda643"
+      "bytes": 130249,
+      "sha256": "fef0c7a96c7e1f7749b51c150136b3c567b153f253041b13a7adf5900c4d9d78"
     },
     {
       "file": "PLAZA_individual_tile_meshes_STUDY.blend",
@@ -32,8 +32,8 @@
       ],
       "mesh_objects": 8671,
       "external_images": [],
-      "bytes": 3197825,
-      "sha256": "4b367bca3639ba61ab62c47d4b471750645313ae056bfbfa734b45b763118860"
+      "bytes": 3197577,
+      "sha256": "a6762a8e94297a172091057844ecb46fc0ef5af5e26018f987abbad2399e6132"
     },
     {
       "file": "PLAZA_vegetation_TYPE.blend",
@@ -43,8 +43,8 @@
       ],
       "mesh_objects": 77,
       "external_images": [],
-      "bytes": 109714,
-      "sha256": "558a642bdbf267aa89a4500708bf158c0c531b4f1062e24369b1836536d996a2"
+      "bytes": 109709,
+      "sha256": "e6c9d65149764eb4838d5d7c89a865727cd50754fbb96c7d696bf5ab545b751c"
     },
     {
       "file": "WTC1.blend",
@@ -56,12 +56,24 @@
         "WTC1_CROWN_CAP_steel_support_TYPE",
         "WTC1_CROWN_CAP_mitered_panels",
         "WTC1_corner_three_panels",
+        "WTC1_BASE_nested_frames_and_transoms_STUDY",
         "WTC1"
       ],
-      "mesh_objects": 37751,
+      "mesh_objects": 39243,
       "external_images": [],
-      "bytes": 7956012,
-      "sha256": "9df19648e8e5ff0473c59f27bb859c5450126c5973b4767b2b0f7c74f1042d3a"
+      "bytes": 8262514,
+      "sha256": "362efa330b0f8990b5fe1f58473db5a3a6c2b0604ecc51e7e306a94efb76a7ad"
+    },
+    {
+      "file": "WTC1_BASE_nested_frames_and_transoms_STUDY.blend",
+      "passed": true,
+      "root_assets": [
+        "WTC1_BASE_nested_frames_and_transoms_STUDY"
+      ],
+      "mesh_objects": 1492,
+      "external_images": [],
+      "bytes": 392628,
+      "sha256": "c3188fbbd6fa7a113574501eb703cb89e8d187db832da11d7b35ffbea3cbf582"
     },
     {
       "file": "WTC1_COMPLETION_study.blend",
@@ -69,13 +81,14 @@
       "root_assets": [
         "WTC1_ROOF_detail_components",
         "WTC1_LOBBY_photo_interpretation_STUDY",
+        "WTC1_LOBBY_curved_mezzanine_and_entrances_STUDY",
         "WTC1_CORE_roof_connections_STUDY",
         "WTC1_COMPLETION_study"
       ],
-      "mesh_objects": 6328,
+      "mesh_objects": 7726,
       "external_images": [],
-      "bytes": 1022445,
-      "sha256": "a499e098a6fbb3260095b68cb3e8abec1c8a7cb62f8e6f507b5cd72631d1fce0"
+      "bytes": 1320008,
+      "sha256": "90ef43f235a783ca04e8eaf9e8f05a36becd8f846c7a4da8c129ab3283be972d"
     },
     {
       "file": "WTC1_CORE_roof_connections_STUDY.blend",
@@ -85,8 +98,8 @@
       ],
       "mesh_objects": 364,
       "external_images": [],
-      "bytes": 148953,
-      "sha256": "0f316676b9ac03ab1831f11ae14e0ac2cd246af2de73b78be4bb6f265350e932"
+      "bytes": 148966,
+      "sha256": "8fa8b49eee990461b3f2a57c2f2ee17fda0c9f76cb1986ddc99e442b3db7bffb"
     },
     {
       "file": "WTC1_CROWN_CAP_mitered_panels.blend",
@@ -96,8 +109,8 @@
       ],
       "mesh_objects": 1000,
       "external_images": [],
-      "bytes": 517782,
-      "sha256": "67659d4a1a1675521070537ac7740132a4be4d0ea38ea57f49d4ea9c7f62ef7f"
+      "bytes": 517800,
+      "sha256": "5340a3c722cf1ecb2b81014637568ae7b04b824a6132305e7d91b9b24dc91bc0"
     },
     {
       "file": "WTC1_CROWN_CAP_steel_support_TYPE.blend",
@@ -107,8 +120,8 @@
       ],
       "mesh_objects": 504,
       "external_images": [],
-      "bytes": 157429,
-      "sha256": "755cf8b458a4b451a324ecac3050e305ce48113aa3848c52b340aa5d52ddaffc"
+      "bytes": 157418,
+      "sha256": "b62ed9c4e81fdd30f1d07b8fb3cf530436414833aef529a9fd8c73451b91c85c"
     },
     {
       "file": "WTC1_FACADE_REVISION.blend",
@@ -121,8 +134,8 @@
       ],
       "mesh_objects": 9092,
       "external_images": [],
-      "bytes": 2566256,
-      "sha256": "93f869d1c7956d295cd041cc33ac54c56f68f31fc5cfd223a890db3f90519a69"
+      "bytes": 2592768,
+      "sha256": "ba9ee0cfce050f9f019503170e59ec819c5bb6884d1c2395be0cbd27d442d1e2"
     },
     {
       "file": "WTC1_FACADE_corner_transition_frames.blend",
@@ -132,19 +145,31 @@
       ],
       "mesh_objects": 5616,
       "external_images": [],
-      "bytes": 1309463,
-      "sha256": "a212cf61e6b51251a2be889f57fb2f21c939e6fd9cd39bdcc6587db66a895456"
+      "bytes": 1309452,
+      "sha256": "7f1d8cf3206fec7b1dadd5d17ffd68d08cbd8e2cb476a129f2c5ac36404ff69d"
+    },
+    {
+      "file": "WTC1_LOBBY_curved_mezzanine_and_entrances_STUDY.blend",
+      "passed": true,
+      "root_assets": [
+        "WTC1_LOBBY_curved_mezzanine_and_entrances_STUDY"
+      ],
+      "mesh_objects": 1397,
+      "external_images": [],
+      "bytes": 320827,
+      "sha256": "1e02f6cbff46f51af51d4530fcc2ccf3a4e233142f3ddfe362a4a6644bd08c18"
     },
     {
       "file": "WTC1_LOBBY_photo_interpretation_STUDY.blend",
       "passed": true,
       "root_assets": [
-        "WTC1_LOBBY_photo_interpretation_STUDY"
+        "WTC1_LOBBY_photo_interpretation_STUDY",
+        "WTC1_LOBBY_curved_mezzanine_and_entrances_STUDY"
       ],
-      "mesh_objects": 1667,
+      "mesh_objects": 3065,
       "external_images": [],
-      "bytes": 215162,
-      "sha256": "238d0fe4664d68e94841996ee665060c3a183831a7707a764a64554748a14153"
+      "bytes": 482870,
+      "sha256": "a3590a7c8cc7136eabada039e7804f6d670fabb508fdc5a5d227f72df07074d0"
     },
     {
       "file": "WTC1_ROOF_detail_components.blend",
@@ -154,8 +179,8 @@
       ],
       "mesh_objects": 427,
       "external_images": [],
-      "bytes": 117348,
-      "sha256": "12104861f56a774cb858c5ebd9d75f06320509c62174a6d5e524f2ec7bda7095"
+      "bytes": 117349,
+      "sha256": "4c379dd9d05f6a337caf6671fb0fbbffb0782fbdc276961e3ae39ffc3aeb287d"
     },
     {
       "file": "WTC1_antenna_photo_interpretation_STUDY.blend",
@@ -165,8 +190,8 @@
       ],
       "mesh_objects": 380,
       "external_images": [],
-      "bytes": 147624,
-      "sha256": "bf0613da9233e8f4f286c4b49be69124ee5c61e83dad1ae771620ff3b243412a"
+      "bytes": 147550,
+      "sha256": "88735e601728dfb0a3354bb2bc902ab2f39a08d6c37f91b29dadf60490c0c10d"
     },
     {
       "file": "WTC1_corner_three_panels.blend",
@@ -176,8 +201,8 @@
       ],
       "mesh_objects": 1320,
       "external_images": [],
-      "bytes": 677985,
-      "sha256": "e68a92fd2a7386e126f917df584098916159ee75f715cba6f9a1b54bd447cdc3"
+      "bytes": 677994,
+      "sha256": "340fba640fbb9ccbb0a87b57cf916e36490284f1067358cc7e042dad46a9fb96"
     },
     {
       "file": "WTC1_crown_curved_cladding.blend",
@@ -187,8 +212,8 @@
       ],
       "mesh_objects": 608,
       "external_images": [],
-      "bytes": 228456,
-      "sha256": "6af93ffcbe52c727be970c576da65a869c5686024874474b305bee87e81c55f0"
+      "bytes": 229624,
+      "sha256": "8dff5e66ef3c572e341f07e4ddaaeb19c7756635d8e5e320d400cb4269b545a4"
     },
     {
       "file": "WTC2.blend",
@@ -200,26 +225,40 @@
         "WTC2_CROWN_CAP_steel_support_TYPE",
         "WTC2_CROWN_CAP_mitered_panels",
         "WTC2_corner_three_panels",
+        "WTC2_BASE_nested_frames_and_transoms_STUDY",
         "WTC2"
       ],
-      "mesh_objects": 37587,
+      "mesh_objects": 39079,
       "external_images": [],
-      "bytes": 7911942,
-      "sha256": "3a70efb69114d146d9f4e684d3c520930d29fea01ff62d66f18e19e7f7778c1d"
+      "bytes": 8228799,
+      "sha256": "dd8d84b222dccc5f3f37e6ecdfe336a51c272e5259d25af03f9f1d0560ef64fe"
+    },
+    {
+      "file": "WTC2_BASE_nested_frames_and_transoms_STUDY.blend",
+      "passed": true,
+      "root_assets": [
+        "WTC2_BASE_nested_frames_and_transoms_STUDY"
+      ],
+      "mesh_objects": 1492,
+      "external_images": [],
+      "bytes": 392523,
+      "sha256": "b9b63eb286678779857ee75dd99cf4e227318575f02776154aae5893e8b197da"
     },
     {
       "file": "WTC2_COMPLETION_study.blend",
       "passed": true,
       "root_assets": [
+        "WTC2_ROOF_observation_and_communications_STUDY",
         "WTC2_ROOF_detail_components",
         "WTC2_LOBBY_photo_interpretation_STUDY",
+        "WTC2_LOBBY_curved_mezzanine_and_entrances_STUDY",
         "WTC2_CORE_roof_connections_STUDY",
         "WTC2_COMPLETION_study"
       ],
-      "mesh_objects": 6366,
+      "mesh_objects": 10429,
       "external_images": [],
-      "bytes": 1032797,
-      "sha256": "6af427392fec6c8065e177bcd2fe2294d705196cfdd3dd355aceaff8c408eae5"
+      "bytes": 1700747,
+      "sha256": "5936ad2a922904b5cf48aba6e55ba035560164f0aee9bbe62e88e0c7e5d0f4fe"
     },
     {
       "file": "WTC2_CORE_roof_connections_STUDY.blend",
@@ -229,8 +268,8 @@
       ],
       "mesh_objects": 361,
       "external_images": [],
-      "bytes": 147786,
-      "sha256": "921665c7fd2cbd9799de458e686fb11ed68208a94bec01b90d3ccb59338aa929"
+      "bytes": 147791,
+      "sha256": "16da82cac461205fe460d10424d399058d1dcd7b1d3c7666ee92b3d95339094d"
     },
     {
       "file": "WTC2_CROWN_CAP_mitered_panels.blend",
@@ -240,8 +279,8 @@
       ],
       "mesh_objects": 1000,
       "external_images": [],
-      "bytes": 513454,
-      "sha256": "c79195dc8570f8c4edec9ca06b81dd0a7eccc77923569fbb5670fbc2bd66608b"
+      "bytes": 513460,
+      "sha256": "97d431e4126f5a09cbde03409c9ab1e8eb5a25046543770352df122c1ddc0bd2"
     },
     {
       "file": "WTC2_CROWN_CAP_steel_support_TYPE.blend",
@@ -251,8 +290,8 @@
       ],
       "mesh_objects": 504,
       "external_images": [],
-      "bytes": 157957,
-      "sha256": "645584d77048732487d463b102fc76cc78d5fa29fea9b0a04f8e1352cd77ba2d"
+      "bytes": 157929,
+      "sha256": "d562f3af44e961bd0eaaf5e8a6d8eec9fa321bd8e075d0352600b0e1ddad5a05"
     },
     {
       "file": "WTC2_FACADE_REVISION.blend",
@@ -265,8 +304,8 @@
       ],
       "mesh_objects": 9092,
       "external_images": [],
-      "bytes": 2562304,
-      "sha256": "15bf1614587fb34d6f950a25416f69b1ebc42d4944b09d7392ef0f1552d9a374"
+      "bytes": 2590991,
+      "sha256": "5c745df160f7ce75b7a34bf23f067b56d5205e37e2b8927228c0d511fb0c4884"
     },
     {
       "file": "WTC2_FACADE_corner_transition_frames.blend",
@@ -276,19 +315,31 @@
       ],
       "mesh_objects": 5616,
       "external_images": [],
-      "bytes": 1308663,
-      "sha256": "b21bc9d2a96a8ce7b3252cf30a9cdf7b0c183afa399fb2886170b10ce645cabb"
+      "bytes": 1308658,
+      "sha256": "6719047cb46fa0c912bb23a042c690c4070ec40ad2e8b2205e9491d3cfceee42"
+    },
+    {
+      "file": "WTC2_LOBBY_curved_mezzanine_and_entrances_STUDY.blend",
+      "passed": true,
+      "root_assets": [
+        "WTC2_LOBBY_curved_mezzanine_and_entrances_STUDY"
+      ],
+      "mesh_objects": 1397,
+      "external_images": [],
+      "bytes": 320577,
+      "sha256": "91a1142a0f43d7403019b5d3159ac57fc2ba9a348e4d6fa50349bc1a300ab932"
     },
     {
       "file": "WTC2_LOBBY_photo_interpretation_STUDY.blend",
       "passed": true,
       "root_assets": [
-        "WTC2_LOBBY_photo_interpretation_STUDY"
+        "WTC2_LOBBY_photo_interpretation_STUDY",
+        "WTC2_LOBBY_curved_mezzanine_and_entrances_STUDY"
       ],
-      "mesh_objects": 1667,
+      "mesh_objects": 3065,
       "external_images": [],
-      "bytes": 214748,
-      "sha256": "53328a41d12348b8f6089538257183b7a1fef0936bf0743bf2b5b6c124a873f9"
+      "bytes": 481838,
+      "sha256": "df35bcd765f37d742a4037e1e6638027d7d09a109dbba48f4b5e2ec48895d08c"
     },
     {
       "file": "WTC2_ROOF_detail_components.blend",
@@ -298,8 +349,19 @@
       ],
       "mesh_objects": 427,
       "external_images": [],
-      "bytes": 117360,
-      "sha256": "d8287371a0779c9561ca1be4c073e69baa7f50fac8e8a28a6de8bf1c473b139e"
+      "bytes": 117431,
+      "sha256": "cd4919dd1db1320b291fecdb9234990ffa0175d635eb50658ef7436896297908"
+    },
+    {
+      "file": "WTC2_ROOF_observation_and_communications_STUDY.blend",
+      "passed": true,
+      "root_assets": [
+        "WTC2_ROOF_observation_and_communications_STUDY"
+      ],
+      "mesh_objects": 2665,
+      "external_images": [],
+      "bytes": 434184,
+      "sha256": "6339f4905117c89cdf570bc04b3f93898a7058ca74d5f69d97e8d3a0f7541d73"
     },
     {
       "file": "WTC2_corner_three_panels.blend",
@@ -309,8 +371,8 @@
       ],
       "mesh_objects": 1320,
       "external_images": [],
-      "bytes": 676429,
-      "sha256": "9338d9eb42fed9728942ba0b2f9521eb272c6d64cb3f126c9b12d4d53218aed4"
+      "bytes": 676393,
+      "sha256": "12778e64ce247dccd7037bc0b74d81031db81d02b559a261e92c0b573e3595ca"
     },
     {
       "file": "WTC2_crown_curved_cladding.blend",
@@ -320,8 +382,8 @@
       ],
       "mesh_objects": 608,
       "external_images": [],
-      "bytes": 227350,
-      "sha256": "2da2b3a208dabdd7ab68682b72c74e8cd172b85550ce26ef20b5f76e5209ccf2"
+      "bytes": 229500,
+      "sha256": "dd484e4e248ff4f8c1845723c614870f0ccf5c1289413a0f714b0c3988f42012"
     },
     {
       "file": "WTC3_Marriott_massing_STUDY.blend",
@@ -333,8 +395,8 @@
       ],
       "mesh_objects": 7280,
       "external_images": [],
-      "bytes": 504433,
-      "sha256": "8f6826bd7a752a84ab0f753a90fa8303470083a2b772129a1bba7d325db2cf83"
+      "bytes": 504430,
+      "sha256": "491489a6673855b9bc3158e9adc281ef657245aa83d0d42dfc2d401cafd915ab"
     },
     {
       "file": "WTC3_Marriott_volume_0_STUDY_ROOF_detail_components.blend",
@@ -344,8 +406,8 @@
       ],
       "mesh_objects": 444,
       "external_images": [],
-      "bytes": 106847,
-      "sha256": "49f5eb411bf2c6662dad1734e47d40ce3e23466572dcb620c98ea4ff691a74cb"
+      "bytes": 106837,
+      "sha256": "01180f49f1c681cef27ae76fc66cc7730e5ce3dca17e64728bfc3c23f1fa31df"
     },
     {
       "file": "WTC3_Marriott_volume_1_STUDY_ROOF_detail_components.blend",
@@ -355,8 +417,8 @@
       ],
       "mesh_objects": 294,
       "external_images": [],
-      "bytes": 99237,
-      "sha256": "e00500eaeeea28b3fda5a83d80acc4787fab6d988f8b71ae8558a6d3e47b464d"
+      "bytes": 99240,
+      "sha256": "60b7565016913602b939946fe6dc04d7a5cb64a96f2b3c4d4e0449e340d68b61"
     },
     {
       "file": "WTC4_massing_STUDY.blend",
@@ -367,8 +429,8 @@
       ],
       "mesh_objects": 3066,
       "external_images": [],
-      "bytes": 260650,
-      "sha256": "2a3e9ec74090c8f4216bfd90f24313de1da060fec3692664400cfa9e90e31dc6"
+      "bytes": 260664,
+      "sha256": "93496885f6517f7d7ab7c7f65aa3dc24dcd15cbb1afcb03da42a4775eaac047f"
     },
     {
       "file": "WTC4_volume_0_STUDY_ROOF_detail_components.blend",
@@ -378,8 +440,8 @@
       ],
       "mesh_objects": 414,
       "external_images": [],
-      "bytes": 105638,
-      "sha256": "216e0493fc436a73b948ba99376df145fd65ee894df0c910bed2ca1c27c5dc24"
+      "bytes": 105640,
+      "sha256": "424ac683c21be2249c6d21132b58fdd32be8d09c5349d7d182ed6fdd835bb3a5"
     },
     {
       "file": "WTC5_massing_STUDY.blend",
@@ -391,8 +453,8 @@
       ],
       "mesh_objects": 5925,
       "external_images": [],
-      "bytes": 435028,
-      "sha256": "c8e8be8fc6a9b90463c271aa110731e745f18bd93e5599c96d2889e0a38045ef"
+      "bytes": 435032,
+      "sha256": "b2d602e18cbe80dc796546aed8694576b08f779e977fd0d3b5e7fba91d9813ca"
     },
     {
       "file": "WTC5_volume_0_STUDY_ROOF_detail_components.blend",
@@ -402,8 +464,8 @@
       ],
       "mesh_objects": 570,
       "external_images": [],
-      "bytes": 113089,
-      "sha256": "cccd130fb65f9259c57dc02425be192e3d1b6396af2d59e87fecc0b1694b7650"
+      "bytes": 113050,
+      "sha256": "4c671a35a8095a2322d65a3f51d3d4d8692064de6f0ffdc3a312c57525a33d11"
     },
     {
       "file": "WTC5_volume_1_STUDY_ROOF_detail_components.blend",
@@ -413,8 +475,8 @@
       ],
       "mesh_objects": 360,
       "external_images": [],
-      "bytes": 102760,
-      "sha256": "ed9b2fe15b8cdaa722806403605981da09afc5706f12a229ce7a69793167431a"
+      "bytes": 102741,
+      "sha256": "946ed02a3441b2fe4e4a0f0c4ce8d6e4730617059e23579be232950a72e4935b"
     },
     {
       "file": "WTC6_massing_STUDY.blend",
@@ -425,8 +487,8 @@
       ],
       "mesh_objects": 2778,
       "external_images": [],
-      "bytes": 244334,
-      "sha256": "16fd70fcac1141c4994dc301fdc92993bdbb93c78321c8b91b2400fe6904b5dd"
+      "bytes": 244350,
+      "sha256": "15d2ebb5a9af92d7392fe6d84b9bdeb39ab0d5d947e62bcf3f14d220a1dacf10"
     },
     {
       "file": "WTC6_volume_0_STUDY_ROOF_detail_components.blend",
@@ -436,8 +498,8 @@
       ],
       "mesh_objects": 414,
       "external_images": [],
-      "bytes": 105165,
-      "sha256": "7d6dddeb7d35e0075bcbf49b6c8763dccad4fd483d765be6da8dfd049a7f2997"
+      "bytes": 105161,
+      "sha256": "35329b9e7914d43972c0d4fbe7a7b9ba4b814ff425ae38a65503b150454bfba6"
     },
     {
       "file": "WTC7_ROOF_NIST_plan_interpretation.blend",
@@ -447,8 +509,8 @@
       ],
       "mesh_objects": 627,
       "external_images": [],
-      "bytes": 164650,
-      "sha256": "9eedb31155d104cdec69f76ee2d7985678dff19e81f530ed30cfbb9858c6222d"
+      "bytes": 164678,
+      "sha256": "cb4b67fee6cabe39612fe9f655edcb0b253e35c3f0cb08eb12b2f9f7be5423ff"
     },
     {
       "file": "WTC7__NIST_massing_position_schematic.blend",
@@ -459,8 +521,8 @@
       ],
       "mesh_objects": 25674,
       "external_images": [],
-      "bytes": 1588818,
-      "sha256": "3d5df5b960b2598c71b54ad92d0621bfba37e978a40e2909163d7491f1f95df6"
+      "bytes": 1588817,
+      "sha256": "b7736e14b59604f83da044c94465713a1ef2da8b53cc4251a2e93b7759448bbd"
     },
     {
       "file": "WTC_TYPICAL_STEEL_PANEL_STUDY.blend",
@@ -470,8 +532,8 @@
       ],
       "mesh_objects": 6,
       "external_images": [],
-      "bytes": 66286,
-      "sha256": "983362958c45250b14654b5f3142ebd354682881aff4842dfc8b77d92ef88be2"
+      "bytes": 66285,
+      "sha256": "bb196137e4b7fef6290133e367365bffcaa30e3ce9cb0284f506b4a35eeac7e4"
     }
   ]
 }

@@ -20,7 +20,7 @@ OPENING = 21.25 * IN
 FRAME = IN
 GLASS_Q = OUTER_HALF - 11.5 * IN
 FRAME_PROJECTION = .018  # not dimensioned in NIST; visible relief estimate
-CROWN_DEPTH = 17.0       # inherited photographic envelope, NOT a source size
+CROWN_DEPTH = (15+17.5+14+14+7+1/12-17/12)*FT       # inherited photographic envelope, NOT a source size
 CACHE = {}
 
 

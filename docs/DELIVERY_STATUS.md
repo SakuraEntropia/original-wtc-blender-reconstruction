@@ -1,17 +1,11 @@
 # 当前交付
 
-最新：顶部旧玻璃视口/渲染清理，背墙止于屋面下；中形饰面改为上下连通的扁平网格。127项技术检查、40库、30图；见FLAT_CROWN_CORRECTION.md。下文为旧批次记录。
+2026-10-15：视口旧研究钢构隐藏、原图双曲线挑空平台/玻璃栏杆/扶梯及旋转门、三叉柱三凸脊（两侧高、中间低）、次框/子框、一楼顶上下双曲边收窄横梁、11.176m整框高的6mm薄平塔冠、南塔环形观景步道/历史平台/双入口/桁架碟形天线已保存。34相机Perspective；Cycles Metal GPU渲染设备、耗时与完成镜头见`reports/render_runtime.json`。
 
-本轮内容提交`8da63aa923039f634dfdf44135fd941eec154f34`已推送；逐件核验124个远端Git blob全部匹配。`.blend`、40库、29图、代码及原图引用均已包含。
+技术验收以`reports/qa.json`为准，独立资产及重复迁移见`assets_qa.json`、`repeat_qa.json`。本轮来源、参数与不确定度见`OCT15_FINAL_SOURCE_CORRECTIONS.md`；历史原图不发布。
 
-最新追加：原AB321/323斜接/边框修订。5×7in分件突出框、内退不等分角板、角部屋面收尖及双折边斜接、fascia/翻边/支承独立件已经实际保存和渲染。新增`crown_miter`、`edge_profile`、`edge_top`近景；115项技术检查、40库、29图。具体依据及推断见`ORIGINAL_JUNCTION_IMPLEMENTATION.md`。下文是上一批次记录，发布哈希以`reports/publication.json`为准。
+最新追加：收窄梁加粗到中央240mm、端部680mm、深180mm。两塔456件凸脊、152个柱体和144根收窄梁使用独立单用户mesh，凸脊命名`*_crest_left/middle/right`；三脊可单独编辑，闭合/正体积及实际mesh唯一性纳入验收。
 
-2026-10-14批次：突出窗框/玻璃退距；三分角板；两跨曲线开合塔冠；空中大厅及机械窗带；模块顶棚/灯具/核心外饰；WTC7两机房/两屏墙/五冷却出口；广场140块边界裁砖。追加帽檐45°斜接、端板/螺栓/I形支架、加宽曲线及交界框，cap_structure可剖看。新镜头facade_corner、sky_lobby、wtc7_roof、lobby_ceiling、paving_seam。
+[GitHub public仓库](https://github.com/SakuraEntropia/original-wtc-blender-reconstruction)。已推送的模型内容提交及逐件远端Git blob核验见`reports/publication.json`。该报告后的发布元数据提交不改变模型/资产/渲染内容。
 
-保存场景、26张渲染、独立资产库、逐件来源尺寸、重开/重入检查随项目交付。最终实际数量和结果以reports/qa.json、assets_qa.json、repeat_qa.json为准。
-
-未完成：全域机电施工布置、地下/PATH、逐层平面/真实核心井道、换乘层承重钢专图、角部树柱专图、稳定版/LOD/UV交付管线。Sphere只保留通用代理；候选资产没有获得开放再分发授权。模型仍不能宣称完整历史复原production-ready。
-
-现有GitHub public仓库：https://github.com/SakuraEntropia/original-wtc-blender-reconstruction。实际推送commit、文件数及远端Git blob核验见reports/publication.json；参考照片、图纸、受限第三方网格均未上传。
-
-本轮内容提交`646cd64cde3c3b55abf0a7e46e69e7a2f1a53b66`已推送并核对116个Git blob。40资产库、26图、主.blend及代码/证据均包含。
+未完成：全域机电施工布置、地下/PATH、逐层平面/真实核心井道、换乘层承重钢专图、角部树柱专图、稳定版/LOD/UV交付管线。Sphere仅为通用代理。未取得可再分发第三方网格，未使用工业资产。模型不能宣称完整历史复原production-ready。

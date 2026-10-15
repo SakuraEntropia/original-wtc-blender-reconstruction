@@ -1,0 +1,796 @@
+{
+  "views": {
+    "roof2": {
+      "utc": "2026-10-15T03:24:26.495117+00:00",
+      "seconds": 10.768,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 48.93219757080078,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_roof2.png"
+    },
+    "lobby": {
+      "utc": "2026-10-15T03:23:24.038096+00:00",
+      "seconds": 15.231,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 20.0,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_lobby.png"
+    },
+    "trident": {
+      "utc": "2026-10-15T03:22:59.182756+00:00",
+      "seconds": 14.216,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 51.1223030090332,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_trident.png"
+    },
+    "crown_unit": {
+      "utc": "2026-10-15T03:23:34.161850+00:00",
+      "seconds": 10.123,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 63.31191635131836,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_crown_unit.png"
+    },
+    "roof_plan": {
+      "utc": "2026-10-15T03:26:07.503350+00:00",
+      "seconds": 11.727,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 66.92308044433594,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_roof_plan.png"
+    },
+    "overview": {
+      "utc": "2026-10-15T03:23:44.008203+00:00",
+      "seconds": 9.843,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 46.566219329833984,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_overview.png"
+    },
+    "site_plan": {
+      "utc": "2026-10-15T03:23:53.663392+00:00",
+      "seconds": 9.652,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 64.28571319580078,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_site_plan.png"
+    },
+    "globe": {
+      "utc": "2026-10-15T03:24:05.388982+00:00",
+      "seconds": 11.724,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 24.17186164855957,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_globe.png"
+    },
+    "roof1": {
+      "utc": "2026-10-15T03:24:15.725717+00:00",
+      "seconds": 10.334,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 47.61002731323242,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_roof1.png"
+    },
+    "antenna": {
+      "utc": "2026-10-15T03:24:36.613431+00:00",
+      "seconds": 10.116,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 41.69123077392578,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_antenna.png"
+    },
+    "mep": {
+      "utc": "2026-10-15T03:24:45.666765+00:00",
+      "seconds": 9.009,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 37.301204681396484,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_mep.png"
+    },
+    "hat_truss": {
+      "utc": "2026-10-15T03:24:53.555363+00:00",
+      "seconds": 7.817,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 34.400001525878906,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_hat_truss.png"
+    },
+    "core": {
+      "utc": "2026-10-15T03:25:02.839936+00:00",
+      "seconds": 9.1,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 23.896442413330078,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_core.png"
+    },
+    "steel_panels": {
+      "utc": "2026-10-15T03:25:14.621751+00:00",
+      "seconds": 11.64,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 41.69926071166992,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_steel_panels.png"
+    },
+    "section": {
+      "utc": "2026-10-15T03:25:24.937197+00:00",
+      "seconds": 10.278,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 61.358177185058594,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_section.png"
+    },
+    "wtc7": {
+      "utc": "2026-10-15T03:25:42.100969+00:00",
+      "seconds": 17.137,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 38.124473571777344,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_wtc7.png"
+    },
+    "lowrise": {
+      "utc": "2026-10-15T03:25:55.774659+00:00",
+      "seconds": 13.668,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 35.79486846923828,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_lowrise.png"
+    },
+    "crown": {
+      "utc": "2026-10-15T03:26:19.143999+00:00",
+      "seconds": 11.639,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 67.44525146484375,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_crown.png"
+    },
+    "core_top": {
+      "utc": "2026-10-15T03:26:28.643536+00:00",
+      "seconds": 9.399,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 45.347686767578125,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_core_top.png"
+    },
+    "plaza": {
+      "utc": "2026-10-15T03:26:47.054999+00:00",
+      "seconds": 18.345,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 44.89703369140625,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_plaza.png"
+    },
+    "mep_detail": {
+      "utc": "2026-10-15T03:26:57.145058+00:00",
+      "seconds": 10.04,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 32.21194839477539,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_mep_detail.png"
+    },
+    "facade_corner": {
+      "utc": "2026-10-15T03:27:09.990770+00:00",
+      "seconds": 12.816,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 55.52356719970703,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_facade_corner.png"
+    },
+    "sky_lobby": {
+      "utc": "2026-10-15T03:27:24.573550+00:00",
+      "seconds": 14.581,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 76.80696105957031,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_sky_lobby.png"
+    },
+    "wtc7_roof": {
+      "utc": "2026-10-15T03:27:36.412347+00:00",
+      "seconds": 11.837,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 37.614097595214844,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_wtc7_roof.png"
+    },
+    "lobby_ceiling": {
+      "utc": "2026-10-15T03:27:54.860609+00:00",
+      "seconds": 18.446,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 22.0,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_lobby_ceiling.png"
+    },
+    "paving_seam": {
+      "utc": "2026-10-15T03:28:08.845429+00:00",
+      "seconds": 13.982,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 44.067020416259766,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_paving_seam.png"
+    },
+    "cap_structure": {
+      "utc": "2026-10-15T03:28:21.435790+00:00",
+      "seconds": 12.588,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 74.91625213623047,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_cap_structure.png"
+    },
+    "crown_miter": {
+      "utc": "2026-10-15T03:28:33.237016+00:00",
+      "seconds": 11.8,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 115.60136413574219,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_crown_miter.png"
+    },
+    "edge_profile": {
+      "utc": "2026-10-15T03:28:46.656319+00:00",
+      "seconds": 13.418,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 191.81719970703125,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_edge_profile.png"
+    },
+    "edge_top": {
+      "utc": "2026-10-15T03:28:58.692052+00:00",
+      "seconds": 12.034,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 140.78036499023438,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_edge_top.png"
+    },
+    "balcony": {
+      "utc": "2026-10-15T03:23:08.806725+00:00",
+      "seconds": 9.623,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 48.99336242675781,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_balcony.png"
+    },
+    "revolving": {
+      "utc": "2026-10-15T03:22:30.372397+00:00",
+      "seconds": 15.836,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 27.994110107421875,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_revolving.png"
+    },
+    "ridge": {
+      "utc": "2026-10-15T03:22:44.965979+00:00",
+      "seconds": 14.593,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 107.04862976074219,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_ridge.png"
+    },
+    "base_frame": {
+      "utc": "2026-10-15T03:22:14.535005+00:00",
+      "seconds": 15.408,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 66.38801574707031,
+      "samples": 32,
+      "resolution": [
+        1280,
+        1280
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "output": "renders/detail_base_frame.png"
+    }
+  },
+  "execution_evidence": {
+    "cycles_debug_path_tracing_device_lines": [
+      "Path tracing on: Apple M5 (GPU - 10 cores) (Metal) (display) [METAL_Apple M5 (GPU - 10 cores)]"
+    ],
+    "gpu_path_records": 34,
+    "completed_views": [
+      "base_frame",
+      "revolving",
+      "ridge",
+      "trident",
+      "balcony",
+      "lobby",
+      "crown_unit",
+      "overview",
+      "site_plan",
+      "globe",
+      "roof1",
+      "roof2",
+      "antenna",
+      "mep",
+      "hat_truss",
+      "core",
+      "steel_panels",
+      "section",
+      "wtc7",
+      "lowrise",
+      "roof_plan",
+      "crown",
+      "core_top",
+      "plaza",
+      "mep_detail",
+      "facade_corner",
+      "sky_lobby",
+      "wtc7_roof",
+      "lobby_ceiling",
+      "paving_seam",
+      "cap_structure",
+      "crown_miter",
+      "edge_profile",
+      "edge_top"
+    ],
+    "raw_log_sha256": "07b0dbd1a1b5ac52b022c55b7422469b4ed3896d875b0f32a5a2d28ce623779c",
+    "note": "Cycles --debug-cycles actual path-tracing device record, independent of saved preference fields; raw temporary log not packaged."
+  }
+}

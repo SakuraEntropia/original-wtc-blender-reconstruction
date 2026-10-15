@@ -18,9 +18,10 @@ for mesh in bpy.data.meshes:
     if bm.edges and all(e.is_manifold for e in bm.edges) and bm.calc_volume(signed=True)<0:
         bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces));bm.to_mesh(mesh)
     bm.free()
-render_reviews()
 scene=bpy.context.scene
-scene['quality_status']='Flat connected two-bay crown / superseded viewport glass suppressed / service backing below roof; source dimensions retained; historical gates remain open'
+bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'wtc_detailed_cg.blend'),compress=True)
+render_reviews()
+scene['quality_status']='Oct15: exterior viewport restored, source-traced curved mezzanine and revolving entrances, three positive trident crests / nested frames / paired-curve waisted first-floor lintels, AB302 full-height thin flat crown, photo-fitted South roof; Perspective Cycles Metal GPU; historical gates remain open'
 for c in bpy.data.collections:
     if any(s in c.name for s in ('_CROWN_photo','_CORNER_aluminum','_ROOF_detail','_CORE_roof_connections','PLAZA_furniture')):
         c.asset_mark();c.asset_data.description=c.get('confidence','CG study; inspect source tags')

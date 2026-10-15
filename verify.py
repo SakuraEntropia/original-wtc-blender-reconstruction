@@ -18,7 +18,7 @@ def bounds(ob):
 
 check('reopened_saved_file',Path(bpy.data.filepath).name=='wtc_detailed_cg.blend',Path(bpy.data.filepath).name)
 check('restored_overview_camera',bpy.context.scene.camera.name=='CAM_overview',bpy.context.scene.camera.name)
-check('review_cameras_saved',len([o for o in bpy.data.objects if o.name.startswith('CAM_')])==30,
+check('review_cameras_saved',len([o for o in bpy.data.objects if o.name.startswith('CAM_')])==34,
       [o.name for o in bpy.data.objects if o.name.startswith('CAM_')])
 for name in ('WTC1','WTC2'):
     trees=[o for o in bpy.data.objects if re.fullmatch(name+r'_tree_s\d_\d+',o.name)]
@@ -109,6 +109,8 @@ from verify_original_junction import inspect as original_junction_inspect
 original_junction_inspect(check)
 from verify_flat_crown import inspect as flat_crown_inspect
 flat_crown_inspect(check)
+from verify_oct15 import inspect as oct15_inspect
+oct15_inspect(check)
 
 parents={}
 for col in bpy.data.collections:
@@ -144,7 +146,7 @@ report={'technical_checks':checks,'technical_check_count':len(checks),'technical
         'historical_blockers':['corner-tree and structural fabrication schedules unverified; AB321/323 exterior junction partly transcribed',
           'roof apex/run, finished110 absolute mapping and public observation deck dimensions inferred',
           'full floor elevations and core shafts unverified',
-          'lobby/sky lobby/public-floor layouts and finishes schematic','MER equipment reference transferred from 75/76 to top without as-built plan',
+          'lobby openings source-traced; small sections/fit-out and sky lobby/public-floor layouts incomplete','MER equipment reference transferred from 75/76 to top without as-built plan',
           'rooftop and antenna component dimensions/layout estimated','WTC3-7/site footprints and georeference incomplete',
           'Koenig sculpture is only a generic scale proxy','basement/PATH/retail and full MEP distribution absent'],
         'statistics':{'objects':len(bpy.context.scene.objects),'scene_mesh_objects':len(meshes),
