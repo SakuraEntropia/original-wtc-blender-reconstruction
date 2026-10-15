@@ -126,7 +126,7 @@ def render_reviews(keys=None):
                 'enabled_devices':[d.name for d in bpy.context.preferences.addons['cycles'].preferences.devices if d.use],
                 'camera_type':scene.camera.data.type,'camera_lens_mm':scene.camera.data.lens,
                 'samples':scene.cycles.samples,'resolution':[scene.render.resolution_x,scene.render.resolution_y],
-                'revision':scene.get('south_roof_revision',''), 'crown_revision':scene.get('flat_connected_crown_revision',''), 'lobby_revision':scene.get('source_lobby_plan_revision',''), 'base_frame_revision':scene.get('base_frame_revision',''), 'output':str(Path(scene.render.filepath).relative_to(ROOT))}
+                'revision':scene.get('south_roof_revision',''), 'crown_revision':scene.get('flat_connected_crown_revision',''), 'lobby_revision':scene.get('source_lobby_plan_revision',''), 'base_frame_revision':scene.get('base_frame_revision',''), 'interior_visibility_revision':scene.get('interior_visibility_revision',''), 'output':str(Path(scene.render.filepath).relative_to(ROOT))}
             report_path.write_text(json.dumps(report,indent=2))
             print('REVIEW_DONE '+key,flush=True)
         finally:

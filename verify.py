@@ -103,6 +103,7 @@ for m in newmeshes:
 check('new_detail_parts_closed_outward',not bad,{'unique_meshes':len(newmeshes),'failed':bad})
 import sys
 sys.path.insert(0,str(ROOT))
+sys.path.insert(0,str(ROOT/'src'))
 from verify_revision import inspect
 inspect(check)
 from verify_original_junction import inspect as original_junction_inspect
@@ -111,6 +112,8 @@ from verify_flat_crown import inspect as flat_crown_inspect
 flat_crown_inspect(check)
 from verify_oct15 import inspect as oct15_inspect
 oct15_inspect(check)
+from wtc.interior_visibility_revision import inspect as interior_visibility_inspect
+interior_visibility_inspect(check)
 
 parents={}
 for col in bpy.data.collections:

@@ -11,6 +11,7 @@ from .oct15_revision import apply as oct15
 from .south_roof_revision import apply as south_roof
 from .lobby_plan_revision import apply as lobby_plan
 from .base_frame_revision import apply as base_frame
+from .interior_visibility_revision import apply as interior_visibility
 
 
 def apply():
@@ -29,3 +30,4 @@ def apply():
     lobby_plan()
 
     base_frame()
+    interior_visibility()

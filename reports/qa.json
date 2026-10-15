@@ -1396,8 +1396,6 @@
       "passed": true,
       "evidence": [
         "WTC1_107_110_structural_types",
-        "WTC1_CORE_roof_connections_STUDY",
-        "WTC1_CORE_shaft_wall_types",
         "WTC1_CORNER_aluminum_photo_interpretation",
         "WTC1_CROWN_photo_interpretation",
         "WTC1_segmented_structural_steel",
@@ -1428,8 +1426,6 @@
       "passed": true,
       "evidence": [
         "WTC2_107_110_structural_types",
-        "WTC2_CORE_roof_connections_STUDY",
-        "WTC2_CORE_shaft_wall_types",
         "WTC2_CORNER_aluminum_photo_interpretation",
         "WTC2_CROWN_photo_interpretation",
         "WTC2_segmented_structural_steel",
@@ -1748,9 +1744,43 @@
       "name": "WTC2_nested_frame_solids_closed_positive",
       "passed": true,
       "evidence": []
+    },
+    {
+      "name": "WTC1_floor_stack_restored_open_plaza_preserved",
+      "passed": true,
+      "evidence": {
+        "visible_existing_slabs": 109,
+        "plaza_floor": "existing source-traced curved mezzanine replaces F002"
+      }
+    },
+    {
+      "name": "WTC1_core_columns_shafts_roof_nodes_restored",
+      "passed": true,
+      "evidence": {
+        "core_axes": 47,
+        "segments": 1786,
+        "roof_and_shaft_parts": 364
+      }
+    },
+    {
+      "name": "WTC2_floor_stack_restored_open_plaza_preserved",
+      "passed": true,
+      "evidence": {
+        "visible_existing_slabs": 109,
+        "plaza_floor": "existing source-traced curved mezzanine replaces F002"
+      }
+    },
+    {
+      "name": "WTC2_core_columns_shafts_roof_nodes_restored",
+      "passed": true,
+      "evidence": {
+        "core_axes": 47,
+        "segments": 1786,
+        "roof_and_shaft_parts": 361
+      }
     }
   ],
-  "technical_check_count": 164,
+  "technical_check_count": 168,
   "technical_pass": true,
   "historical_production_ready": false,
   "historical_blockers": [

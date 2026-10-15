@@ -111,8 +111,8 @@
       "output": "renders/detail_roof_plan.png"
     },
     "overview": {
-      "utc": "2026-10-15T03:23:44.008203+00:00",
-      "seconds": 9.843,
+      "utc": "2026-10-15T03:45:47.696201+00:00",
+      "seconds": 12.608,
       "engine": "CYCLES",
       "cycles_device": "GPU",
       "compute_device_type": "METAL",
@@ -130,6 +130,7 @@
       "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
       "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
       "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "interior_visibility_revision": "2026-10-15-restore-floor-core-v1",
       "output": "renders/detail_overview.png"
     },
     "site_plan": {
@@ -265,8 +266,8 @@
       "output": "renders/detail_hat_truss.png"
     },
     "core": {
-      "utc": "2026-10-15T03:25:02.839936+00:00",
-      "seconds": 9.1,
+      "utc": "2026-10-15T03:45:34.992246+00:00",
+      "seconds": 9.817,
       "engine": "CYCLES",
       "cycles_device": "GPU",
       "compute_device_type": "METAL",
@@ -284,6 +285,7 @@
       "crown_revision": "2026-10-15-flat-connected-crown-v5-full-height",
       "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
       "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "interior_visibility_revision": "2026-10-15-restore-floor-core-v1",
       "output": "renders/detail_core.png"
     },
     "steel_panels": {
@@ -792,5 +794,17 @@
     ],
     "raw_log_sha256": "07b0dbd1a1b5ac52b022c55b7422469b4ed3896d875b0f32a5a2d28ce623779c",
     "note": "Cycles --debug-cycles actual path-tracing device record, independent of saved preference fields; raw temporary log not packaged."
+  },
+  "restoration_execution_evidence": {
+    "completed_views": [
+      "core",
+      "overview"
+    ],
+    "gpu_path_records": 2,
+    "cycles_debug_path_tracing_device_lines": [
+      "Path tracing on: Apple M5 (GPU - 10 cores) (Metal) (display) [METAL_Apple M5 (GPU - 10 cores)]"
+    ],
+    "raw_log_sha256": "f3c548dabd8689792a73326cceb6443333a25aaf7463276d91ac67ba02e91518",
+    "scope": "Floor/core visibility restoration. Other images retain the preceding34-view batch; per-view interior_visibility_revision distinguishes states."
   }
 }
