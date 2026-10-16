@@ -33,8 +33,8 @@ def inspect(check):
             bm.free()
         check(tower+'_crown_arms_and_stems_one_connected_solid',len(units)==116 and not bad,{'units':len(units),'bad_meshes':bad})
         flat=all(not p.use_smooth for o in units for p in o.data.polygons)
-        depth=all(abs(max(v.co.y for v in o.data.vertices)-min(v.co.y for v in o.data.vertices)-.006)<1e-6 for o in units)
-        check(tower+'_crown_flat6mm_unsmoothed_section',bool(units) and flat and depth,{'flat_normals':flat,'depth_m':.006})
+        depth=all(abs(max(v.co.y for v in o.data.vertices)-min(v.co.y for v in o.data.vertices)-.0635)<1e-6 for o in units)
+        check(tower+'_crown_edge_on_ribbons_unsmoothed_section',bool(units) and flat and depth,{'flat_normals':flat,'normal_depth_m':.0635,'face_ribbon_width_m':.006})
         a=col['z_transition_lower_estimated_m'];top=col['z_fascia_bottom_inferred_m']
         continuous=all(abs(min(p.z for p in _points(o))-a)<.0001 and abs(max(p.z for p in _points(o))-top)<.0001 for o in units)
         check(tower+'_joined_finish_reaches_lower_and_upper_seats',bool(units) and continuous,{'lower_z':a,'upper_z':top})

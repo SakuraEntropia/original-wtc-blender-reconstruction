@@ -1,7 +1,7 @@
 """Flat, connected two-bay crown finish; remove superseded viewport glass.
 
 Sourced stem widths and transition readings retained as reference. AB302 establishes the complete vertical interval; source
-curve spans retained; ribbon width, curvature and6mm depth are CG fits.
+curve spans retained;6mm face width,63.5mm normal depth and curvature are CG fits.
 CDT unions seven planar regions before extrusion: no detached arms or doubled
 front faces. This decorative finish does not replace the separate steel assets.
 """
@@ -10,9 +10,10 @@ from mathutils import Vector
 from mathutils.geometry import delaunay_2d_cdt
 from .facade_revision import IN, PITCH, OUTER_HALF, _mesh, _box_mesh, _prism_profile, _face_object
 
-VERSION='2026-10-15-flat-connected-crown-v5-full-height'
-DEPTH=.006
-STRIP=2.5*IN
+VERSION='2026-10-16-crown-v6-edge-on-ribbons'
+DEPTH=2.5*IN
+STRIP=.006
+COVER_DEPTH=.006
 CURVE_LENGTH_FACTOR=1.0  # retain source transition heights in the AB302 full interval
 SOURCE='NIST1-5Av1 Fig4-8; original A-AB-321/323; user flat-section correction'
 
@@ -71,6 +72,17 @@ def _joined_mesh(lower,middle,upper,total,metal):
 
 def apply():
     scene=bpy.context.scene
+    # Ordinary cover sheets retain their thickness; the changed cross-section
+    # belongs to the curved ribbons, not the restaurant window surrounds.
+    seen=set()
+    for ob in bpy.data.objects:
+        if ob.get('module') not in ('crown_107_cover','crown_flat_end_cover'):continue
+        if ob.data not in seen:
+            lo=min(v.co.y for v in ob.data.vertices);depth=max(v.co.y for v in ob.data.vertices)-lo
+            if depth>0:
+                for v in ob.data.vertices:v.co.y=lo+(v.co.y-lo)*COVER_DEPTH/depth
+            seen.add(ob.data)
+        ob['flat_depth_m']=COVER_DEPTH
     if scene.get('flat_connected_crown_revision')==VERSION:return
     bpy.context.view_layer.update()
     metal=bpy.data.materials['silver_cladding_color_study']
@@ -98,16 +110,16 @@ def apply():
                     cell_index=cell,branch_count=4,flat_depth_m=DEPTH,branch_width_m=STRIP,
                     lower_transition_height_m=b-a,upper_transition_height_m=top-d,
                     profile_samples=24,structural=False,visual_curve_length_factor=CURVE_LENGTH_FACTOR,
-                    confidence='Source stem widths; AB302 full-height interval; NIST source transition spans;2.5in ribbon/6mm depth/curvature are CG fits; planar union connects all arms/stems').items():ob[k]=v
+                    confidence='Source stem widths and full-height interval; user correction: ribbon6mm face width,63.5mm facade-normal depth, CG fitted; planar union connects all arms/stems').items():ob[k]=v
             # Outermost halves close the59-axis rhythm without overlapping cells.
             heights=[0,b-a,d-a,top-a];widths=[12*IN,17*IN,17*IN,12*IN]
             for sign in (-1,1):
                 profile=[(0,0)]+[(sign*w/2,z) for w,z in zip(widths,heights)]+[(0,top-a)]
-                profile=_ccw(profile);v=[];f=[];_prism_profile(v,f,profile,DEPTH,DEPTH/2)
+                profile=_ccw(profile);v=[];f=[];_prism_profile(v,f,profile,COVER_DEPTH,COVER_DEPTH/2)
                 m=_mesh(('flat_end',sign,b-a,d-a,top-a),v,f,metal)
                 for p in m.polygons:p.use_smooth=False
                 ob=_face_object(f'{tower}_crown_flat_S{side+1}_end{sign:+d}',m,xy,side,OUTER_HALF,a,col,sign*29*PITCH)
-                ob['module']='crown_flat_end_cover';ob['source']=SOURCE;ob['flat_depth_m']=DEPTH
+                ob['module']='crown_flat_end_cover';ob['source']=SOURCE;ob['flat_depth_m']=COVER_DEPTH
         roof=bpy.data.objects[tower+'_roof_datum']
         roof_bottom=min((roof.matrix_world@v.co).z for v in roof.data.vertices)
         for ob in col.objects:
@@ -118,9 +130,9 @@ def apply():
                 else:
                     h=(11+7/12)*.3048
                     profile=[(-6*IN,-h/2),(6*IN,-h/2),(6*IN,h/2),(-6*IN,h/2)]
-                v=[];f=[];_prism_profile(v,f,profile,DEPTH,DEPTH/2)
+                v=[];f=[];_prism_profile(v,f,profile,COVER_DEPTH,COVER_DEPTH/2)
                 ob.data=_mesh(('flat_107', 'taper' in ob.name,h),v,f,metal)
-                ob['flat_depth_m']=DEPTH;ob['confidence']='Source width/height;6mm flat finish depth estimated'
+                ob['flat_depth_m']=COVER_DEPTH;ob['confidence']='Source width/height;6mm flat finish depth estimated'
             elif ob.get('module')=='crown_mechanical_backing':
                 height=roof_bottom-.008-a
                 ob.data=_box_mesh((58*PITCH+12*IN,.08,height),ob.data.materials[0]);ob.location.z=a+height/2
@@ -130,7 +142,7 @@ def apply():
             if ob:ob.hide_render=True;ob.hide_viewport=True;ob['superseded_by']=VERSION
         legacy=bpy.data.collections.get(tower+'_CROWN_photo_interpretation')
         if legacy:legacy.hide_render=True;legacy.hide_viewport=True
-        col['confidence']='Flat joined two-bay crown. Source stem widths/transition readings retained as reference; AB302 full-height interval, source transition spans, ribbon2.5in/depth6mm/curvature/absolute mapping CG fits.'
+        col['confidence']='Joined two-bay crown; source stem widths and full vertical interval retained. Curved ribbons6mm facade-facing width,63.5mm normal depth, fitted to user correction; curvature and absolute mapping CG fits.'
         col['flat_connected_revision']=VERSION
         if col.asset_data:col.asset_data.description=col['confidence']
     scene['flat_connected_crown_revision']=VERSION

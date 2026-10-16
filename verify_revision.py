@@ -5,7 +5,7 @@ import bpy,bmesh,math
 def inspect(check):
     for tower in ('WTC1','WTC2'):
         curves=[o for o in bpy.data.collections[tower+'_crown_curved_cladding'].objects if o.get('module')=='crown_flat_joined_unit']
-        check(tower+'_crown_curves_thin_flat',len(curves)==116 and all(abs(o.get('branch_width_m',0)-.0635)<1e-5 for o in curves),len(curves))
+        check(tower+'_crown_curves_thin_flat',len(curves)==116 and all(abs(o.get('branch_width_m',0)-.006)<1e-5 for o in curves),len(curves))
         support=bpy.data.collections.get(tower+'_CROWN_CAP_steel_support_TYPE')
         check(tower+'_cap_independent_support',support and len(support.objects)>300,len(support.objects) if support else 0)
         edge_frames=bpy.data.collections.get(tower+'_FACADE_corner_transition_frames')
@@ -52,10 +52,11 @@ def inspect(check):
     check('conforming_paver_boundary_closed',len(tiles)>100 and not bad,{'tiles':len(tiles),'bad':bad})
     check('paving_revision_saved',bool(bpy.context.scene.get('paving_boundary_revision')),bpy.context.scene.get('paving_boundary_revision'))
     # Each clipped square lies outside the fountain's polygonal outer edge.
-    threshold=(18.05+.018/2)*math.cos(math.pi/192)-1e-4
+    from wtc.site_registration_revision import FOUNTAIN
+    threshold=22.05*math.cos(math.pi/128)-1e-4
     near=[]
     for o in tiles:
         for v in o.data.vertices:
             p=o.matrix_world@v.co
-            if math.hypot(p.x,p.y)<threshold:near.append(o.name);break
+            if math.hypot(p.x-FOUNTAIN[0],p.y-FOUNTAIN[1])<threshold:near.append(o.name);break
     check('cut_pavers_clear_fountain',not near,near)

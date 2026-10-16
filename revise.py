@@ -11,7 +11,7 @@ for mesh in bpy.data.meshes:
     if mesh.name.startswith('steel_box_segment_type') and len(mesh.vertices)>=104 and not mesh.get('splices_cross_joint'):
         for v in list(mesh.vertices)[24:]:v.co.z+=.16
         mesh['splices_cross_joint']=True;mesh.update()
-typical_panel_sample();enhance();latest_revision();create_detail_cameras()
+typical_panel_sample();enhance();latest_revision(ROOT/'migration_checkpoint.blend' if '--checkpoint' in sys.argv else None);create_detail_cameras()
 for mesh in bpy.data.meshes:
     if not mesh.users:continue
     bm=bmesh.new();bm.from_mesh(mesh)
@@ -21,7 +21,7 @@ for mesh in bpy.data.meshes:
 scene=bpy.context.scene
 bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'wtc_detailed_cg.blend'),compress=True)
 render_reviews()
-scene['quality_status']='Oct16: WTC7 core/public-lobby study, source-labelled1977 Windows, split elevator mechanisms, jointed lobby finishes and composite-floor connection panel; North43/67 height differential allocated once; Perspective Cycles Metal GPU; historical production gates remain open'
+scene['quality_status']='Oct16 shell/core/site:104 floor structure families per tower, owner elevator halls and bare tenant shell, marble/crystal rods/smooth separate crests/lower tapered border/West canopy; manual SKA55 registration; Perspective Cycles Metal GPU; exact historical fit-out and fabrication gates remain open'
 for c in bpy.data.collections:
     if any(s in c.name for s in ('_CROWN_photo','_CORNER_aluminum','_ROOF_detail','_CORE_roof_connections','PLAZA_furniture')):
         c.asset_mark();c.asset_data.description=c.get('confidence','CG study; inspect source tags')

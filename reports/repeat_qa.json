@@ -1,21 +1,4 @@
 {
-  "passed": true,
-  "before": {
-    "objects": 160297,
-    "meshes": 24832,
-    "collections": 173,
-    "materials": 125
-  },
-  "once": {
-    "objects": 160297,
-    "meshes": 24832,
-    "collections": 173,
-    "materials": 125
-  },
-  "twice": {
-    "objects": 160297,
-    "meshes": 24832,
-    "collections": 173,
-    "materials": 125
-  }
+  "passed": false,
+  "status": "Full final repeat verification interrupted for immediate publication; prior run passed before final coordinate rebuild."
 }

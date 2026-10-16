@@ -8,7 +8,14 @@ for path in sorted((ROOT/'assets').glob('*.blend')):
     with bpy.data.libraries.load(str(path),link=True) as (source,target):
         target.collections=source.collections
     roots=[c for c in target.collections if c and c.asset_data]
-    objects={o for c in roots for o in c.all_objects}
+    objects=set();seen=set()
+    def visit(c):
+        if c in seen:return
+        seen.add(c)
+        for ob in c.all_objects:
+            objects.add(ob)
+            if ob.instance_type=='COLLECTION' and ob.instance_collection:visit(ob.instance_collection)
+    for c in roots:visit(c)
     meshes=[o for o in objects if o.type=='MESH']
     external=[i.filepath for i in bpy.data.images if i.source=='FILE' and i.filepath]
     passed=bool(roots) and bool(meshes) and all(o.data.vertices and o.data.materials for o in meshes) and not external

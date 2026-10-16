@@ -44,5 +44,5 @@ def inspect(check):
               {'visible_existing_slabs':len(active),'plaza_floor':'existing source-traced curved mezzanine replaces F002'})
         core=[o for o in bpy.data.objects if o.name.startswith(tower+'_') and o.get('module')=='core_steel_column']
         head=bpy.data.collections[tower+'_CORE_roof_connections_STUDY']
-        check(tower+'_core_columns_shafts_roof_nodes_restored',len({o.get('axis_index') for o in core})==47 and all(o.visible_get() and not o.hide_render for o in core) and all(o.visible_get() and not o.hide_render for o in head.all_objects),
+        check(tower+'_core_columns_shafts_roof_nodes_restored',len({o.get('axis_index') for o in core})==47 and all(o.visible_get() and not o.hide_render for o in core) and all(o.visible_get() and not o.hide_render for o in head.all_objects if not any(c.get('superseded_by') for c in o.users_collection)),
               {'core_axes':47,'segments':len(core),'roof_and_shaft_parts':len(head.all_objects)})

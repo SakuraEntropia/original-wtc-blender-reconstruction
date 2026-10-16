@@ -22,7 +22,7 @@ def inspect(check):
         check(tower+'_six_physical_connection_hosts',sum(o.get('module')=='connection_host_column_TYPE' for o in col.objects)==6,len(col.objects))
         check(tower+'_profiled_deck_bridging_rods_and_concrete',len(deck.data.vertices)>100 and sum(o.get('module')=='bridging_truss' for o in col.objects)>30 and any(o.get('module')=='shear_knuckle' for o in col.objects),len(col.objects))
         frame=bpy.data.collections[tower+'_BASE_nested_frames_and_transoms_STUDY']
-        check(tower+'_lower_corner_terminal_projections_present',sum(o.get('module')=='base_end_corner_projection' for o in frame.objects)==32,32)
+        check(tower+'_lower_corner_terminal_projections_present',all(o.hide_render and o.hide_viewport for o in frame.objects if o.get('module')=='base_end_corner_projection') and len(bpy.data.collections[tower+'_BASE_tapered_corner_borders'].objects)==24,{'retired_tabs':32,'tapered_parts':24})
         rugs=bpy.data.collections[tower+'_LOBBY_stone_carpet_lamps_DETAIL']
         check(tower+'_carpets_jointed_stone_and_actual_lights',sum(o.get('module')=='carpet_zone' for o in rugs.objects)>=12 and sum(o.type=='LIGHT' for o in rugs.objects)==12 and any(o.get('module')=='jointed_stone_fascia' for o in rugs.objects),len(rugs.objects))
         c=bpy.data.collections[tower+'_ELEVATOR_cab_and_mechanism_TYPE']

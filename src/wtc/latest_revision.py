@@ -16,9 +16,15 @@ from .floor_schedule_revision import apply as floor_schedule
 from .public_interiors_revision import apply as public_interiors
 from .wtc7_interior_revision import apply as wtc7_interior
 from .floor_structure_revision import apply as floor_structure
+from .shell_floor_revision import apply as shell_floors
+from .owner_lobby_revision import apply as owner_halls
+from .lobby_finish_revision import apply as lobby_finishes
+from .site_registration_revision import apply as register_site
+from .podium_parking_revision import apply as podium_parking
+from .core_framing_revision import apply as core_framing
 
 
-def apply():
+def apply(checkpoint=None):
     for name,fn in (('paving',paving),('lobby',lobby),('facade',facade),('wtc7_roof',roof7),('crown_junction',crown_junction),('original_junction',original_junction)):
         print('REVISION_START '+name,flush=True)
         fn()
@@ -39,3 +45,9 @@ def apply():
     public_interiors()
     wtc7_interior()
     floor_structure()
+    for name,fn in (('whole_floor_shell',shell_floors),('owner_halls',owner_halls),('marble_crystal_crests',lobby_finishes),('podium_and_parking',podium_parking),('source_plaza_registration',register_site)):
+        print('REVISION_START '+name,flush=True);fn();print('REVISION_DONE '+name,flush=True)
+        if checkpoint and name=='podium_and_parking':
+            import bpy
+            bpy.ops.wm.save_as_mainfile(filepath=str(checkpoint),compress=True)
+    core_framing()

@@ -23,12 +23,13 @@ def configure():
         if device.use:selected.append(device.name)
     if not selected:raise RuntimeError('Metal GPU unavailable; do not silently substitute CPU')
     scene.render.engine='CYCLES';scene.cycles.device='GPU'
-    scene.cycles.samples=32;scene.cycles.use_denoising=True
-    scene.cycles.use_adaptive_sampling=True;scene.cycles.adaptive_threshold=.06;scene.cycles.adaptive_min_samples=8
+    scene.cycles.samples=16;scene.cycles.use_denoising=True
+    scene.cycles.use_adaptive_sampling=True;scene.cycles.adaptive_threshold=.06;scene.cycles.adaptive_min_samples=4
+    scene.render.resolution_x=960;scene.render.resolution_y=960
     scene.cycles.max_bounces=6;scene.cycles.diffuse_bounces=3
     scene.cycles.glossy_bounces=3;scene.cycles.transmission_bounces=4
     scene.cycles.transparent_max_bounces=6
     scene.render.use_persistent_data=True
     scene['render_device_names']=selected
-    scene['render_configuration']='Cycles / GPU / Metal only / 32 adaptive samples / denoised'
+    scene['render_configuration']='Cycles / GPU / Metal only / 16 adaptive samples / 960px technical previews / denoised'
     return selected

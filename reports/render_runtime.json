@@ -994,6 +994,72 @@
       "wtc7_interior_revision": "2026-10-16-wtc7-interior-v1",
       "floor_structure_revision": "2026-10-16-composite-floor-and-end-projections-v1",
       "output": "renders/detail_north_heights.png"
+    },
+    "shell_floor": {
+      "utc": "2026-10-16T12:10:15.150691+00:00",
+      "seconds": 45.235,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 41.65553283691406,
+      "samples": 16,
+      "resolution": [
+        960,
+        960
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-16-crown-v6-edge-on-ribbons",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "interior_visibility_revision": "2026-10-15-restore-floor-core-v1",
+      "floor_schedule_revision": "2026-10-15-port-authority43-67-v1",
+      "public_interiors_revision": "2026-10-16-public-interiors-v1",
+      "wtc7_interior_revision": "2026-10-16-wtc7-interior-v1",
+      "floor_structure_revision": "2026-10-16-composite-floor-and-end-projections-v1",
+      "shell_floor_revision": "2026-10-16-whole-floor-shell-v1",
+      "owner_lobby_revision": "2026-10-16-owner-elevator-halls-v1",
+      "lobby_finish_revision": "2026-10-16-marble-crystal-smooth-crests-v1",
+      "site_registration_revision": "2026-10-16-SKA55-plaza-registration-v1",
+      "podium_parking_revision": "2026-10-16-podium-outlines-parking-v1",
+      "core_framing_revision": "2026-10-16-core-headers-perimeter-closures-v1",
+      "output": "renders/detail_shell_floor.png"
+    },
+    "owner_hall": {
+      "utc": "2026-10-16T12:12:20.430407+00:00",
+      "seconds": 27.102,
+      "engine": "CYCLES",
+      "cycles_device": "GPU",
+      "compute_device_type": "METAL",
+      "enabled_devices": [
+        "Apple M5 (GPU - 10 cores)"
+      ],
+      "camera_type": "PERSP",
+      "camera_lens_mm": 22.0,
+      "samples": 16,
+      "resolution": [
+        960,
+        960
+      ],
+      "revision": "2026-10-15-south-roof-photo-v2",
+      "crown_revision": "2026-10-16-crown-v6-edge-on-ribbons",
+      "lobby_revision": "2026-10-15-traced-mezzanine-revolving-v2",
+      "base_frame_revision": "2026-10-15-independent-crests-thicker-lintel-v4",
+      "interior_visibility_revision": "2026-10-15-restore-floor-core-v1",
+      "floor_schedule_revision": "2026-10-15-port-authority43-67-v1",
+      "public_interiors_revision": "2026-10-16-public-interiors-v1",
+      "wtc7_interior_revision": "2026-10-16-wtc7-interior-v1",
+      "floor_structure_revision": "2026-10-16-composite-floor-and-end-projections-v1",
+      "shell_floor_revision": "2026-10-16-whole-floor-shell-v1",
+      "owner_lobby_revision": "2026-10-16-owner-elevator-halls-v1",
+      "lobby_finish_revision": "2026-10-16-marble-crystal-smooth-crests-v1",
+      "site_registration_revision": "2026-10-16-SKA55-plaza-registration-v1",
+      "podium_parking_revision": "2026-10-16-podium-outlines-parking-v1",
+      "core_framing_revision": "2026-10-16-core-headers-perimeter-closures-v1",
+      "output": "renders/detail_owner_hall.png"
     }
   },
   "execution_evidence": {
@@ -1113,5 +1179,17 @@
       }
     ],
     "scope": "Oct16 final geometry and WTC7 lamp registration;14 unique views,18 renders including revised floor-end camera and WTC7 cutaways. Remaining28 views retain individually recorded previous revisions. Per-view timestamp identifies the final image."
+  },
+  "shell_site_execution_evidence": {
+    "completed_views": [
+      "shell_floor",
+      "owner_hall"
+    ],
+    "unique_completed_view_count": 2,
+    "gpu_path_records": 2,
+    "cycles_debug_path_tracing_device_lines": [
+      "Path tracing on: Apple M5 (GPU - 10 cores) (Metal) (display) [METAL_Apple M5 (GPU - 10 cores)]"
+    ],
+    "scope": "User requested immediate push to conserve quota; remaining preview renders stopped. Historical images retain their individual prior versions."
   }
 }

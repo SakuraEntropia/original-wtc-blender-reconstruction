@@ -1,83 +1,14 @@
 {
   "repository": "https://github.com/SakuraEntropia/original-wtc-blender-reconstruction",
-  "public": true,
-  "payload_commit": "56202b8f7a853e64eb384655ddfe9f433771b3af",
-  "payload_tree": "32f3e6cf150aa0945ee2c45cd85e81575fd54807",
-  "api_reference_sha": "56202b8f7a853e64eb384655ddfe9f433771b3af",
-  "verified_file_count": 171,
-  "verified_utc": "2026-10-15T17:57:17.966528+00:00",
-  "all_payload_git_blob_hashes_match": true,
-  "main_blend_git_blob_sha": "8e608533fc9d9b4b60faa43f337c6050be3eef11",
-  "asset_libraries": 53,
-  "rendered_views": 42,
-  "technical_checks": 192,
-  "gpu_path_tracing_devices": [
-    "Path tracing on: Apple M5 (GPU - 10 cores) (Metal) (display) [METAL_Apple M5 (GPU - 10 cores)]"
+  "status": "Immediate payload prepared; remote verification follows push",
+  "main_blend_sha256": "5821837f95cfd662b4ee7d3c12603db7e2586a35e7318e5ede5e69570bea697b",
+  "asset_libraries": 56,
+  "geometry_preflight_checks": 49,
+  "geometry_preflight_pass": true,
+  "current_rendered_views": [
+    "shell_floor",
+    "owner_hall"
   ],
-  "interior_batch_execution_evidence": {
-    "completed_views": [
-      "balcony",
-      "base_frame",
-      "elevator",
-      "floor_end",
-      "floor_structure",
-      "lobby",
-      "lobby_ceiling",
-      "north_heights",
-      "overview",
-      "restaurant",
-      "revolving",
-      "stone",
-      "wtc7_core",
-      "wtc7_interior"
-    ],
-    "unique_completed_view_count": 14,
-    "gpu_path_records": 18,
-    "cycles_debug_path_tracing_device_lines": [
-      "Path tracing on: Apple M5 (GPU - 10 cores) (Metal) (display) [METAL_Apple M5 (GPU - 10 cores)]"
-    ],
-    "source_logs": [
-      {
-        "sha256": "25525683fd20d447c3b065ae8a7e488d8ada9f6898766b1ae61eefeb64a77061",
-        "completed_views": [
-          "floor_end",
-          "floor_structure",
-          "stone",
-          "elevator",
-          "restaurant",
-          "wtc7_interior",
-          "wtc7_core"
-        ],
-        "gpu_path_records": 7
-      },
-      {
-        "sha256": "9474459ee46297648eb726134223db944394fa43728b84a2bea0f5ca2249bb65",
-        "completed_views": [
-          "floor_end",
-          "wtc7_interior",
-          "wtc7_core",
-          "north_heights",
-          "lobby",
-          "lobby_ceiling",
-          "balcony",
-          "revolving",
-          "base_frame",
-          "overview"
-        ],
-        "gpu_path_records": 10
-      },
-      {
-        "sha256": "0c45f88ed8b7d8da6e0dd582b75dbcfb0e6b9914eaf304751dd97209acd42087",
-        "completed_views": [
-          "floor_end"
-        ],
-        "gpu_path_records": 1
-      }
-    ],
-    "scope": "Oct16 final geometry and WTC7 lamp registration;14 unique views,18 renders including revised floor-end camera and WTC7 cutaways. Remaining28 views retain individually recorded previous revisions. Per-view timestamp identifies the final image."
-  },
-  "source_photos_or_scans_in_repository": false,
-  "third_party_mesh_assets_used": false,
   "historical_production_ready": false,
-  "scope_note": "Model/scripts/assets/renders and QA verified at payload commit. Following metadata commit updates publication, ZIP manifest and acceptance checklist without changing model, script, asset or render payloads."
+  "full_final_regression_complete": false
 }

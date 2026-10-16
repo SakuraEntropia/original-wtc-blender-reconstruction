@@ -279,6 +279,8 @@ def _roof(tower, objects, points, check):
 
 def inspect(check):
     """Emit check(name, passed, evidence); never mutate or save Blender data."""
+    from wtc.site_registration_revision import center
+    TOWERS.update({t:center(t) for t in TOWERS})
     for tower in TOWERS:
         collections = []
         frame_col, frames = _objects(tower+'_FACADE_corner_transition_frames', FRAME_MODULES)

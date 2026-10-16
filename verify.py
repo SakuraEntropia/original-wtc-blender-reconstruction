@@ -18,7 +18,7 @@ def bounds(ob):
 
 check('reopened_saved_file',Path(bpy.data.filepath).name=='wtc_detailed_cg.blend',Path(bpy.data.filepath).name)
 check('restored_overview_camera',bpy.context.scene.camera.name=='CAM_overview',bpy.context.scene.camera.name)
-check('review_cameras_saved',len([o for o in bpy.data.objects if o.name.startswith('CAM_')])==42,
+check('review_cameras_saved',len([o for o in bpy.data.objects if o.name.startswith('CAM_')])==50,
       [o.name for o in bpy.data.objects if o.name.startswith('CAM_')])
 for name in ('WTC1','WTC2'):
     trees=[o for o in bpy.data.objects if re.fullmatch(name+r'_tree_s\d_\d+',o.name)]
@@ -76,7 +76,7 @@ for name in ('WTC1','WTC2'):
 
 tiles=[o for o in bpy.data.objects if o.get('mesh_unique')]
 check('each_plaza_tile_unique_mesh',len({o.data.as_pointer() for o in tiles})==len(tiles),len(tiles))
-check('plaza_tile_z_datum',all(abs(bounds(o)['min_m'][2]-PLAZA_Z)<1e-4 and abs(bounds(o)['max_m'][2]-(PLAZA_Z+.03))<1e-4 for o in tiles),PLAZA_Z)
+check('plaza_tile_z_datum',all(abs(bounds(o)['min_m'][2]-(o.get('finished_z_m',PLAZA_Z+.03)-.03))<1e-4 and abs(bounds(o)['max_m'][2]-o.get('finished_z_m',PLAZA_Z+.03))<1e-4 for o in tiles),PLAZA_Z)
 check('orange_antenna_proxy_removed',not bpy.data.objects.get('WTC1_antenna_360ft_height_proxy'),'one mast assembly remains')
 check('generic_globe_present',bpy.data.objects.get('generic_15ft_globe_mass_proxy_NOT_Koenig_replica') is not None,
       'generic sculpture scale proxy; faithful artwork reproduction excluded')
@@ -116,6 +116,8 @@ from wtc.interior_visibility_revision import inspect as interior_visibility_insp
 interior_visibility_inspect(check)
 from verify_interior_details import inspect as interior_details_inspect
 interior_details_inspect(check)
+from verify_shell_site import inspect as shell_site_inspect
+shell_site_inspect(check)
 
 parents={}
 for col in bpy.data.collections:
