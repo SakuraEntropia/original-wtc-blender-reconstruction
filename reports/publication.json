@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/SakuraEntropia/original-wtc-blender-reconstruction",
-  "status": "Immediate payload prepared; remote verification follows push",
+  "status": "Pushed and all payload Git blobs verified",
   "main_blend_sha256": "5821837f95cfd662b4ee7d3c12603db7e2586a35e7318e5ede5e69570bea697b",
   "asset_libraries": 56,
   "geometry_preflight_checks": 49,
@@ -10,5 +10,11 @@
     "owner_hall"
   ],
   "historical_production_ready": false,
-  "full_final_regression_complete": false
+  "full_final_regression_complete": false,
+  "payload_commit": "e259cef6fdd3eee6ba34179a4f71c425ed0fb946",
+  "payload_tree": "d00f3720c5d38ed9b1125c58306291ee2c6643e4",
+  "verified_file_count": 183,
+  "all_payload_git_blob_hashes_match": true,
+  "main_blend_git_blob_sha": "924406114e3ba09c58e0b771fb4e9a5478735948",
+  "verified_utc": "2026-10-16T12:15:02.796433+00:00"
 }
