@@ -1,8 +1,8 @@
 {
   "historical_production_ready": false,
-  "github_pushed_files": 148,
-  "technical_check_count": 168,
-  "asset_libraries": 45,
+  "github_pushed_files": 171,
+  "technical_check_count": 192,
+  "asset_libraries": 53,
   "files": [
     {
       "path": ".gitattributes",
@@ -26,8 +26,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5066,
-      "sha256": "abbd645ebf194fb042d0c93551f1f2b7f4431091a442a5231bb1ee8bdb4ad5e0"
+      "bytes": 5510,
+      "sha256": "fe786d6a98a788a423f1074edb7834cc26fb92a0f19b4c506d0ae0d374bdd38f"
     },
     {
       "path": "asset_export.py",
@@ -36,228 +36,268 @@
     },
     {
       "path": "assets/PLAZA_furniture_and_landscape_interpretation.blend",
-      "bytes": 125951,
-      "sha256": "06cd5bd255ef36b93661cdc5602216b7f0fcfda87da743dccd48de58993443a6"
+      "bytes": 125948,
+      "sha256": "9d383fd9571823641f88b7a917f16c8cf61396100818161d4631ab27abdc8913"
     },
     {
       "path": "assets/PLAZA_globe_and_fountain_SCALE_PROXY.blend",
-      "bytes": 130241,
-      "sha256": "67a8cc321a113bb00804a8c4f4ca8e00c0f960832c8768bfa1a6ebbff2af68d7"
+      "bytes": 130234,
+      "sha256": "33151cc785622a7d5750b68730bcec040f42591cd687e0c80c27fc19030b7524"
     },
     {
       "path": "assets/PLAZA_individual_tile_meshes_STUDY.blend",
-      "bytes": 3197573,
-      "sha256": "ac8f8f485bf628608df55b2122e2d697f12877659ce526e56c71372134806b54"
+      "bytes": 3197501,
+      "sha256": "e9d54cd95c255c65272d81ab9c115102882aa0f48b4282f366dc62dce66fd68e"
     },
     {
       "path": "assets/PLAZA_vegetation_TYPE.blend",
-      "bytes": 109702,
-      "sha256": "f0495b0e6f52539f016105e13a3aa2307331aab7cccae8a4cd24191f2ad6c1a2"
+      "bytes": 109699,
+      "sha256": "fa56aaf045a325972d8bf61a56459d86448c679386f8f37972bcb905bc9c1e19"
     },
     {
       "path": "assets/WTC1.blend",
-      "bytes": 8297047,
-      "sha256": "cea3f55b1c4b1854ddd85dd5e3f136e7d090ec0c3faccd852c0695b71ee22c2e"
+      "bytes": 8988412,
+      "sha256": "eb2a9c58c280bf1e3864a9a925dc5c4205a526e449d21248056841c01b077966"
     },
     {
       "path": "assets/WTC1_BASE_nested_frames_and_transoms_STUDY.blend",
-      "bytes": 426392,
-      "sha256": "7afff3b727926998a65d6c9e698bdad25aa37a8bdb05bb85d1eb79cbf64938cf"
+      "bytes": 433717,
+      "sha256": "1d124fcee5708b8de830180ece326c8dab79bfdd781400c559ba259fbfdc7ea4"
     },
     {
       "path": "assets/WTC1_COMPLETION_study.blend",
-      "bytes": 1330586,
-      "sha256": "2b41ed1c876bc73d25480ba852d79891e8ae3da56341bfeee16f4f61356b5fc7"
+      "bytes": 1871289,
+      "sha256": "e0d9b4a69541a6295f061ef27d8859aea9225f26456a8226e49016f01d970335"
     },
     {
       "path": "assets/WTC1_CORE_roof_connections_STUDY.blend",
-      "bytes": 148986,
-      "sha256": "ecc7e15e3fec172151e3325dc1d3fa93a3bd70a7c4eff44167e653fe83b83f71"
+      "bytes": 148972,
+      "sha256": "a6eac5b93992258f3ab0d003496a446b11f60920c00ea548058741802b354c86"
     },
     {
       "path": "assets/WTC1_CROWN_CAP_mitered_panels.blend",
-      "bytes": 518009,
-      "sha256": "81fb1b71298a2ad735c626a2f1264136a1922938f4b66a8bd73615411e8beb31"
+      "bytes": 517792,
+      "sha256": "3de44367691136fa495d29104bf221085ffcbb26d9f0cccea1c16097dd8aa015"
     },
     {
       "path": "assets/WTC1_CROWN_CAP_steel_support_TYPE.blend",
-      "bytes": 157404,
-      "sha256": "e127c9f137f224f3c3db04bd0fa68c626f2b8865504726d02925b0cd82b7bad2"
+      "bytes": 157413,
+      "sha256": "36d82989bc0fb9d24ae4302c99897c98f33f398299fcca98546ec70f18e53a71"
+    },
+    {
+      "path": "assets/WTC1_ELEVATOR_cab_and_mechanism_TYPE.blend",
+      "bytes": 92960,
+      "sha256": "d8363ad64debdaae67b258c46b4f2b1356000b3f048a822f4ffc698bacd02eb2"
     },
     {
       "path": "assets/WTC1_FACADE_REVISION.blend",
-      "bytes": 2592712,
-      "sha256": "fc12850ce6ea50b9eedfec2988fbf335c9f04b5b2e537782c0cd4f077873c5b4"
+      "bytes": 3256226,
+      "sha256": "45a33a879620255dbebe966cf92b3f9f7be1ade7a3f2c53ddf0628be703a685d"
     },
     {
       "path": "assets/WTC1_FACADE_corner_transition_frames.blend",
-      "bytes": 1309437,
-      "sha256": "56d47e96205f6acee8e364e0e429cbd7567b3cf6371a69ffef7f79e8a571bb8d"
+      "bytes": 1808357,
+      "sha256": "5c00479f6405c2f4f737706196945872878401670b5446be0fbe2b157738f8c1"
+    },
+    {
+      "path": "assets/WTC1_FLOOR_composite_truss_panel_DETAIL.blend",
+      "bytes": 239240,
+      "sha256": "227872fcd00703cd9fb25965e7c508960c69c7daba3850edebba1a39807c38d1"
     },
     {
       "path": "assets/WTC1_LOBBY_curved_mezzanine_and_entrances_STUDY.blend",
-      "bytes": 320832,
-      "sha256": "f8b73019684691e3733d6b6579c38f7e99156b107cf464492fac54e0319f759d"
+      "bytes": 320864,
+      "sha256": "fac2b138342e6949d051748cb1e214eaffee94d65e0ef36ced9334afcbe2e5ac"
     },
     {
       "path": "assets/WTC1_LOBBY_photo_interpretation_STUDY.blend",
-      "bytes": 482863,
-      "sha256": "fc8c023dcd375012bcfe9d96ce6b2d1875f5381959b9257ff6d8a6b1de4e2976"
+      "bytes": 551449,
+      "sha256": "b0f3484d47aaac4e252345cc6c8760f7564af8cac01d44aef9b4efe31d2adbc1"
+    },
+    {
+      "path": "assets/WTC1_LOBBY_stone_carpet_lamps_DETAIL.blend",
+      "bytes": 130941,
+      "sha256": "ee919b88e57fd6ddf9b8959a4d763582b178a6476842859fe57ebea292f0dafc"
     },
     {
       "path": "assets/WTC1_ROOF_detail_components.blend",
-      "bytes": 117346,
-      "sha256": "79723464bc265bcd0e83ea75f256ac7f1ba1d71e31d3e0aae987f50153809ffe"
+      "bytes": 117345,
+      "sha256": "4fcb945e034195ce643ab69b3d01d178a3e5c833b1e630a4892b2267e96509a9"
+    },
+    {
+      "path": "assets/WTC1_WINDOWS_1977_Platner_STUDY.blend",
+      "bytes": 323192,
+      "sha256": "ad6a0d9095ca7960f5a5b2bdc05fb911745a14cea33d6d1589c0b0a51bf87452"
     },
     {
       "path": "assets/WTC1_antenna_photo_interpretation_STUDY.blend",
-      "bytes": 147550,
-      "sha256": "25d095d06fa81bed6d04da569ad5a8d11d4c6cc96e989a9bf8a4b28426b12a97"
+      "bytes": 147580,
+      "sha256": "235477b3a9618590b3fa74dc0186e6487895411ba6fef6b1b412c68afcb1801c"
     },
     {
       "path": "assets/WTC1_corner_three_panels.blend",
-      "bytes": 678919,
-      "sha256": "6d6db6b9f69c7274b106c1ce139fcba8d381c5b214086fad683ba2deb2781ce3"
+      "bytes": 685791,
+      "sha256": "4915ddc53b94db2940c864e8e9c0cbbe5aa15476bb4279ba6ab5964065014d3a"
     },
     {
       "path": "assets/WTC1_crown_curved_cladding.blend",
-      "bytes": 229615,
-      "sha256": "ea5bf31f198bf76151ad365c69c3a1b47f07a92fc8b44b756dc1bbea781954a0"
+      "bytes": 229633,
+      "sha256": "d03419c7db6670989bbf4b96fc59abba425fc904c327599e7b23ef4ae969830d"
     },
     {
       "path": "assets/WTC2.blend",
-      "bytes": 8263404,
-      "sha256": "7a98c370c453000afaad70c88b43a875ea634e6488df43fb990bdf6c38718e0b"
+      "bytes": 8279113,
+      "sha256": "af79d83fb858b4406c12eacc6852b758843227fa5e31cadb1b972f189241796e"
     },
     {
       "path": "assets/WTC2_BASE_nested_frames_and_transoms_STUDY.blend",
-      "bytes": 426460,
-      "sha256": "c395c1c48a9ef91f91f86278edca2afc7da2dd7c2c94dfc41c6a288037492902"
+      "bytes": 433909,
+      "sha256": "a9616b63020f2c126733c10dbfa90846b9437562fd7d4b38bd58de8b0c265441"
     },
     {
       "path": "assets/WTC2_COMPLETION_study.blend",
-      "bytes": 1711455,
-      "sha256": "008d8b5838965d4e2cf13afc8be6370f0c8b851f39ac3e315461f883d376cc60"
+      "bytes": 1994772,
+      "sha256": "49c98cc5b0f41b62740c260a5210e682e75ced7dad218c0f6ab639641e61be69"
     },
     {
       "path": "assets/WTC2_CORE_roof_connections_STUDY.blend",
-      "bytes": 147810,
-      "sha256": "eb12f92f1dc0ee891b41e15de14cdd9c8e720f37ff2adc86c0588007cc5df5ba"
+      "bytes": 147829,
+      "sha256": "b6517795cc25fd3c76eb320f2b7f460b8dd390988394f49735f2041122d7f9d0"
     },
     {
       "path": "assets/WTC2_CROWN_CAP_mitered_panels.blend",
-      "bytes": 513379,
-      "sha256": "c6e6c2dc767138dc450d2a82db15fbcd82d401ea655ede147f20b191d06b4f6b"
+      "bytes": 513428,
+      "sha256": "0de57160d816e1f46094ac58d91f39c081dbbd0344119f151cc0c847466d6484"
     },
     {
       "path": "assets/WTC2_CROWN_CAP_steel_support_TYPE.blend",
-      "bytes": 157921,
-      "sha256": "6d2fafd6492a4ec90c45044bd76d1c7d4e827d42000f12a0b92b458685a9fc0c"
+      "bytes": 157935,
+      "sha256": "758e41bbdd13edf2257716f74a1059f96f41a26789d15ff39ac6af0673f3e262"
+    },
+    {
+      "path": "assets/WTC2_ELEVATOR_cab_and_mechanism_TYPE.blend",
+      "bytes": 92513,
+      "sha256": "776163135456932bc0cdb3323c67bd8c6ff068683244f52010b959a40d669b6f"
     },
     {
       "path": "assets/WTC2_FACADE_REVISION.blend",
-      "bytes": 2590602,
-      "sha256": "4754b1be44a06727c9cc8035b144f8c210e00330a3e59ab40245927148bc74e3"
+      "bytes": 2590663,
+      "sha256": "630e493c7b4d269ff2728873a8f039b81a4425fb46ae4fcc62317014ae2d1876"
     },
     {
       "path": "assets/WTC2_FACADE_corner_transition_frames.blend",
-      "bytes": 1308650,
-      "sha256": "14fbed5910d3dbaeab980e6b1e69faebb4455e849b1b59dd7bebe88056e1f96f"
+      "bytes": 1308796,
+      "sha256": "547797156249ca7f469c660f8e475781a9ec11280f5393b9b9bc8ee3a8a8b213"
+    },
+    {
+      "path": "assets/WTC2_FLOOR_composite_truss_panel_DETAIL.blend",
+      "bytes": 241590,
+      "sha256": "80205ff465645030a3c8251197a9b656f61f5df656cda4260788cc84b7b2471b"
     },
     {
       "path": "assets/WTC2_LOBBY_curved_mezzanine_and_entrances_STUDY.blend",
-      "bytes": 320566,
-      "sha256": "2185b735bba03dc90660a7c55a50fd7797db85a9740b284884f2ba60f19aa525"
+      "bytes": 320612,
+      "sha256": "a1d1f48b7d0666a9c9f00262c4fb62aad2ebffcf86d2b4c752efbff1b7a5c738"
     },
     {
       "path": "assets/WTC2_LOBBY_photo_interpretation_STUDY.blend",
-      "bytes": 482155,
-      "sha256": "ea4454bc0f6716f96d363174575edc6fd2318a49ec8bf222ecec2ea6a414c4a6"
+      "bytes": 550321,
+      "sha256": "773f55ce40cae4bf8700350c2ebb4f8a6f2201ee6a91dfed3195d60986a300b8"
+    },
+    {
+      "path": "assets/WTC2_LOBBY_stone_carpet_lamps_DETAIL.blend",
+      "bytes": 130820,
+      "sha256": "2d85f641ca056677341cffd4bbe9a8390ac99801754ff1cfa3f4aead6be66e75"
     },
     {
       "path": "assets/WTC2_ROOF_detail_components.blend",
-      "bytes": 117443,
-      "sha256": "c3629a49c29214ee74c519467d8a8c287cbf4a97465cbb1dd4b94a8ffa00f173"
+      "bytes": 117445,
+      "sha256": "2c015c91078c66366fdf2f00f3afa4ea6cf16ec3928b32b44871dc8ccc578fd0"
     },
     {
       "path": "assets/WTC2_ROOF_observation_and_communications_STUDY.blend",
-      "bytes": 434174,
-      "sha256": "018cb9582eb3eb5f8b111a7e66d57857cd9e2b24f6c61f25208fcabeaf4476df"
+      "bytes": 434213,
+      "sha256": "32decfb65a17a9ad076efb98c4a3422dbd3158a625b94fa174728ed15a477079"
     },
     {
       "path": "assets/WTC2_corner_three_panels.blend",
-      "bytes": 676388,
-      "sha256": "0a7d6cb3857436bc1f25fcf3fd4949b0947aa9883a4910eceb8381d70fa6678e"
+      "bytes": 676443,
+      "sha256": "e95d5dfd192e506b7adfc4aa24527924a03b5d4c314e49d0cc63ae922658a770"
     },
     {
       "path": "assets/WTC2_crown_curved_cladding.blend",
-      "bytes": 229497,
-      "sha256": "6a72d87de9bb839bc6da532a63f06ed81eaf408358bce526b5377fe6b001e7a7"
+      "bytes": 229534,
+      "sha256": "19994dce0afa5fdbb35b387b84d6369631995fd1fe20f9cc10137b959620ad13"
     },
     {
       "path": "assets/WTC3_Marriott_massing_STUDY.blend",
-      "bytes": 504441,
-      "sha256": "5ec5521a1f83050f062ccbdf30c24af9625614dbac29f54ab6eea630a522e38c"
+      "bytes": 504537,
+      "sha256": "9637f2cd1afb871572880ef74178671e8764a2db10892a5d66f0891db63d60fb"
     },
     {
       "path": "assets/WTC3_Marriott_volume_0_STUDY_ROOF_detail_components.blend",
-      "bytes": 106838,
-      "sha256": "bf5b6d9680e9b1e78ae77a7bd25843e2ae2784927b73ca11f91ea9233dcb438e"
+      "bytes": 106866,
+      "sha256": "40fe596d94fcae736d435d6fd4255f19b0d3087e8f66caa3edff96c020f80e93"
     },
     {
       "path": "assets/WTC3_Marriott_volume_1_STUDY_ROOF_detail_components.blend",
-      "bytes": 99236,
-      "sha256": "72c184a89015455d2d959ce3262a7f4b5ac0c276687fca34ed9da2e3f9436c86"
+      "bytes": 99237,
+      "sha256": "0a42ab2eff9dbee19e269bfe0947aeb50a62056df5dd476172c9f61005757fb4"
     },
     {
       "path": "assets/WTC4_massing_STUDY.blend",
-      "bytes": 260661,
-      "sha256": "330a79dbc093ea421ff2fef120aa436699b5f1e04e7be346943a1b3710463513"
+      "bytes": 260591,
+      "sha256": "4ac9e7a01d8fe6ba9f7cd26b54eb889d405d2752efc7e848910c52efb9276c33"
     },
     {
       "path": "assets/WTC4_volume_0_STUDY_ROOF_detail_components.blend",
-      "bytes": 105647,
-      "sha256": "5167f0e24fdbf3ccb91f3e953460115eaf52dcf18d693e009149b374afbbc6c1"
+      "bytes": 105596,
+      "sha256": "77cbf0515599ca83c50e90f5994a775a92d9e5949d0c39c1d0d75967866e58e4"
     },
     {
       "path": "assets/WTC5_massing_STUDY.blend",
-      "bytes": 435104,
-      "sha256": "7ef5e33f95a89687c3b20235332cc8f751753cd7d216e8b2340bf60f08ffaf98"
+      "bytes": 435209,
+      "sha256": "43e83f61231d56a2dfe5bc08a4d28021446b264aba010c14a24d9c774c2ec7de"
     },
     {
       "path": "assets/WTC5_volume_0_STUDY_ROOF_detail_components.blend",
-      "bytes": 113088,
-      "sha256": "3c50056123a755c4528afb576f5ffe2172652c522014a5696cf18ca7827e5d03"
+      "bytes": 113122,
+      "sha256": "7502d0641da50e2472295fba20ae360640ecf2a08d56e9694acf7130a14b03b7"
     },
     {
       "path": "assets/WTC5_volume_1_STUDY_ROOF_detail_components.blend",
-      "bytes": 102751,
-      "sha256": "b64bd69faf92259bf7613effb85c1fe6961421c770a9346d232065546b26604c"
+      "bytes": 102764,
+      "sha256": "ec514be6d1b4af887bd69e4999cb3b5b12b28a70440bcfcd9eec0438adc6731b"
     },
     {
       "path": "assets/WTC6_massing_STUDY.blend",
-      "bytes": 244337,
-      "sha256": "0c24ecb8bd7203c7db2fdd26647af11c1eac000e041121c793ecb8e48788f480"
+      "bytes": 244249,
+      "sha256": "f8fe4c97a94678de15c94c1700f8d41fc7ccaba3730b51e55ce16756899548f9"
     },
     {
       "path": "assets/WTC6_volume_0_STUDY_ROOF_detail_components.blend",
-      "bytes": 105159,
-      "sha256": "008c27487ec99ae227165d1458891a6988069319159f096ed8dfd47a1c513064"
+      "bytes": 105158,
+      "sha256": "98bf93b9e1824a9f2482b6250089ab9511c1de6e5a34101789415538362b6fd0"
+    },
+    {
+      "path": "assets/WTC7_INTERIOR_NIST_core_and_public_lobbies.blend",
+      "bytes": 709419,
+      "sha256": "6d84dca56d9ab7f751abef62011f8734bf42d431b798a854f2a3c247ae0a17a0"
     },
     {
       "path": "assets/WTC7_ROOF_NIST_plan_interpretation.blend",
-      "bytes": 164632,
-      "sha256": "46e481b609801527fe88e516a29735f0bbe9ca025f9ba55f342fce6202d12d2c"
+      "bytes": 164662,
+      "sha256": "cc21c68cb1e89ff9c583e8de63c0a942450012bd48bd8f3d215c293e073b2521"
     },
     {
       "path": "assets/WTC7__NIST_massing_position_schematic.blend",
-      "bytes": 1588749,
-      "sha256": "8b22286d2a0e91d5e1c821a2d06b690fba92679db611446c969393c6b347b139"
+      "bytes": 2240975,
+      "sha256": "e50432c7a3352c716ee13dd65c758d0dac08c698f5660923997d1e6651634d21"
     },
     {
       "path": "assets/WTC_TYPICAL_STEEL_PANEL_STUDY.blend",
-      "bytes": 66285,
-      "sha256": "0bd7e01e27abb6b3ced10dff39cf6cbeabe716a3c0826f89ee096303d8bb5c76"
+      "bytes": 66287,
+      "sha256": "6e662965cc8c18544a6d2436fbfbd5c9a73e28b76febead93a547185e5f44ad2"
     },
     {
       "path": "build.py",
@@ -271,8 +311,8 @@
     },
     {
       "path": "docs/ASSET_MODULES.md",
-      "bytes": 6045,
-      "sha256": "042db16b90250f10fd7100cf85d7af0b22beb1226b0c22e60302ed16311dc8da"
+      "bytes": 7164,
+      "sha256": "aeee16e525852d70c12de51bba473c8ffb66c82b9dd994b3efabed91e2b9d7a4"
     },
     {
       "path": "docs/ASSUMPTIONS.md",
@@ -281,8 +321,8 @@
     },
     {
       "path": "docs/COPYRIGHT.md",
-      "bytes": 2809,
-      "sha256": "e6dd2f185e55744114300a73761bc1b900fed5e91d0f8ccbb8b8ab44cb37afdf"
+      "bytes": 3102,
+      "sha256": "f5f6474ded0a639dc3dedff71c65a4534dbb447d5917c9fda498f65b19dfa8e0"
     },
     {
       "path": "docs/CROWN_JUNCTION_EVIDENCE.md",
@@ -296,8 +336,8 @@
     },
     {
       "path": "docs/DELIVERY_STATUS.md",
-      "bytes": 1814,
-      "sha256": "de80536da9ef779c7c13a35b97e5773cf5267d145782d2b18c7445a751230e04"
+      "bytes": 2127,
+      "sha256": "503efe88d6f5fc6f4a24d8f8d9193dd5cc87e2e309d40e367af9e6b12088e64a"
     },
     {
       "path": "docs/DETAIL_REVISION_PLAN.md",
@@ -318,6 +358,11 @@
       "path": "docs/FLAT_CROWN_CORRECTION.md",
       "bytes": 1969,
       "sha256": "8e496ceb015e1ab8229483017c5d004dd561d175d3243f3bfd08ffc312de45b7"
+    },
+    {
+      "path": "docs/INTERIOR_STEEL_REVISION.md",
+      "bytes": 3675,
+      "sha256": "97cc995fac17fcf646580fb0dcb2aad353d2a8c58184dc4390f991fde4716e97"
     },
     {
       "path": "docs/LOBBY_SPHERE_EVIDENCE.md",
@@ -346,8 +391,8 @@
     },
     {
       "path": "docs/PRODUCTION_GATE.md",
-      "bytes": 2269,
-      "sha256": "6d6bc0c2135d587d3d974089c28f8c53108edfeb069d8551260fbe60781eb4b6"
+      "bytes": 2527,
+      "sha256": "496b2695b244d267740b513d8b9a159c1aa641195826fc9b55ef928e4aa8e88e"
     },
     {
       "path": "docs/SEVEN_ITEM_REVISION_PLAN.md",
@@ -381,13 +426,13 @@
     },
     {
       "path": "renders/detail_balcony.png",
-      "bytes": 2057826,
-      "sha256": "891eac4e6a2ec2e2d0a738ee182b67f8a2fc261ef4f5f480b7b38c21f6839cd5"
+      "bytes": 1993691,
+      "sha256": "da2886b2007b25e07d45a57b625da4b91063af1a1362e39510a199d999bcc102"
     },
     {
       "path": "renders/detail_base_frame.png",
-      "bytes": 1727135,
-      "sha256": "d698fcc14234a05fd62563a3c20087d630d7a3379236a4f6b1d7edaefe656fe9"
+      "bytes": 1752898,
+      "sha256": "80cba7a0c136980217f156605fab87457938d80b53e96a82167adaf92d7a4b91"
     },
     {
       "path": "renders/detail_cap_structure.png",
@@ -430,9 +475,24 @@
       "sha256": "9cb9cee92b3ad68adbdd1b844ac07c4458dd73d34a276acda94c0c0148f80058"
     },
     {
+      "path": "renders/detail_elevator.png",
+      "bytes": 1726720,
+      "sha256": "86c15e9cf7225c908fa893c45d6afc63083ddfcc1e2f74fc34a42bcef960a008"
+    },
+    {
       "path": "renders/detail_facade_corner.png",
       "bytes": 1880576,
       "sha256": "858bb0217d5975bb50486d1f4f6f631f0508c94e17ef08af123ee952bffca3f9"
+    },
+    {
+      "path": "renders/detail_floor_end.png",
+      "bytes": 1859539,
+      "sha256": "b62b8c59e1b5bffddc1e8ef379bc79323d676f02a28e3892bfee18d47af7aeeb"
+    },
+    {
+      "path": "renders/detail_floor_structure.png",
+      "bytes": 1575354,
+      "sha256": "21cc7b672f0448e890688815e4d648de1485f30b585b6d7d3f617b17a47c12d4"
     },
     {
       "path": "renders/detail_globe.png",
@@ -446,13 +506,13 @@
     },
     {
       "path": "renders/detail_lobby.png",
-      "bytes": 1899558,
-      "sha256": "b8ae73de02a8a6de9cc3f6e5d99cc7eba6309ac93b8647955e768227a71476c8"
+      "bytes": 2061542,
+      "sha256": "263ab72060911c21a874e769233f347c3d67ccb2bd201ebacf289fdfdfb3c066"
     },
     {
       "path": "renders/detail_lobby_ceiling.png",
-      "bytes": 2028703,
-      "sha256": "d5ce9b5cea97666cdf17f94a2d91be9ccb2fa6a74b4158c9fc5b157cdb6cd5ee"
+      "bytes": 2094749,
+      "sha256": "ceb2b76b97466765b8cdb92e9f192201e0894100bbd03b6e4e716024472c455e"
     },
     {
       "path": "renders/detail_lowrise.png",
@@ -470,9 +530,14 @@
       "sha256": "3d8adf282eb4fdda6395e337ca4395674ac6a4bba51033805bfce9aa0a434231"
     },
     {
+      "path": "renders/detail_north_heights.png",
+      "bytes": 1778776,
+      "sha256": "e6a12218b2e63adc3165dbdeaa0d65f2f8cb2b13a592946b701875be1ae67943"
+    },
+    {
       "path": "renders/detail_overview.png",
-      "bytes": 1711223,
-      "sha256": "158ef7f9e830022a9d577b165a04b6326d304d203a87f7296e501a3a5380f3ac"
+      "bytes": 1711665,
+      "sha256": "eea881abeae568e6adfac6b40858baf9539d358060d5d1b5de4cfdf6e03263ec"
     },
     {
       "path": "renders/detail_paving_seam.png",
@@ -485,9 +550,14 @@
       "sha256": "ce5bbec4e6867fb53be3cfc3d17670d35a30e6d73613a0584f4efebecab5917c"
     },
     {
+      "path": "renders/detail_restaurant.png",
+      "bytes": 1731097,
+      "sha256": "21f203ee5029a23bb20c78be06bc61fcfa0bd3f96ea4ccf533de6178dcdc222a"
+    },
+    {
       "path": "renders/detail_revolving.png",
-      "bytes": 1874122,
-      "sha256": "5910432c92a71ee167cbf3fb6e5c1e59fa746a86aee96013b15bb90a5c5fbb30"
+      "bytes": 1881540,
+      "sha256": "dc3f7c83612906bd6f6f74ed92ddb174b8d09cdb2f828d5b46ad3db23f6c66b0"
     },
     {
       "path": "renders/detail_ridge.png",
@@ -530,6 +600,11 @@
       "sha256": "47052144706b29328e1fc79e368de362d8602ba0829975ddcdcfc1f944ca9ca9"
     },
     {
+      "path": "renders/detail_stone.png",
+      "bytes": 1904385,
+      "sha256": "7daaeadfce083a5f73c5397d684f49b3c75616572de9fee14815156d6ed02e74"
+    },
+    {
       "path": "renders/detail_trident.png",
       "bytes": 1884598,
       "sha256": "4a5143cd27ffc9832689372573b4adae638e2b934d328b9b925f2db22b0d6b2a"
@@ -540,49 +615,59 @@
       "sha256": "02ca5c79bef2fc990143e46c947696e4e49bb40f0672691c32975af9cdff6ca3"
     },
     {
+      "path": "renders/detail_wtc7_core.png",
+      "bytes": 1626828,
+      "sha256": "ddebbfab814886286c11c1ce82f5680a33e9fcb06e996e4b8ee1cc743bfd3f7a"
+    },
+    {
+      "path": "renders/detail_wtc7_interior.png",
+      "bytes": 1637286,
+      "sha256": "02fcf2844280c2dde9392340fec7d3d289a624e4a259533e2f397556d1ad5ac6"
+    },
+    {
       "path": "renders/detail_wtc7_roof.png",
       "bytes": 1982187,
       "sha256": "1fc1c0468b8a9e9b85ebbb762b02c5856fd2f644368b6e81724277648e26c144"
     },
     {
       "path": "reports/assets_qa.json",
-      "bytes": 16666,
-      "sha256": "b810a0d965727c44909c93bf6ffa2eba667eed6b9d956f96da526e350fa02432"
+      "bytes": 19856,
+      "sha256": "9cc872588be93717e072586883122a48457861f6d68b0c5e7fd7bcbcfd3b9c24"
     },
     {
       "path": "reports/geometry_manifest.json.gz",
-      "bytes": 4129305,
-      "sha256": "85ac7bea4dffba12955ef19dae6844c17e947515f38fffd26506c8b21878a822"
+      "bytes": 4610587,
+      "sha256": "73d36daa128b0a4f5c543e323e6c0f951e1fddfa40a9e2dd5ab8d469ed91d8ce"
     },
     {
       "path": "reports/publication.json",
-      "bytes": 1359,
-      "sha256": "a0002ea26848034340e1bf64d9b8dee1e90b6c07b0af04118efabdad89448490"
+      "bytes": 2878,
+      "sha256": "6102868ff63b23128cb08f80ae9fa3f2959948dc6f033034a90a5aa4429ecd8b"
     },
     {
       "path": "reports/qa.json",
-      "bytes": 42723,
-      "sha256": "46e992764e417718d4335d876b39e71f9b87b54500f87997388aba37a940a0fb"
+      "bytes": 48768,
+      "sha256": "46aeb96a456d8c48af0961ef0105923180fdb11f5a2e07868deaa933db4ddc4f"
     },
     {
       "path": "reports/render_runtime.json",
-      "bytes": 26840,
-      "sha256": "fa5c040bee01f2b8e234cb58e13471a811833b21fd4053ae64623b1a8a5ecc7f"
+      "bytes": 39577,
+      "sha256": "26c2a1704e822e08ee8b36ea315d66b965fff34e1b3a9c7cf036c9a62eece9e6"
     },
     {
       "path": "reports/repeat_qa.json",
-      "bytes": 338,
-      "sha256": "8a9179e0a0f478b900fe3913e0811de2b7cd6eee68e9e03f2fabccbdc2cf3568"
+      "bytes": 341,
+      "sha256": "022f5b0b52cb0bb9d679bd7abb2a7a46b5a79b795c3951f271a425d8b349cdb6"
     },
     {
       "path": "review.py",
-      "bytes": 10228,
-      "sha256": "bd981c7d67adcf32dcc003f2e5f96e164db3e6a2f4e15df2aaf0e5995b63a1fb"
+      "bytes": 14119,
+      "sha256": "810edaa428c5852ff0c4b8cc1d43d88f6cde15f4f6c75cb69b2f78d138bf67ab"
     },
     {
       "path": "revise.py",
-      "bytes": 2168,
-      "sha256": "b5729a373a17b844ea3a8e243942370c2374c1af0f71332abdb9b6250b89ace9"
+      "bytes": 2139,
+      "sha256": "8aeaa55c12b7e8ffd5639423b3cfe6c71574bdd4e7cfa449d254e9ebdd399a66"
     },
     {
       "path": "src/wtc/__init__.py",
@@ -631,8 +716,23 @@
     },
     {
       "path": "src/wtc/facade_revision.py",
-      "bytes": 25006,
-      "sha256": "9cdfd63c0c9ff43039b4ebd8b0b0a4dc312d325301d2b26fb2d0f32194239205"
+      "bytes": 25394,
+      "sha256": "a786aa9fe12571c04a7d329c724c0f4662df61121499b60c8daf4a7171528a4d"
+    },
+    {
+      "path": "src/wtc/floor_schedule_revision.py",
+      "bytes": 2715,
+      "sha256": "f736dcd4eecbe2454e7b473b03f58ea1e9550bd258145c91c681c5acc157b3d9"
+    },
+    {
+      "path": "src/wtc/floor_structure_revision.py",
+      "bytes": 8150,
+      "sha256": "0885a2bcc737559b8f2ea00118625a85005e085e3967060ff01094d7b7d65167"
+    },
+    {
+      "path": "src/wtc/interior_parts.py",
+      "bytes": 5981,
+      "sha256": "20a34b2c4e078a2433031cf02fc71a8dc16e8e332d83795048651398b7d88f31"
     },
     {
       "path": "src/wtc/interior_visibility_revision.py",
@@ -641,8 +741,8 @@
     },
     {
       "path": "src/wtc/latest_revision.py",
-      "bytes": 1300,
-      "sha256": "7ff8e04ca8e25b7c3d314bae38c263bc694fb097274682c4f45a8b41eb5bb4ed"
+      "bytes": 1634,
+      "sha256": "f493bd9c5d8a642f4007b8934f2683b15b6087cf08c27efaef3b096806a081d4"
     },
     {
       "path": "src/wtc/lobby_plan_revision.py",
@@ -685,6 +785,11 @@
       "sha256": "ba3faed1d7e8cbf8fde02528dc4e96c9d98393bcc78f3ed6f2174312e52d38eb"
     },
     {
+      "path": "src/wtc/public_interiors_revision.py",
+      "bytes": 12371,
+      "sha256": "6918801f8c364f9963db340267653944758832a6152a0f39bbb605aa657faa5b"
+    },
+    {
       "path": "src/wtc/render_config.py",
       "bytes": 1622,
       "sha256": "9401c179827d67e84188c17ef560093699310430e45b00f9609c705505860fe6"
@@ -695,14 +800,19 @@
       "sha256": "2b57d62c9b827fc2f33e90d2ec869ad2b9911cf5477089ff0c02bd168899e2f5"
     },
     {
+      "path": "src/wtc/wtc7_interior_revision.py",
+      "bytes": 6170,
+      "sha256": "ac73308a92512fb226e3847ad3392172cda6067d672fb87253eccbb3814a19db"
+    },
+    {
       "path": "src/wtc/wtc7_roof_revision.py",
       "bytes": 12316,
       "sha256": "c725802491bdbbf0ba598ed57fefc71bdb16aad376f005610cf20df7593a77c9"
     },
     {
       "path": "verify.py",
-      "bytes": 12051,
-      "sha256": "f1db0c2d9c7890bfa24685b702cde1e59c80728934334ff01ce8987073ca9a25"
+      "bytes": 12155,
+      "sha256": "aeb74725eba98731fdaf5b5116be763bdcabd08dd3f6e8c7c03b49c2234d3e3e"
     },
     {
       "path": "verify_assets.py",
@@ -715,9 +825,14 @@
       "sha256": "e8830a2fb0a1b4e52b17f15bfb5343b67d9a221b5deb3d045082c85003f615a2"
     },
     {
+      "path": "verify_interior_details.py",
+      "bytes": 5380,
+      "sha256": "7c1839fcbb1d418a62a3f4b8a4f9ee79fb168be1ebe8876bc6fc8e7ebc1fe1e8"
+    },
+    {
       "path": "verify_oct15.py",
-      "bytes": 9599,
-      "sha256": "9cc869d449a24dcf5802a5601fb653be37d76d4a6fe84425f8e9b9838fff518e"
+      "bytes": 9687,
+      "sha256": "d96464d4e9a3b06c450a93f24de4ef389c59e810e3940a8199fc66d550cc4f00"
     },
     {
       "path": "verify_original_junction.py",
@@ -736,8 +851,8 @@
     },
     {
       "path": "wtc_detailed_cg.blend",
-      "bytes": 27689778,
-      "sha256": "333f0d448d08e30cbc62a76671a141cded628c8af2653b074b50c89e57493336"
+      "bytes": 29974233,
+      "sha256": "2844305c5db6fbc3d643462d50746296066911fd8cd0788e1cfaf38c29fbcd90"
     }
   ]
 }
